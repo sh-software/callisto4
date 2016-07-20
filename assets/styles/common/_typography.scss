@@ -62,13 +62,6 @@ h1 {color: $brand-primary;}
 
 h2, h3, h4, h5, h6 { color: #939598 !important;}
 
-.flex-item-main {
-  .container-fluid {
-    h1 {
-      padding:30px 0 0 0;
-    }
-  }
-}
 
 // Body text
 // -------------------------
@@ -102,7 +95,6 @@ a{
     outline: 0 none !important;
   }
 }
-a.producer-imprint {text-decoration:underline;}
 
 
 // Emphasis & misc
