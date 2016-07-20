@@ -1,0 +1,13 @@
+{
+  "name": "callisto4",
+  "homepage": "http://www.frontend-studios.de",
+  "authors": [
+    "frontend-studios"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+  },
+  "overrides": {
+  }
+}

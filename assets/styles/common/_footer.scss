@@ -1,0 +1,59 @@
+footer {
+	bottom: 0;
+	border: 0;
+	color: white;
+	margin: 0;
+	padding: 0;
+	// position: absolute;
+	width: 100%;
+	z-index:1;
+	>.container-fluid{
+		background-color: $brand-primary;
+		margin-top:30px;
+	}
+
+	hr {
+	    border: 0;
+	    height: 1px;
+	    background: rgba(255,255,255,.6);
+	}
+	.buying { padding-top: 2em; }
+
+	.image-list {
+		text-align: left;
+		li {
+			text-align:left;
+			margin: 0px 5px 5px 0;
+		}
+	}
+	.shipping {
+		
+	}
+	.payment {
+		text-align:right;
+		.image-list {
+			text-align: right;
+			li {
+				text-align:right;
+				margin: 0px 0px 5px 5px;
+			}
+		}
+	}
+}
+
+@include breakpoint(tablet_and_more){
+
+	footer {
+		hr { display: none;	}
+		.payment {
+			text-align:left;
+			.image-list {
+				text-align: left;
+				li {
+					text-align:left;
+					margin: 0px 5px 5px 0;
+				}
+			}
+		}
+	}
+}

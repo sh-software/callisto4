@@ -1,0 +1,131 @@
+.service-versand {
+	// margin-bottom: 70em;
+}
+.feature {
+	background-position: 37% center !important;
+	background-size: cover !important;
+	color: white;
+	padding: 0;
+	text-align: center;
+	.wrapper {
+		padding: 0 1em;
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    margin:0 auto; 
+		width: 100%;
+	    transition: all .3 $easing;
+	    h2 {font-weight:bold;}
+	    .btn {
+	    	font-weight: bold;
+	    	font-size: 1.5rem;
+	    	display: inline-block;
+	    	padding:.8em 3em;
+	    	margin:0 auto; 
+				margin-top: .5em;
+	    }
+	}
+
+	&.quality{	
+		background:$brand-primary;
+	}
+	&.hersteller {
+		.wrapper {
+			text-shadow: 0px 0px 40px #000;
+		}
+	}
+	&.costumers{
+		background-color: $gray-lighter;
+		color: $gray-dark;
+		text-align: center;
+
+		.wrapper {
+			left: 50%;
+
+			transform: translate(-50%, -50%);
+
+			button {
+				margin-top: .5em;
+				padding:.8em;
+			} 
+		}
+	}
+	&.service, &.versand {
+		color: $gray-darker;
+		padding: 1em 0;
+		h3 {
+			font-weight:bold;
+		}
+		.wrapper {
+			.glyphicon {
+			    border: 3px solid $brand-primary;
+			    border-radius: 50%;
+			    color: $brand-primary;
+			    padding: 1em;
+			    font-size: 1.5em;
+			    &::before {
+			    	position:relative;
+			    	bottom:-.2em;
+			    	left:-.1em;
+			    }
+			}
+		}
+	}
+	&.service {
+		border-bottom: 1px solid $gray-light;
+	}
+}
+
+// @include breakpoint(phones_portrait) {}
+//@include breakpoint(phones_landscape) {}
+@include breakpoint(tablet_portrait){
+	.service-versand {
+		// margin-bottom: 65em;
+		.col-sm-6:first-child {
+			border-right: 1px solid $gray-light;
+		}
+	}
+	.feature {
+		&.service, &.versand {
+			text-align: center;
+			padding: 0 2em;
+			margin-bottom: 2em;
+			p {
+				text-align:left;
+			}
+			h1, h2, h3, h4, h5, h6 { margin: 1em 0 1.5em; }
+		}
+		&.service {
+			border-bottom: 0;
+		}
+	}
+	
+}
+@include breakpoint(tablet_and_more){
+	.service-versand {
+		// margin-bottom: 35em;
+	}
+	.feature {
+		&.quality {	
+			text-align: left;
+			
+			.wrapper { 
+				width: 70%;
+				left: 30%; 
+				padding: 0 2em;
+			}
+		}
+		&.hersteller{
+			text-align: left;
+			.wrapper {
+				padding: 0 2em;
+				width: 70%;
+			}
+		}
+		&.service, &.versand {
+			p {
+				text-align:center;
+			}
+		}
+	}
+}

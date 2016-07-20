@@ -1,0 +1,24 @@
+// breakpoint variables
+@mixin breakpoint($point) {
+  @if $point == phones_portrait {
+    @media only screen and (max-width: 480px ) { @content; }
+  }
+  @else if $point == phones_landscape {
+    @media only screen and (min-width: 480px) { @content; }
+  }
+  @else if $point == tablet_portrait {
+    @media only screen and (min-width:768px) { @content; }
+  }
+  @else if $point == tablet_and_more {
+    @media only screen and (min-width: 992px) { @content; }
+  }
+  @else if $point == super_large {
+    @media only screen and (min-width: 1280px) { @content; }
+  }
+}
+
+// @include breakpoint(phones_portrait){}
+// @include breakpoint(phones_landscape){}
+// @include breakpoint(tablet_portrait){}
+// @include breakpoint(tablet_and_more){}
+// @include breakpoint(super_large){}

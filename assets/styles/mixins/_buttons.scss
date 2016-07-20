@@ -1,0 +1,223 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+@mixin button-base($color, $background, $outline, $size, $border-width:0px) {
+    color: $color;
+    background-color: $background;
+    border: $border-width solid $outline;
+    border-radius: $border-radius-base;
+    border-color: $outline;
+    box-shadow: none;
+    -webkit-appearance: none; //prevent iOS input styles
+    outline: none; //prevent blue glow on webkit, dots on FF and blue line on IE
+    transition: color .15s, background-color .15s, border-color .15s; 
+
+    @include button-size($size);
+
+
+    &:focus,
+    &.focus {
+        outline: none;
+        background-color: $background;
+        border-color: $background;
+    }
+    
+    &:hover {
+        background-color: $color;
+        border-color: $background;
+        color: $background;
+    }
+
+    &:active,
+    &.active{
+        outline: none;
+        color: $color;
+        background-color: darken($background, 15%);
+        border-color: darken($background, 25%);
+        background-image: none; // Remove the gradient for the pressed/active state
+        box-shadow: none;
+    }
+
+    &.disabled,
+    &:disabled {
+        background-color: lighten($background, 20%);
+        border-color: lighten($background, 10%);
+        cursor: not-allowed;
+
+        &:focus,
+        &.focus {
+            background-color: lighten($background, 20%);
+            border-color: lighten($background, 10%);
+        }
+    }
+
+    @if $outline == true {
+        color: $color;
+        background-image: none;
+        background-color: transparent;
+        border-color: $color;
+        
+        &:focus,
+        &.focus,
+        &:active,
+        &.active{
+            background-color: rgba($color, .2);
+            border-color: darken($color, 10%);
+        }
+
+        &:hover {
+            background-color: rgba($color, .2);
+            color: darken($color, 10%);
+            border-color: darken($color, 10%);
+        }
+        
+        &.disabled,
+        &:disabled {
+            color: lighten($color, 20%);
+            border-color: lighten($color, 20%);
+
+            &:focus,
+            &.focus {
+                color: lighten($color, 20%);
+                border-color: lighten($color, 20%);
+            }
+        }
+    }
+}
+
+//Special buttons with icons
+@mixin button-icon($color, $background, $outline, $size, $icon, $border-width:0){
+    color: $color;
+    background-color: $background;
+    border-color: $background;
+    border: $border-width*1px solid $background;
+    box-shadow: none;
+    -webkit-appearance: none; //prevent iOS input styles
+    outline: none; //prevent blue glow on webkit, dots on FF and blue line on IE
+    transition: color .15s, background-color .15s, border-color .15s; 
+
+    @include button-size($size);
+
+    height: 3em;
+    padding-right: 4em;
+    position: relative;
+    overflow: hidden;
+    flex: 0 1 auto;
+
+    &::before,
+    &::after{
+      content:$icon;
+      font-family: "icomoon";
+      display: inline-block;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 3em;
+      width: 3em;
+      line-height: 2.9em;
+      text-align:center;
+      color: $color;
+
+      transition: transform .25s;
+    }
+
+    &::after{
+      right: 3em;
+      background-color: $color;
+      color: $background;
+      transform-origin: 100% 50%;
+      transform: rotateY(-90deg); 
+    }
+    
+    &:hover{
+        // $color: $color;
+        // $border-color: $color;
+        // $background-color: $background;
+
+        &::before{
+            transform: translateX(3em);
+            transition: transform .25s;
+        }
+
+        &::after{
+            transform: rotateY(0) translateX(3em);
+            transition: transform .4s;
+        }
+    }
+
+    &:active,
+    &.active{
+        outline: none;
+        color: $color;
+        background-color: darken($background, 15%);
+        border-color: darken($background, 25%);
+        background-image: none; // Remove the gradient for the pressed/active state
+        box-shadow: none;
+    }
+
+    &.disabled,
+    &:disabled {
+        background-color: lighten($background, 20%);
+        border-color: lighten($background, 10%);
+        cursor: not-allowed;
+    }
+
+    @if $outline == true {
+        color: $color;
+        background-image: none;
+        background-color: transparent;
+        border-color: $color;
+        
+        &:focus,
+        &.focus,
+        &:active,
+        &.active{
+            background-color: transparent;
+            border-color: $color;
+        }
+
+        &:hover {
+            background-color: transparent;
+            border-color: $color;
+            color: $color;
+        }
+        
+        &.disabled,
+        &:disabled {
+            color: lighten($color, 20%);
+            border-color: lighten($color, 20%);
+        }
+    }
+}
+
+
+// Button sizes
+@mixin button-size($size) {
+    // @if $size == xs {
+    //     font-size: .8em;
+    //     height: 36px;
+    //     width: 140px;
+    // }
+    // @else if $size == sm {
+    //     font-size: .9em;
+    //     height: 36px;
+    //     width: 160px;
+    // }
+    // @else if $size == md {
+    //     font-size: 1em;
+    //     height: 51px;
+    //     max-width: 100%;
+    //     width: 280px;
+    // }
+    // @else if $size == lg {
+    //     font-size: 1.5em;
+    //     height: 60px;
+    //     max-width: 100%;
+    //     padding: .7em 0;
+    //     width: 325px;
+    // }
+
+    border-radius: $border-radius-base;
+}
