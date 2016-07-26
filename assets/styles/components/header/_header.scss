@@ -1,0 +1,213 @@
+
+.topBar{
+	width: 100%;
+	display: block;
+	min-height: 35px;
+	height: auto;
+	background-color: $secondary-color;
+	ul{
+		li{
+			a{
+				padding:0 3px;
+				display: block;
+				line-height: 35px;
+				font-size: 14px;
+				@include transition(all 0.3s ease-in-out);
+				color: $white-color !important;
+				&:hover, &:focus{
+					@include opacity(.8);
+				}
+			}
+		}
+	}
+	ul.pull-right{
+		li{
+			padding: 0;
+			float: left; 
+			a{
+				font-size: 12px;
+				display: inline-block;
+			}
+		}
+		li:first-child{
+			span{
+				small{
+					color: $text-link - 50;
+					padding: 0 $padding - 5px;
+				}
+				a{
+					@include transition(all 0.3s ease-in-out);
+					&:hover{
+						color: $text-link - 50;
+					}
+					&:focus{
+						color: $text-link;
+					}
+				}
+			}
+		}
+		li:first-child::after{
+			content: "|";
+			padding-left: 13px;
+			font-size: 16px;
+			color: $text-link;
+			opacity: .15;
+		}
+		li:nth-child(2){
+			a{
+				color: $white-color;
+				@include transition(all 0.3s ease-in-out);
+				padding: 0 $padding;
+				&:hover{
+					opacity: .5;
+				}
+			}
+			.dropdown-menu{
+				padding: $padding $padding+5px;
+				border-radius: 0;
+				
+				@include mobile-xs {
+					width: 280px;
+					margin: 0 $margin - 75px 0 0;
+				}
+				@include mobile {
+					width: 350px;
+					margin: 0;
+				}
+				li{
+					line-height: 0;
+					width: 100%;
+					.input-group{
+						.form-control{
+							box-shadow: none;
+							border-radius: 0;
+							&:focus{
+								border-color: $primary-color;
+							}
+						}
+						.input-group-addon{
+							border-radius: 0;
+							background-color: $primary-color;
+							color: $white-color;
+							text-transform: uppercase;
+							font-size: $font-size+4px;
+							font-weight: 700;
+							border-color: $primary-color;
+						}
+					}
+				}
+			}
+		}
+		li:last-child{
+			a{
+				background-color: $primary-color;
+				line-height: 35px;
+				min-height: 36px;
+				font-size: $font-size+3px; 
+				color: $white-color;
+				@include transition(all 0.3s ease-in-out);
+				@include mobile-xs {
+					padding: 0 $padding - 3px;
+				}
+				@include mobile {
+					padding: 0 $padding;
+				}
+				@include tablet {
+					padding: 0 $padding+9px;
+				}
+				i{
+					font-size: $font-size+8px;
+					margin-right: $margin;
+				}
+				&:hover{
+					background-color: $primary-color;
+					@include opacity(1);
+				}
+				&:focus{
+					@include opacity(1);
+				}
+			}
+			ul.dropdown-menu{
+				background-color: $primary-color;
+				border-radius: 0;
+				
+				margin: 0;
+				box-shadow: none;
+				border: none;
+				@include mobile-xs {
+					width: 280px;
+				}
+				@include mobile {
+					width: 300px;
+				}
+				li:first-child{
+					color: $white-color;
+					padding: $padding 0 $padding - 2px $padding + 9px;
+				}
+				li{
+					a{
+						line-height: 26px;
+						.media{
+							@include add-border(1px, rgba(0, 0, 0, 0.1), bottom);
+							padding: $padding+2px 0;
+							.media-body{
+								h5{
+									color: $white-color;
+									line-height: 20px;
+									letter-spacing: 1px;
+									span{
+										font-size: $font-size+8px; 
+									}
+								}
+							}
+						}
+						&:hover{
+							opacity: .8;
+							background-color: transparent;
+						}
+					}
+				}
+				li{
+					.btn-group{
+						padding: $padding+4px $padding+9px;
+						.btn{
+							border-radius: 0;
+							border: none;
+							height: 36px;
+							padding: 0;
+							line-height: 36px;
+							font-size: $font-size+3px;
+							font-weight: 700;
+							letter-spacing: 1px;
+							background-color: $btn-bg;
+							@include transition(all 0.3s ease-in-out);
+						}
+						button:first-child{
+							&:hover{
+								opacity: .8;
+							}
+							@include mobile-xs {
+								width: 135px;
+							}
+							@include mobile {
+								width: 149px;
+							}
+						}
+						button:last-child{
+							margin-left: $margin - 6px;
+							@include mobile-xs {
+								width: 100px;
+							}
+							@include mobile {
+								width: 109px;
+							}
+							&:hover{
+								opacity: .8;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
