@@ -1,139 +1,23 @@
-<!DOCTYPE html>
-<html lang="de_DE">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+layout: default
+---
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+<div class="home">
 
-    <title>Callisto4 by zk</title>
+  <h1 class="page-heading">Posts</h1>
 
-    <link href="dist/styles/main.css" rel="stylesheet">
-  </head>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <body>
-        <div class="wrapper wrapper-top">
-            <!-- Messages wrapper -->
-        </div>
-        <div class="wrapper wrapper-left">
-            <!-- Filters wrapper -->
-        </div>
-        <div class="wrapper wrapper-main">
-            <!-- Main content -->
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-<div class="topBar">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 hidden-sm hidden-xs">
-                <ul class="list-inline">
-                    <li> 
-                      <a class="btn btn-social-icon btn-twitter">
-                      <span class="fa fa-twitter"></span>
-                      </a>
-                    </li>   
-                    <li> 
-                      <a class="btn btn-social-icon btn-twitter">
-                      <span class="fa fa-twitter"></span>
-                      </a>
-                    </li>
-                    <li> 
-                      <a class="btn btn-social-icon btn-twitter">
-                      <span class="fa fa-twitter"></span>
-                      </a>
-                    </li>   
-                    <li> 
-                      <a class="btn btn-social-icon btn-twitter">
-                      <span class="fa fa-twitter"></span>
-                      </a>
-                    </li>      
-                </ul>
-              </div>
-              <div class="col-md-6 col-xs-12">
-                <ul class="list-inline pull-right">
-                  <li><span><a data-toggle="modal" href=".login-modal">Einloggen</a><small>oder</small><a data-toggle="modal" href="#signup">Registieren</a></span></li>
-                  <li class="dropdown searchBox">
-                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                      <li>
-                        <span class="input-group">
-                          <input type="text" class="form-control" placeholder="Search…" aria-describedby="basic-addon2">
-                          <span class="input-group-addon" id="basic-addon2">Suchen</span>
-                        </span>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="cart-page.html" class="dropdown-toggle" data-toggle="dropdown disabled"><i class="fa fa-shopping-cart"></i>$0</a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                      <li>Item(s) in your cart</li>
-                      <li>
-                        <a href="single-product.html">
-                          <div class="media">
-                            <img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
-                            <div class="media-body">
-                              <h5 class="media-heading">INCIDIDUNT UT <br><span>2 X $199</span></h5>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <div class="btn-group" role="group" aria-label="...">
-                          <button type="button" class="btn btn-default" onclick="#';">Warenkorb</button>
-                          <button type="button" class="btn btn-default" onclick="#';">Ausloggen</button>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>    
-        </div>
-
-
-
-<nav class="navbar navbar-main navbar-default" role="navigation">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href=""><img src="https://placeholdit.imgix.net/~text?txtsize=8&txt=200%C3%9730&w=200&h=30" alt=""></a>
-            </div>
-        
-            <div class="collapse navbar-collapse navbar-ex1-collapse">            
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="javascript:void(0)">Home</a></li>
-                <li>Seite #2</li>
-                <li>Seite #3</li>
-                <li>Seite #3</li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div>
-        </nav>
-
-
-
-
-
-        </div>
-        <div class="wrapper wrapper-right">
-            <!-- Basket preview plugin wrapper-->
-        </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.3/js/tether.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-  </body>
-</html>
+</div>
