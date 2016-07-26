@@ -6,19 +6,10 @@
 
 @import "layouts/variables";
 
-
-// MIXINS
-@import "mixins/grid";
-@import "mixins/buttons";
-
-// COMMON
-@import "common/breakpoints";
-@import "common/magic-squares";
-@import "common/global";
-@import "common/typography";
-
-
-// COMPONENTS
-@import "components/navbar";
-@import "components/buttons";
-
+//components
+@import "components/header/header";
+@import "components/main/main";
+@import "components/footer/footer";
+@import "components/login/login";
+@import "components/basket_preview/basket_preview";
+@import "components/main_navigation/main_navigation";
