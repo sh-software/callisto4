@@ -3,8 +3,11 @@ BREAKING CHANGES!!!!
 delete node_modules and run
 ``
 npm cache clear
+
 npm install
+
 bower install
+
 bundle install
 ``
 
