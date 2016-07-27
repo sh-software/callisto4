@@ -5,15 +5,76 @@
 
   <body>
 
-    {% include _header/header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="wrapper wrapper-top">
+      <!-- messages -->
     </div>
 
-    {% include _footer/footer.html %}
+    <div class="wrapper wrapper-left">
+      <!-- filters -->
+    </div>
+
+    <div class="wrapper wrapper-main">
+      <!-- content -->
+      {% include _header/header.html %}
+      {% include _navigation/navigation.html %}
+
+      <div class="main">
+          {{ content }}
+      </div>
+
+      {% include _footer/footer.html %}
+
+      <div class="wrapper wrapper-overlay">
+         <!-- content -->
+      </div>
+
+    </div>
+
+    <div class="wrapper wrapper-right">
+      <!-- basket preview -->
+    </div>
+
+    <div class="wrapper wrapper-bottom">
+      <!-- eventually messages -->
+    </div>
+    
+
+    
+
+
+
+
+<!-- Login Modal -->
+<!-- <div class="modal fade login-modal in" id="login" tabindex="-1" role="dialog" style="display: block; padding-left: 0px;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 class="modal-title">log in</h3>
+          </div>
+          <div class="modal-body">
+            <form action="" method="POST" role="form">
+              <div class="form-group">
+                <label for="">E-Mail</label>
+                <input type="email" class="form-control" id="">
+              </div>
+              <div class="form-group">
+                <label for="">Passwort</label>
+                <input type="password" class="form-control" id="">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember Me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Einloggen</button>
+              <button type="button" class="btn btn-link btn-block">Passwort vergessen?</button>
+            </form>  
+          </div>
+        </div>
+      </div>
+    </div> -->
+
 
   </body>
 
