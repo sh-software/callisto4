@@ -1,0 +1,155 @@
+.checkout{
+
+	.ic-edit{
+		font-size: 1em;
+	}
+
+	#sbg_privacyPolicy, #sbg_privacyPolicy.error{
+		display: inline-block;
+
+		.txt { color: $gray-darker; }
+	}
+
+	// #container-HeidelPay {
+	// 	#PlentyWebHeidelpayIFrame{
+	// 		background-color: #fffaef;
+	// 	    height: 600px;
+	// 	    margin-top: 3em;
+	// 	    width: 100%;
+	// 	    border: 2px solid #FDF3DA;
+	// 	    border-radius: 3px;
+	// 	    padding-top: 1em;
+	// 	}
+	// }
+	
+	.container{
+		@include sitepad(xs);
+		//@extend .row;
+		position: relative;
+		padding-bottom: 1.5em;
+
+		.basket-items-list .item{
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.login-register-title {
+			font-size: 1em;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
+
+	.page-view{
+		.partial-submit{
+			display: none;
+		}
+	}
+	
+	.panels-list{
+	    // display: flex;
+	    // flex-flow: row wrap;
+	    // justify-content: flex-start;
+	    // align-items: stretch;
+	    // flex: 1 0 auto;
+		list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    width: 100%;
+
+		.panel-list-item{
+		    // display: flex;
+		    width: 50%;
+		    display: inline-block;
+		    vertical-align:top;
+		    margin-top: -1px;
+			
+			margin-left: -1px;
+
+			&:nth-of-type(1){
+				.label{
+					border-top-left-radius: $border-radius;
+				}
+			}
+
+			&:nth-of-type(2){
+				.label{
+					border-top-right-radius: $border-radius;
+				}
+			}
+
+			&:nth-last-child(2):nth-of-type(even){
+				.label{
+					border-bottom-left-radius: $border-radius;
+				}
+			}
+
+			&:last-child:nth-of-type(odd){
+				.label{
+					border-bottom-left-radius: $border-radius;
+				}
+			}
+
+			&:last-child{
+				.label{
+					border-bottom-right-radius: $border-radius;
+				}
+			}
+
+			input{ display: none; }
+
+			input:checked + label{
+				background-color: $brand-primary;
+				color: white;
+			}
+
+			label{
+				// display: flex;
+				// flex: 1 0 auto;
+				// align-items: center;
+			    border: 1px solid $gray-light;
+		    	cursor: pointer;
+				padding: .5em;
+				margin-bottom: 0;
+				width:100%;
+			}
+
+			.content{
+				//align-items: center;
+				// display: flex;
+				// flex: 1 0 auto;
+				// flex-direction: column;
+				//justify-content: center;
+				max-width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	// .payment-methods-wrapper,
+	// .shipping-profiles-wrapper{
+	// 	.panels-list li label{
+	// 		// justify-content: center;
+	// 	}
+	// 	.panels-list li .content{
+	// 		text-align: center;
+	// 	}
+	// }
+
+	#sbg_guestWrapper{ padding-top:1em; }
+
+	@include media-breakpoint-up(sm){
+		
+	}
+
+	@include media-breakpoint-up(md){
+		
+	}
+
+	@include media-breakpoint-up(lg){
+		
+	}
+
+}
+
+
