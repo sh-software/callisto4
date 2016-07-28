@@ -7,7 +7,7 @@ minifyCSS = require('gulp-minify-css');
 
 
 var input = './_includes/**/*.scss';
-var output = './css';
+var output = './dist';
 
 var sassOptions = {
   errLogToConsole: true,
