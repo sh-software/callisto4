@@ -1,95 +1,34 @@
-<!-- NAVBAR -->
-<nav class="navbar navbar-main navbar-default" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="javascript:void(0)"><img src="images/logo.svg" alt=""></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">            
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="javascript:void(0)">Home</a></li>
-        <li class="dropdown megaDropMenu">
-          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300" data-close-others="true" aria-expanded="false">Shop</b></a>
-          <ul class="dropdown-menu row">
-            <li class="col-sm-3 col-xs-12">
-              <ul class="list-unstyled">
-                <li>Products Grid View</li>
-                <li><a href="product-grid-left-sidebar.html">Products Sidebar Left</a></li>
-                <li><a href="product-grid-right-sidebar.html">Products Sidebar Right</a></li>
-                <li><a href="product-grid-3-col-filter.html">Products 3 Columns V1</a></li>
-                <li><a href="product-grid-3-col.html">Products 3 Columns V2</a></li>
-                <li><a href="product-grid-4-col.html">Products 4 Columns</a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3 col-xs-12">
-              <ul class="list-unstyled">
-                <li>Products List View</li>
-                <li><a href="product-list-left-sidebar.html">Products Sidebar Left</a></li>
-                <li><a href="product-list-right-sidebar.html">Products Sidebar Right</a></li>
-                <li class="listHeading">Others</li>
-                <li><a href="single-product.html">Single Product</a></li>
-                <li><a href="cart-page.html">Cart Page</a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3 col-xs-12">
-              <ul class="list-unstyled">
-                <li>Checkout</li>
-                <li><a href="checkout-step-1.html">Step 1 - Address</a></li>
-                <li><a href="checkout-step-2.html">Step 2 - Shipping</a></li>
-                <li><a href="checkout-step-3.html">Step 3 - Payment</a></li>
-                <li><a href="checkout-step-4.html">Step 4 - Payment</a></li>
-                <li><a href="checkout-complete.html">Order Complete</a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3 col-xs-12">
-              <a href="#" class="menu-photo"><img src="img/menu-photo.jpg" alt="menu-img"></a>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages</a>
-          <ul class="dropdown-menu dropdown-menu-left">
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="signup.html">Register</a></li>
-            <li><a href="signup-login.html">Register or Login</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="lost-password.html">Password Recovery</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-            <li><a href="404.html">404 Not Found</a></li>
-            <li><a href="coming-soon.html">Coming Soon</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">blog</a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
-            <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
-            <li><a href="blog-fullwidth.html">Full Width</a></li>
-            <li><a href="blog-single-fullwidth.html">Single Post</a></li>
-            <li><a href="blog-single-right-sidebar.html">Single Right Sidebar</a></li>
-            <li><a href="blog-single-left-sidebar.html">Single Left Sidebar</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account</a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="account-dashboard.html">Dashboard</a></li>
-            <li><a href="account-profile.html">Profile</a></li>
-            <li><a href="account-all-orders.html">All Orders</a></li>
-            <li><a href="account-single-order.html">Single Order</a></li>
-            <li><a href="account-wishlist.html">Wishlist</a></li>
-            <li><a href="account-address.html">Address</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
+<!-- .navbar -->
+<nav class="navbar navbar-full navbar-dark bg-primary">
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">
+  &#9776;
+  </button>
+  <a class="navbar-brand" href="#">
+  Brand
+  </a>
+  <div class="collapse navbar-toggleable-md" id="mainNavbarCollapse">
+    <ul class="nav navbar-nav pull-lg-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" id="navbarDropdown1" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+          <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+          <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+          <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 4</a>
+      </li>
+    </ul>
   </div>
 </nav>
+<!-- /.navbar -->

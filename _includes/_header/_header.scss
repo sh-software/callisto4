@@ -1,4 +1,4 @@
-.top-bar{
+.topBar{
 	width: 100%;
 	display: block;
 	min-height: 35px;
@@ -210,5 +210,10 @@
 			}
 		}
 	}
+}
+
+ul.dropdown-menu.dropdown-menu-right {
+z-index:1001;
+
 }
 
