@@ -21,7 +21,7 @@
  * 
  */
 
-$font-size:			1em;
+$font-size:			10px;
 $main-max-width:	128rem;
 $easing:			cubic-bezier(0.37, 0.03, 0.55, 0.99);
 
@@ -265,10 +265,9 @@ $label-link-hover-color:      #fff !default;
 
 
 
-
-
 /*=== TODO : TEMP VARIABLES ===*/
-$primary-color:#000;
+
+$primary-color:#47bac1;
 $primary-color-light:#4dc8cf;
 $primary-color-lightess:#92d5d9;
 $primary-color-lighter: #47aeb5;
@@ -315,4 +314,3 @@ $tumblr-color:#36465d;
 $dark-bg:#282828;
 
 $padding: 10px;
-$margin: 10px;
