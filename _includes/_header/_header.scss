@@ -19,7 +19,7 @@
 			}
 		}
 	}
-	ul.pull-right{
+	ul.pull-xs-right{
 		margin-bottom: 0;
 		li{
 			padding: 0;
@@ -90,7 +90,7 @@
 							background-color: $primary-color;
 							color: $white-color;
 							text-transform: uppercase;
-							font-size: $font-size+4px;
+							font-size: $font-size;
 							font-weight: 700;
 							border-color: $primary-color;
 						}
@@ -100,10 +100,10 @@
 		}
 		li:last-child{
 			a{
-				background-color: $primary-color;
+				background-color: $brand-primary;
 				line-height: 35px;
 				min-height: 36px;
-				font-size: $font-size+3px; 
+				font-size: $font-size; 
 				color: $white-color;
 				@include transition(all 0.3s ease-in-out);
 				@include mobile-xs {
@@ -116,7 +116,7 @@
 					padding: 0 $padding+9px;
 				}
 				i{
-					font-size: $font-size+8px;
+					font-size: $font-size;
 					margin-right: $margin;
 				}
 				&:hover{
@@ -156,7 +156,7 @@
 									line-height: 20px;
 									letter-spacing: 1px;
 									span{
-										font-size: $font-size+8px; 
+										font-size: $font-size; 
 									}
 								}
 							}
@@ -176,7 +176,7 @@
 							height: 36px;
 							padding: 0;
 							line-height: 36px;
-							font-size: $font-size+3px;
+							font-size: $font-size;
 							font-weight: 700;
 							letter-spacing: 1px;
 							background-color: $btn-bg;

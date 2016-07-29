@@ -1,4 +1,4 @@
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../bower_components/bootstrap/scss/bootstrap";
 
 @import "mixins/media-query";
 @import "mixins/grid";
@@ -8,8 +8,8 @@
 //@import "mess/**/*";
 
 @import "common/common";
-@import "variables";
 @import "vars";
+@import "variables";
 
 @import "../_header/header";
 @import "../_header/page-header";
@@ -17,3 +17,4 @@
 @import "../_navigation/navigation";
 @import "../_footertop/footertop";
 @import "../_footer/footer";
+
