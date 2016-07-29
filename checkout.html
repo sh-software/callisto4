@@ -2,200 +2,65 @@
 layout: default
 ---
 
-<div class="checkout">
-    <div class="container-fluid">
-        <div class="row">
+<div class="checkout container">
+    <div class="row">
+        
+        <div class="col-xs-12 m-b-3">
+            <h1>Kasse</h1>
+            <hr>
+        </div>
+        <!--
             
-            <div class="col-xs-12">
-                <h3>Kasse</h3>
-                <hr>
-            </div>
-            <!--
-                
-            -->
-            <div class="col-md-3 col-md-push-9">
-                <aside class="sidebar">
-                    {% include _checkout-totals-sidebar/checkout-totals-sidebar.html %}
-                </aside>
-            </div>
+        -->
+        <div class="col-md-5 col-md-push-7">
+            <aside class="sidebar">
+                {% include _component-checkout-sidebar/component-checkout-sidebar.html %}
+            </aside>
+        </div>
 
-            <div class="col-md-9 col-md-pull-3">
-                <div id="registry-form-container" class="registry-form-container main-col" data-id="0" data-status="2">
-                    <div class="main-col_inner">
-                        <!-- invoiceAddress -->
-                        <div class="invoice-address-wrapper clearfix">
-                            <h4 class="clearfix">
-                                Rechnungsanschrift
-                                <a data-inmodal="/rest/checkout/container_checkoutcustomerinvoiceaddress/" style="float:right;">
-                                    bearbeiten
-                                    <span class="ic-edit"></span>
-                                </a>
-                            </h4> <strong>Zentral
-                                <br>buyer frontend</strong>
-                            <p></p>
-                            <div>Kurze Straße 3002</div>
-                            <div>12345 Ortschaft</div>
-                            <div>Deutschland</div>
-                        </div>
-                        <!-- /invoiceAddress -->
-                        <hr>
+        <div class="col-md-7 col-md-pull-5">
+            <div id="registry-form-container" class="registry-form-container main-col" data-id="0" data-status="2">
+                <div class="main-col_inner">
+                    <!-- invoiceAddress -->
+                    {% include _component-invoice-address/component-invoice-address.html %}
+                    <!-- /invoiceAddress -->
+                    {% include _component-shipping-address/component-shipping-address.html %}
+                    <!-- /ShippingAddress -->                    
+                    {% include _component-shipping-profiles/component-shipping-profiles.html %}
+
+                    {% include _component-payment-methods/component-payment-methods.html %}                    
+
+                    <!-- <form id="legalForm" class="" method="get" action="">
                         <div>
-                            <!-- ShippingAddress -->
-                            <div class="shipping-address-wrapper">
-                                <h4 class="clearfix">
-                                    Lieferadresse
-                                    <a id="sbg_newAddress" data-inmodal="316" style="float:right;">
-                                        bearbeiten
-                                        <span class="ic-edit"></span>
-                                    </a>
-                                </h4>
-                                <form id="shippingAdressSelect" data-signal="addShippingAddress" novalidate="novalidate">
-                                    <div data-response=""></div>
-                                    <div class="saved-addresses-list">
-                                        <ul class="panels-list">
-                                            <li class="panel-list-item">
-                                                <input id="chk_shippingAddress_" type="radio" name="shippingAddressID" value="0" checked="checked">
-                                                <label for="chk_shippingAddress_" class="address-select">
-                                                    <div class="content">
-                                                        <div>Firma buyer frontend</div>
-                                                        <div>Kurze Straße 3002</div>
-                                                        <div>12345 Ortschaft</div>
-                                                        <div>Deutschland</div>
-                                                    </div>
-                                                </label>
-                                            </li><!--
-                                            --><li class="panel-list-item">
-                                                <input id="chk_shippingAddress_60" type="radio" name="shippingAddressID" value="60">
-                                                <label for="chk_shippingAddress_60" class="address-select">
-                                                    <div class="content">
-                                                        <div>Frau Vorname Nachname</div>
-                                                        <div>Goethestrasse, 92</div>
-                                                        <div>34119 Kassel</div>
-                                                        <div>Deutschland</div>
-                                                    </div>
-                                                </label>
-                                            </li><!--
-                                            --><li class="panel-list-item">
-                                                <input id="chk_shippingAddress_61" type="radio" name="shippingAddressID" value="61">
-                                                <label for="chk_shippingAddress_61" class="address-select">
-                                                    <div class="content">
-                                                        <div>Frau Vorname Nachname</div>
-                                                        <div>Straße, Hausnr.</div>
-                                                        <div>Zusatz</div>
-                                                        <div>Postleitzhal Ortschaft</div>
-                                                        <div>Deutschland</div>
-                                                    </div>
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </form>
-                            </div>
+                            <input id="newsletterCheck" type="checkbox" value="1" name="NewsletterCheck">
+                            <label>
+                                Bitte senden Sie mir regelmäßig Informationen zu Ihrem Produktsortiment per E-Mail zu. Ihren Newsletter kann ich jederzeit wieder abbestellen.
+                            </label>
                         </div>
-                        <!-- /ShippingAddress -->
-                        <hr>
-                        
-                        <div class="shipping-profiles-wrapper" data-value="">
-                            <h3>Versandart</h3>
-                            <hr>
-                            <ul class="panels-list">
-                                <li class="panel-list-item" data-id="7">
-                                    <input id="ShippingProfileID_7" type="radio" name="ShippingProfileID" value="7">
-                                    <label for="ShippingProfileID_7">Hermes</label>
-                                </li><!--
-                                --><li class="panel-list-item" data-id="6">
-                                    <input id="ShippingProfileID_6" type="radio" name="ShippingProfileID" value="6" checked="checked">
-                                    <label for="ShippingProfileID_6">DHL</label>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="payment-methods-wrapper" data-value="">
-                            <h3>Zahlungsart</h3>
-                            <hr>
-                            <ul class="panels-list">
-                                <li class="panel-list-item" data-id="50">
-                                    <input type="radio" id="1_paymentMethod50" name="MethodOfPaymentID" value="50" checked="checked">
-                                    <label for="1_paymentMethod50">
-                                        <div class="content">PayPal</div>
-                                    </label>
-                                </li><!--
-                                --><li class="panel-list-item" data-id="50">
-                                    <input type="radio" id="2_paymentMethod50" name="MethodOfPaymentID" value="50" checked="checked">
-                                    <label for="2_paymentMethod50">
-                                        <div class="content">Lastschrift (PayPal Plus)</div>
-                                    </label>
-                                </li><!--
-                                --><li class="panel-list-item" data-id="50">
-                                    <input type="radio" id="paymentMethod50" name="MethodOfPaymentID" value="50" checked="checked">
-                                    <label for="paymentMethod50">
-                                        <div class="content">Kreditkarte (PayPal Plus)</div>
-                                    </label>
-                                </li><!--
-                                --><li class="panel-list-item" data-id="50">
-                                    <input type="radio" id="3_paymentMethod50" name="MethodOfPaymentID" value="50" checked="checked">
-                                    <label for="3_paymentMethod50">
-                                        <div class="content">Rechnung (PayPal Plus)</div>
-                                    </label>
-                                </li><!--
-                                --><li class="panel-list-item" data-id="1060">
-                                    <input type="radio" id="paymentMethod1060" name="MethodOfPaymentID" value="1060">
-                                    <label for="paymentMethod1060">
-                                        <div class="content">Sofortüberweisung</div>
-                                    </label>
-                                </li><!--
-                                --><li class="panel-list-item" data-id="1">
-                                    <input type="radio" id="paymentMethod1" name="MethodOfPaymentID" value="1">
-                                    <label for="paymentMethod1">
-                                        <div class="content">Nachnahme</div>
-                                    </label>
-                                </li><!--
-                                --><li class="panel-list-item" data-id="0">
-                                    <input type="radio" id="paymentMethod0" name="MethodOfPaymentID" value="0">
-                                    <label for="paymentMethod0">
-                                        <div class="content">Vorkasse</div>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <hr>
-                        <form id="sbg_legalForm" class="" method="get" action="https://shop.seeberger.de/feco/bestellbestaetigung/">
-                            <div class="response" data-response=""></div>
-                            <input type="checkbox" name="TermsAndConditionsCheck" value="1" checked="" style="display:none;">
-                            <input type="checkbox" name="WithdrawalCheck" value="1" checked="" style="display:none;">
-                            <input id="sbg_privacyPolicy" type="checkbox" name="PrivacyPolicyCheck" value="1" required="" data-rule-required="true" checked="" style="display:none;">
-                            <div style="margin-bottom:1em;">
-                                <label style="color:#363636;">
-                                    Bitte nehmen Sie unsere
-                                    <a href="https://shop.seeberger.de/agb/" target="_blank"> <strong>AGB</strong>
-                                    </a>
-                                    ,
-                                    <a href="https://shop.seeberger.de/widerrufsrecht/" target="_blank">
-                                        <strong>Widerrufs&shy;recht</strong>
-                                    </a>
-                                    und
-                                    <a href="https://shop.seeberger.de/datenschutz/" target="_blank">
-                                        <strong>Daten&shy;schutz&shy;erklärung</strong>
-                                    </a>
-                                    zur Kenntnis.
-                                </label>
-                            </div>
-                            <div>
-                                <input id="sbg_newsletterCheck" type="checkbox" value="1" name="NewsletterCheck">
-                                <label>
-                                    Bitte senden Sie mir regelmäßig Informationen zu Ihrem Produktsortiment per E-Mail zu. Ihren Newsletter kann ich jederzeit wieder abbestellen.
-                                </label>
-                            </div>
-                        </form>
-                    </div>
+                    </form> -->
                 </div>
             </div>
+        </div>
 
-            <div class="col-xs-12">
-                <hr>
-                <div style="text-align:right;">
-                    <button id="sbg_placeOrder" class="btn" type="submit">Kaufen</button>
+        <div class="col-xs-12 m-b-3">
+            <hr>
+            <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                    Bitte nehmen Sie unsere
+                    <a href="/agb/" target="_blank">
+                        <strong>AGB</strong></a>
+                    ,
+                    <a href="/widerrufsrecht/" target="_blank">
+                        <strong>Widerrufs&shy;recht</strong>
+                    </a>
+                    und
+                    <a href="/datenschutz/" target="_blank">
+                        <strong>Daten&shy;schutz&shy;erklärung</strong>
+                    </a>
+                    zur Kenntnis.
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <button id="placeOrder" class="btn btn-primary btn-block" type="submit">Kaufen</button>
                 </div>
             </div>
         </div>

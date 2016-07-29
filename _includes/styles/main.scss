@@ -1,15 +1,16 @@
 @import "../../bower_components/bootstrap/scss/bootstrap";
 
+@import "variables";
+
 @import "mixins/media-query";
 @import "mixins/grid";
 @import "mixins/mixins";
 @import "mixins/site-padding";
 @import "common/common";
-@import "variables";
 @import "../_header/header";
-@import "../_header/page-header";
+//@import "../_header/page-header";
 @import "../_footer/footer";
-@import "../_checkout-totals-sidebar/checkout";
+@import "../_component-checkout-sidebar/checkout";
 @import "../_navigation/navigation";
 @import "../_footertop/footertop";
 @import "../_footer/footer";
