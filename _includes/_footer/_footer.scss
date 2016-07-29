@@ -4,7 +4,7 @@
 	width: 100%;
 	padding: $padding*3+8px 0; 
 	background-color: $secondary-color;
-	@include add-border(8px, $primary-color, top);
+	@include add-border(8px, $brand-primary, top);
 	.footerLink{
 		@include mobile-xs{
 			text-align: center;
@@ -30,7 +30,7 @@
 				line-height: 20px;
 				a{
 					color: $text-link-two;
-					font-size: $font-size+2px;
+					font-size: $font-size;
 					line-height: 20px;
 					&:hover{
 						color: $text-link-two - 50;
@@ -58,7 +58,7 @@
 		}
 		h4{
 			color: $text-title-light;
-			font-size: $font-size+8px;
+			font-size: $font-size;
 			text-transform: uppercase;
 			margin-bottom: 0;
 		}	
@@ -83,7 +83,7 @@
 				height: 35px;
 				line-height: 35px;
 				padding: 0 $padding+4px;
-				font-size: $font-size+2px;
+				font-size: $font-size;
 				color: $text-field-text;
 				&:focus{
 					box-shadow: none;
@@ -106,8 +106,8 @@
 				height: 35px;
 				padding: 0;
 				line-height: 29px;
-				border:3px solid $primary-color;
-				font-size: $font-size+4px;
+				border:3px solid $brand-primary;
+				font-size: $font-size;
 				text-transform: uppercase;
 				font-weight: 700;
 				color: $white-color;
@@ -124,22 +124,9 @@
 				@include desktops{
 					width: 25%;	
 				}
-				i{
-					@include transition(all 0.3s ease-in-out);
-					color: $primary-color;					
-					@include mobile{
-						margin-left: $margin - 3px;	
-					}
-					@include tablet{
-						margin-left: $margin - 7px;	
-					}
-					@include desktops{
-						margin-left: $margin - 3px;	
-					}
-				}
 				&:hover{
-					background-color: $primary-color;
-					border-color: $primary-color;
+					background-color: $brand-primary;
+					border-color: $brand-primary;
 					color: $white-color;
 					i{
 						color: $white-color;
@@ -161,12 +148,12 @@
 		@include mobile-xs{
 			text-align: center;
 			line-height: 45px;
-			font-size: $font-size - 2px;
+			font-size: $font-size;
 		}
 		@include mobile{
 			text-align: center;
 			line-height: 45px;
-			font-size: $font-size+2px;
+			font-size: $font-size;
 		}
 		@include tablet{
 			text-align: left;

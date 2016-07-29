@@ -53,3 +53,12 @@ a:hover, a:focus{
 .media-left, .media>.pull-left {
     float: left !important;
 }
+
+hr {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    height: 1px;
+    background: #ddd;
+}

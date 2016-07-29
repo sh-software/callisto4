@@ -6,7 +6,7 @@
 	width: 100%;
 	padding: $padding*3+8px 0; 
 	background-color: $secondary-color;
-	@include add-border(8px, $primary-color, top);
+	@include add-border(8px, $brand-primary, top);
 	.footerLink{
 		@include mobile-xs{
 			text-align: center;
