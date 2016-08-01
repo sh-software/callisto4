@@ -1,3 +1,4 @@
+//header scss
 .top-bar{
 	width: 100%;
 	display: block;
@@ -214,6 +215,29 @@
 
 ul.dropdown-menu.dropdown-menu-right {
 z-index:1001;
-
 }
+
+//navigation scss
+.navbar {
+  border-radius: 0;
+}
+
+.navbar-toggler {
+float:right;
+}
+
+//breadcrumb scss
+.breadcrumb-nav li {
+	display:inline-block;
+	margin:0 auto;
+
+	+li::before {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #818a91;
+    content: "/";
+}
+}
+
+
 
