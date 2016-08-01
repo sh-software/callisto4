@@ -1,24 +1,16 @@
 @import "../../bower_components/bootstrap/scss/bootstrap";
 
+@import "variables";
+
 @import "mixins/media-query";
 @import "mixins/grid";
 @import "mixins/mixins";
 
-//@import "mess/**/*";
-
 @import "common/common";
-<<<<<<< Updated upstream
-@import "vars";
-=======
->>>>>>> Stashed changes
-@import "variables";
 
 @import "../_header/header";
 @import "../_header/page-header";
 @import "../_navigation/navigation";
 @import "../_footertop/footertop";
 @import "../_footer/footer";
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
