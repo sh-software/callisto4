@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="checkout container">
+    <div class="row">
+        
+        <div class="col-xs-12 m-b-3">
+            <h1>Kasse</h1>
+            <hr>
+        </div>
+        <!--
+            
+        -->
+        
+        <div class="col-md-7">
+            <div id="registry-form-container" class="registry-form-container main-col" data-id="0" data-status="2">
+                    <!-- invoiceAddress -->
+                    {% include _component-address-list/component-address-list.html id="invoiceAddress" %}
+                    <!-- /invoiceAddress -->
+                    <header class="m-b-1">
+                        <h3>
+                            Lieferadresse
+                        </h3>
+                    </header>
+                    <div class="shipping-addresses-select">
+                        {% include _component-address-list/component-address-list.html id="shippingAddress" %}
+                    </div>
+                    <!-- /ShippingAddress -->                    
+                    {% include _component-shipping-profiles/component-shipping-profiles.html %}
+                    
+
+                    {% include _component-payment-methods/component-payment-methods.html %}                    
+
+                    <!-- <form id="legalForm" class="" method="get" action="">
+                        <div>
+                            <input id="newsletterCheck" type="checkbox" value="1" name="NewsletterCheck">
+                            <label>
+                                Bitte senden Sie mir regelmäßig Informationen zu Ihrem Produktsortiment per E-Mail zu. Ihren Newsletter kann ich jederzeit wieder abbestellen.
+                            </label>
+                        </div>
+                    </form> -->
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <aside class="sidebar">
+                {% include _component-checkout-sidebar/component-checkout-sidebar.html %}
+            </aside>
+        </div>
+
+        <div class="col-xs-12 m-b-3">
+            <hr>
+            <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                    Bitte nehmen Sie unsere
+                    <a href="/agb/" target="_blank">
+                        <strong>AGB</strong></a>
+                    ,
+                    <a href="/widerrufsrecht/" target="_blank">
+                        <strong>Widerrufs&shy;recht</strong>
+                    </a>
+                    und
+                    <a href="/datenschutz/" target="_blank">
+                        <strong>Daten&shy;schutz&shy;erklärung</strong>
+                    </a>
+                    zur Kenntnis.
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <button id="placeOrder" class="btn btn-primary btn-block" type="submit">Kaufen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

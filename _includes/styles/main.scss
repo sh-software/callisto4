@@ -1,4 +1,5 @@
 @import "../../bower_components/bootstrap/scss/bootstrap";
+@import "../../bower_components/font-awesome/scss/font-awesome";
 
 @import "variables";
 
@@ -6,11 +7,8 @@
 @import "mixins/grid";
 @import "mixins/mixins";
 
-@import "common/common";
-
 @import "../_header/header";
-//@import "../_header/page-header";
-//@import "../_navigation/navigation";
-//@import "../_breadcrumb/breadcrumb";
-//@import "../_footertop/footertop";
+@import "../_component-address-list/component-address-list";
+@import "../_component-checkout-sidebar/checkout";
 @import "../_footer/footer";
+
