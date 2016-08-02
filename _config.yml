@@ -14,4 +14,5 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-exclude: [/node_modules, /bower_components, bower.json, package.json]
+include: [/dist]
+exclude: [/node_modules, /bower_components, bower.json, package.json, /css]
