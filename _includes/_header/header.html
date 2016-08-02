@@ -29,7 +29,7 @@
                 <ul class="list-inline pull-xs-right ">
                     <li class="list-inline-item">
                         <span>
-                            <a data-toggle="modal" href=".login-modal">Einloggen</a>
+                            <a data-toggle="modal" href="#login">Einloggen</a>
                             <small>oder</small>
                             <a data-toggle="modal" href="#signup">Registieren</a>
                         </span>
@@ -46,8 +46,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="list-inline-item dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown disabled"> <i class="fa fa-shopping-cart"></i>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#basketprev"> <i class="fa fa-shopping-cart"></i>
                             0€
                         </a>
                         <ul class="dropdown-menu dropdown-menu-right">
@@ -81,4 +81,108 @@
 </div>
 
 
+<!-- LOGIN MODAL -->
+    <div class="modal fade login-modal" id="login" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title">Einloggen</h3>
+          </div>
+          <div class="modal-body">
+            <form action="" method="POST" role="form">
+              <div class="form-group">
+                <label for="">E-Mail-Adresse</label>
+                <input type="email" class="form-control" id="">
+              </div>
+              <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" class="form-control" id="">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Passwort merken</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Einloggen</button>
+              <button type="button" class="btn btn-link btn-block">Passwort vergessen?</button>
+            </form>  
+          </div>
+        </div>
+      </div>
+    </div>
 
+
+<div class="modal fade" id="signup" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title">Account erstellen</h3>
+          </div>
+          <div class="modal-body">
+            <form action="" method="POST" role="form">
+              <div class="form-group">
+                <label for="">E-Mail eingeben</label>
+                <input type="email" class="form-control" id="">
+              </div>
+              <div class="form-group">
+                <label for="">Passwort</label>
+                <input type="password" class="form-control" id="">
+              </div>
+              <div class="form-group">
+                <label for="">Passwort bestätigen</label>
+                <input type="password" class="form-control" id="">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Registrieren</button>
+            </form>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <!-- Navigation -->
+   <div class="container">
+<nav class="navbar navbar-full navbar-dark bg-primary">
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">
+  &#9776;
+  </button>
+  <a class="navbar-brand" href="#">
+  Brand
+  </a>
+  <div class="collapse navbar-toggleable-md" id="mainNavbarCollapse">
+    <ul class="nav navbar-nav pull-lg-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" id="navbarDropdown1" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+          <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+          <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+          <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 4</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+<!-- breadcrumb -->
+<div class="breadcrumb text-xs-right">
+        <div class="container">
+            <ol class="breadcrumb-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Unterseite</a></li>
+              <li class="active">Aktuelle Seite</li>
+            </ol>
+         </div>  
+</div>

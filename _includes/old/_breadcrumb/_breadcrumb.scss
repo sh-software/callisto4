@@ -1,0 +1,12 @@
+.breadcrumb-nav li {
+	display:inline-block;
+	margin:0 auto;
+
+	+li::before {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #818a91;
+    content: "/";
+}
+}
+
