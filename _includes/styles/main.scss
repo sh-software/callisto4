@@ -1,4 +1,7 @@
 @import "../../bower_components/bootstrap/scss/bootstrap";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+
+
 
 @import "variables";
 
@@ -14,3 +17,5 @@
 //@import "../_breadcrumb/breadcrumb";
 //@import "../_footertop/footertop";
 @import "../_footer/footer";
+
+@import "../_single/single";

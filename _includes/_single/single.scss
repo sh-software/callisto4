@@ -1,0 +1,47 @@
+.producer a {
+line-height: 1;
+margin-top: .5em;
+color: #dedede;
+font-weight: 700;
+display: inline-block;
+}
+
+.title {
+line-height: 1.4;
+margin-top: 0;
+margin-bottom: .5em;
+}
+
+
+
+.price {
+display: block;
+color: #e20800;
+font-size: 2.5em;
+line-height: 1;
+margin-bottom: 10px;
+}
+
+.vat {
+line-height: 1.4;
+margin-top: 0;
+margin-bottom: .5em;
+color:#020260;
+}
+
+.rezension {
+    display: inline-block;
+}
+
+.img-thumbnail {
+    border:none;
+    border-radius:none;
+    padding: .75rem .5rem .25rem 0;
+}
+
+.fleximg {
+    display:flex;
+    flex-shrink: 1;
+    width:100%;
+    height:auto;
+    }

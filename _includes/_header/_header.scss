@@ -213,6 +213,7 @@
 	}
 }
 
+
 ul.dropdown-menu.dropdown-menu-right {
 z-index:1001;
 }
@@ -227,10 +228,18 @@ float:right;
 }
 
 //breadcrumb scss
-.breadcrumb-nav li {
+.breadcrumb {
+	margin:0;
+}
+
+.breadcrumb-nav {
+	margin:0;
+	padding:0;
+	li {
 	display:inline-block;
 	margin:0 auto;
-
+	
+	
 	+li::before {
     padding-right: .5rem;
     padding-left: .5rem;
@@ -238,6 +247,6 @@ float:right;
     content: "/";
 }
 }
-
+}
 
 
