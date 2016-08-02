@@ -12,16 +12,11 @@ layout: default
         <!--
             
         -->
-        <div class="col-md-5 col-md-push-7">
-            <aside class="sidebar">
-                {% include _component-checkout-sidebar/component-checkout-sidebar.html %}
-            </aside>
-        </div>
-
-        <div class="col-md-7 col-md-pull-5">
+        
+        <div class="col-md-7">
             <div id="registry-form-container" class="registry-form-container main-col" data-id="0" data-status="2">
                     <!-- invoiceAddress -->
-                    {% include _component-invoice-address/component-invoice-address.html %}
+                    {% include _component-address-list/component-address-list.html id="invoiceAddress" %}
                     <!-- /invoiceAddress -->
                     <header class="m-b-1">
                         <h3>
@@ -29,10 +24,11 @@ layout: default
                         </h3>
                     </header>
                     <div class="shipping-addresses-select">
-                        {% include _component-address-list/component-address-list.html %}
+                        {% include _component-address-list/component-address-list.html id="shippingAddress" %}
                     </div>
                     <!-- /ShippingAddress -->                    
                     {% include _component-shipping-profiles/component-shipping-profiles.html %}
+                    
 
                     {% include _component-payment-methods/component-payment-methods.html %}                    
 
@@ -45,6 +41,12 @@ layout: default
                         </div>
                     </form> -->
             </div>
+        </div>
+
+        <div class="col-md-5">
+            <aside class="sidebar">
+                {% include _component-checkout-sidebar/component-checkout-sidebar.html %}
+            </aside>
         </div>
 
         <div class="col-xs-12 m-b-3">

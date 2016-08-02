@@ -1,44 +1,127 @@
 .cmp-address-list{
 	
-	
+	.items{
 
-	.list-group{
-		
 	}
 
-	.list-group-item{
+	.add-item{
+		width: 100%;
+		padding: 1em;
+		text-align:center;
+		cursor: pointer;
+
+    	.fa{
+    		width: 1em;
+		    height: 1em;
+		    text-align: center;
+		    padding: .3em;
+		    box-sizing: content-box;
+		    border: 3px solid #ddd;
+		    border-radius: 50%;
+		    line-height: 1.1;
+		    color: #ddd;
+		    transition: all .2s ease-in-out;
+
+		    &:hover{
+				color: $brand-primary;
+				border-color: $brand-primary;
+	    	}
+    	}
+	}
+	
+	.dropdown-toggle{
+		border: 1px solid $gray-lighter;
+		border-radius: $border-radius;
+
+		&:after{
+		    position: absolute;
+		    top: 50%;
+		    right: 1em;
+		    transform: translateY(-50%);
+		}
+	}
+
+	.items.open{
+		.dropdown-toggle{
+			border-bottom: none;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+
+	.dropdown-menu{
+		width: 100%;
+		margin: 0;
 		padding: 0;
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+		border-top: none;
+		border: 1px solid $gray-lighter;
+	}
+
+	ul{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		list-style: none;	
+	}
+
+	.item{
+		padding: 0;
+		border-bottom: 1px solid $gray-lighter;
 
 		input{ display: none; }
 
-		input:checked + label{
-			background-color: $brand-primary;
-			color: white;
-		}
+		input:checked{
 
-		label{
-			display: block;
-	    	cursor: pointer;
-			padding: 1em;
-			margin-bottom: 0;
-		}
-
-		.item-edit{
-			width: 4rem;
-			padding: .5em;
-			float: right;
-	    	background: #aafed6;
-		}
-
-		.item-content{
-			float: none;
-		    background: purple;
-		    width: auto;
-		    overflow: hidden;
-
-			strong, span{
-				display: block;
+			& + .item-inner{
+				background-color: $brand-primary;
+				color: white;
 			}
+
+			& + .item-inner .item-edit .fa{
+
+			}
+		}
+
+		&:last-of-type{
+			border-bottom: none;
+		}
+	}
+
+
+	.item-inner{
+		display: block;
+    	cursor: pointer;
+		padding: 1em;
+		margin-bottom: 0;
+	}
+
+	.item-edit{
+		display: inline-block;
+		vertical-align:top;
+		font-size: 1.5em;
+		float: right;
+		
+		.fa{
+    		width: 1em;
+		    height: 1em;
+		    color: #ddd;
+		    transition: all .2s ease-in-out;
+
+		    &:hover{
+				color: $brand-primary;
+				border-color: $brand-primary;
+	    	}
+    	}
+	}
+
+	.item-content{
+		display: inline-block;
+	    width: calc( 100% - 4em );
+
+		strong, span{
+			display: block;
 		}
 	}
 
@@ -47,18 +130,17 @@
 	}
 
 	@include media-breakpoint-up(md){
-		.add-item{
-			width: 6rem;
-			padding: 1em;
-			float: right;
-	    	background: #aafed6;
-		}
 		.items{
-			float: none;
-		    background: $gray-lighter;
-		    width: auto;
-		    overflow: hidden;
+			display: inline-block;
+			width: calc( 100% - 6em );
 		}
+
+		.add-item{
+			display: inline-block;
+			vertical-align: top;
+			width: 6rem;
+		}
+		
 	}
 
 	@include media-breakpoint-up(lg){
