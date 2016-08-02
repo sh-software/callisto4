@@ -19,10 +19,10 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-<<<<<<< HEAD
-include: [/dist]
-exclude: [/node_modules, /bower_components, bower.json, package.json, /css]
-=======
+<<<<<<< b46f6e8bba3a0303297ef98289143da05194ba7d
 include: [/css]
 exclude: [/node_modules, /bower_components, bower.json, package.json]
->>>>>>> master
+=======
+include: [/dist]
+exclude: [/node_modules, /bower_components, bower.json, package.json, /css]
+>>>>>>> [FIX] removing sass from GH pages compiler
