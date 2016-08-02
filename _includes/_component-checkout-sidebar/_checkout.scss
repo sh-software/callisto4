@@ -11,42 +11,6 @@
 		text-align: center;
 	}
 
-	.panel-list{
-		list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	    width: 100%;
-
-		.panel-list-item{
-		    width: 50%;
-		    display: inline-block;
-		    vertical-align:top;
-		    margin-top: -1px;
-			
-			margin-left: -1px;
-
-			input{ display: none; }
-
-			input:checked + label{
-				background-color: $brand-primary;
-				color: white;
-			}
-
-			label{
-			    border: 1px solid $gray-light;
-		    	cursor: pointer;
-				padding: .5em;
-				margin-bottom: 0;
-				width:100%;
-			}
-
-			.content{
-				max-width: 100%;
-				text-align: center;
-			}
-		}
-	}
-
 	@include media-breakpoint-up(sm){
 		
 	}

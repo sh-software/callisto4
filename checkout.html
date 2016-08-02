@@ -20,11 +20,17 @@ layout: default
 
         <div class="col-md-7 col-md-pull-5">
             <div id="registry-form-container" class="registry-form-container main-col" data-id="0" data-status="2">
-                <div class="main-col_inner">
                     <!-- invoiceAddress -->
                     {% include _component-invoice-address/component-invoice-address.html %}
                     <!-- /invoiceAddress -->
-                    {% include _component-shipping-address/component-shipping-address.html %}
+                    <header class="m-b-1">
+                        <h3>
+                            Lieferadresse
+                        </h3>
+                    </header>
+                    <div class="shipping-addresses-select">
+                        {% include _component-address-list/component-address-list.html %}
+                    </div>
                     <!-- /ShippingAddress -->                    
                     {% include _component-shipping-profiles/component-shipping-profiles.html %}
 
@@ -38,7 +44,6 @@ layout: default
                             </label>
                         </div>
                     </form> -->
-                </div>
             </div>
         </div>
 

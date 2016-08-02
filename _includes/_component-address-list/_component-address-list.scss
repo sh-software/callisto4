@@ -1,0 +1,67 @@
+.cmp-address-list{
+	
+	
+
+	.list-group{
+		
+	}
+
+	.list-group-item{
+		padding: 0;
+
+		input{ display: none; }
+
+		input:checked + label{
+			background-color: $brand-primary;
+			color: white;
+		}
+
+		label{
+			display: block;
+	    	cursor: pointer;
+			padding: 1em;
+			margin-bottom: 0;
+		}
+
+		.item-edit{
+			width: 4rem;
+			padding: .5em;
+			float: right;
+	    	background: #aafed6;
+		}
+
+		.item-content{
+			float: none;
+		    background: purple;
+		    width: auto;
+		    overflow: hidden;
+
+			strong, span{
+				display: block;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(sm){
+		
+	}
+
+	@include media-breakpoint-up(md){
+		.add-item{
+			width: 6rem;
+			padding: 1em;
+			float: right;
+	    	background: #aafed6;
+		}
+		.items{
+			float: none;
+		    background: $gray-lighter;
+		    width: auto;
+		    overflow: hidden;
+		}
+	}
+
+	@include media-breakpoint-up(lg){
+		
+	}
+}
