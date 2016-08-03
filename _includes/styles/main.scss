@@ -6,8 +6,11 @@
 @import "mixins/media-query";
 @import "mixins/grid";
 @import "mixins/mixins";
+@import "mixins/transitions";
 
 @import "common/buttons";
+@import "common/structure";
+@import "common/body-toggles";
 
 @import "../_header/header";
 @import "../_component-address-list/component-address-list";
