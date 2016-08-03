@@ -1,0 +1,55 @@
+.cmp-basket-item{
+	display:table;
+
+	padding: .5em 0;
+
+	&:first-child{
+		padding-top: 0;
+	}
+
+	&:last-child{
+		padding-bottom: 0;
+	}
+}
+
+[class^="basket-item-"]{
+	display: table-cell;
+	vertical-align: top;
+	padding-right: .5em;
+
+	&:last-child{
+		padding-right: 0;
+	}
+}
+
+.basket-item-quantity{
+	width: 4em;
+
+	.btn{
+		padding-top: .25rem;
+		padding-bottom: .25rem;
+	}
+}
+
+.basket-item-infos{
+	a{
+		display: block;
+	}
+	.item-name{
+		font-weight: 700;
+		position: relative;
+		overflow: hidden;
+	    text-overflow: ellipsis;
+	    height: 3em;
+
+	    &:after{
+			content: "… ";
+			display: inline-block;
+			height: 50%;
+			position:absolute;
+			right: .25em;
+			bottom: 0; 
+			background-color: white;
+	    }
+	}
+}

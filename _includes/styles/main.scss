@@ -7,8 +7,13 @@
 @import "mixins/grid";
 @import "mixins/mixins";
 
+@import "common/buttons";
+
 @import "../_header/header";
 @import "../_component-address-list/component-address-list";
 @import "../_component-checkout-sidebar/checkout";
+@import "../_component-basket-item/style";
+@import "../_component-method-list/style";
+@import "../_component-totals/style";
 @import "../_footer/footer";
 
