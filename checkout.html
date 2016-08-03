@@ -9,29 +9,37 @@ layout: default
             <h1>Kasse</h1>
             <hr>
         </div>
-        <!--
-            
-        -->
         
         <div class="col-md-7">
             <div id="registry-form-container" class="registry-form-container main-col" data-id="0" data-status="2">
-                    <!-- invoiceAddress -->
-                    {% include _component-address-list/component-address-list.html id="invoiceAddress" %}
-                    <!-- /invoiceAddress -->
+
                     <header class="m-b-1">
-                        <h3>
-                            Lieferadresse
-                        </h3>
+                        <h3>Rechnungsadresse</h3>
+                    </header>
+                    <div class="invoice-addresses-select">
+                        {% include _component-address-list/component-address-list.html id="invoiceAddress" %}
+                    </div>
+
+                    <header class="m-b-1">
+                        <h3>Lieferadresse</h3>
                     </header>
                     <div class="shipping-addresses-select">
                         {% include _component-address-list/component-address-list.html id="shippingAddress" %}
                     </div>
-                    <!-- /ShippingAddress -->                    
-                    {% include _component-shipping-profiles/component-shipping-profiles.html %}
-                    
 
-                    {% include _component-payment-methods/component-payment-methods.html %}                    
+                    <header class="m-b-1">
+                        <h3>Versandart</h3>
+                    </header>
+                    <div class="shipping-method-select">
+                        {% include _component-shipping-profiles/component-shipping-profiles.html %}
+                    </div>
 
+                    <header class="m-b-1">
+                        <h3>Zahlungsart</h3>
+                    </header>
+                    <div class="payment-method-select">
+                        {% include _component-method-list/component-method-list.html %}                    
+                    </div>
                     <!-- <form id="legalForm" class="" method="get" action="">
                         <div>
                             <input id="newsletterCheck" type="checkbox" value="1" name="NewsletterCheck">
