@@ -1,0 +1,47 @@
+.input-group{
+
+	&.vert{
+		.input-group-btn{
+			display: block;
+			width: 100%;
+
+			.btn{
+				width: 100%;
+				margin: 0;
+			}
+		}
+
+		.form-control:not(:last-child),
+		.input-group-addon:not(:last-child),
+		.input-group-btn:not(:last-child) > .btn,
+		.input-group-btn:not(:last-child) > .btn-group > .btn,
+		.input-group-btn:not(:last-child) > .dropdown-toggle,
+		.input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle),
+		.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn {
+		  	@include border-bottom-radius(0);
+		  	@include border-top-radius($border-radius);
+		}
+		.input-group-addon:not(:last-child) {
+		  	border-bottom: 0;
+		}
+		.input-group .form-control:not(:first-child),
+		.input-group-addon:not(:first-child),
+		.input-group-btn:not(:first-child) > .btn,
+		.input-group-btn:not(:first-child) > .btn-group > .btn,
+		.input-group-btn:not(:first-child) > .dropdown-toggle,
+		.input-group-btn:not(:last-child) > .btn:not(:first-child),
+		.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn {
+		  	@include border-bottom-radius($border-radius);
+		  	@include border-top-radius(0);
+		}
+		.form-control + .input-group-addon:not(:first-child) {
+		  	border-top: 0;
+		}
+
+		.form-control{
+			display: block;
+			float: none;
+			border-radius: 0!important;
+		}
+	}
+}
