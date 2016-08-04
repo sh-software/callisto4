@@ -23,27 +23,42 @@
 }
 
 .basket-item-quantity{
-	width: 4em;
-
+	width: 3em;
+	
 	.btn{
 		padding-top: .25rem;
 		padding-bottom: .25rem;
 	}
+
+	.form-control{
+		padding-left: .25rem;
+	    padding-right: .25rem;
+	    text-align: center;
+	}
 }
 
 .basket-item-infos{
+	position: relative;
+
 	a{
 		display: block;
+		transition: color 250ms;
+
+		&:hover{
+			text-decoration: none;
+		}
 	}
+
 	.item-name{
+	    position: relative;
 		font-weight: 700;
-		position: relative;
-		overflow: hidden;
+	    overflow: hidden;
 	    text-overflow: ellipsis;
 	    height: 3em;
+	    margin-bottom: .7rem;
 
 	    &:after{
-			content: "… ";
+			content: "…";
 			display: inline-block;
 			height: 50%;
 			position:absolute;
@@ -52,4 +67,30 @@
 			background-color: white;
 	    }
 	}
+
+	.item-details {
+	    width: 50%;
+	    float: left;
+	}
+
+	.item-total {
+	    font-size: 1.5em;
+	    font-weight: 700;
+	    width: 50%;
+	    float: right;
+	    text-align: right;
+	}
+}
+
+.item-remove{
+	position: absolute;
+    bottom: 0;
+    line-height: 1;
+    color: $gray-light;
+    cursor: pointer;
+	transition: color 250ms;
+
+    &:hover{
+    	color: $brand-danger;
+    }
 }
