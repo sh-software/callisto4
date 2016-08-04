@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+
+<div class="anmeldung container">
+
+    <h1>Anmeldung</h1>
+	<div class="row">
+      	<div class="col-sm-6">
+		      <form action="" method="POST">
+			      {% include _partial-forms/login.html %}
+			      <button type="submit" class="btn btn-primary">Senden</button>
+		      </form>
+		      <p><a href="#">Passwort vergessen?</a>
+      	</div>
+      	<div class="col-sm-6">
+      			<div class="row">
+      				<div class="col-sm-6">
+						<a class="btn btn-primary" href="/registrieren"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Registrieren</a>
+      					<p>Sie erhalten in Ihrem persönlichen "Mein Konto"-Bereich jederzeit Zugriff auf Ihre Bestellungen sowie Ihre Kundendaten.</p>
+	  				</div>
+		      		<div class="col-sm-6">
+						<a class="btn btn-primary" href="/gast"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Als Gast bestellen</a>
+			      		<p>Als Gast bestellen Sie ohne Registrierung. Bei weiteren Bestellungen müssen Sie Ihre Daten erneut eingeben.</p>
+			  		</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+<!-- anmeldung end -->
+

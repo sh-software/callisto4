@@ -70,18 +70,10 @@
           </div>
           <div class="modal-body">
             <form action="" method="POST" role="form">
-              <div class="form-group">
-                <label for="">E-Mail-Adresse</label>
-                <input type="email" class="form-control" id="">
-              </div>
-              <div class="form-group">
-                <label for="">Password</label>
-                <input type="password" class="form-control" id="">
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Passwort merken</label>
-              </div>
+              {% include _partial-forms/login.html %}
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">Passwort merken?
+              </label>
               <button type="submit" class="btn btn-primary btn-block">Einloggen</button>
               <button type="button" class="btn btn-link btn-block">Passwort vergessen?</button>
             </form>  
@@ -100,18 +92,8 @@
           </div>
           <div class="modal-body">
             <form action="" method="POST" role="form">
-              <div class="form-group">
-                <label for="">E-Mail eingeben</label>
-                <input type="email" class="form-control" id="">
-              </div>
-              <div class="form-group">
-                <label for="">Passwort</label>
-                <input type="password" class="form-control" id="">
-              </div>
-              <div class="form-group">
-                <label for="">Passwort bestätigen</label>
-                <input type="password" class="form-control" id="">
-              </div>
+              {% include _partial-forms/login.html %}
+              {% include _partial-forms/anmelden.html %}
               <button type="submit" class="btn btn-primary btn-block">Registrieren</button>
             </form>  
           </div>
