@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="customerdata container">
+	<h1>Kundendaten</h1>
+	<div class="row">
+		<div class="col-sm-6">
+			<h2>Kundenstammdaten</h2>
+			{% include _partial-customerdata/customerdata.html %}
+
+			<h2>Kontaktinformationen</h2>
+			{% include _partial-customerdata/contactinformation.html %}
+			
+			<h2>Bankinformationen</h2>
+			{% include _partial-customerdata/bankinginformation.html %}
+
+			<h2>Passwort</h2>
+			{% include _partial-customerdata/changepassword.html %}
+
+	    </div>
+	    <div class="col-sm-6">
+	    	<h2>Lieferadressen</h2>
+			 <div class="shipping-addresses-select">
+	            {% include _component-address-list/component-address-list.html id="shippingAddress" %}
+	        </div>
+		</div>   	
+	</div>            
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- customerdata end -->
