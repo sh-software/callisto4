@@ -19,7 +19,8 @@
 			padding-right: 0;
 		}
 	}
-
+	
+	.item-quantity,
 	.basket-item-quantity{
 		width: 3em;
 		
@@ -37,6 +38,7 @@
 
 	.basket-item-infos{
 		position: relative;
+		width: 100%;
 
 		a{
 			display: block;
@@ -46,39 +48,40 @@
 				text-decoration: none;
 			}
 		}
+	}
+	
+	.item-name{
+	    position: relative;
+		font-weight: 700;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    max-height: 3em;
+	    margin-bottom: .7rem;
 
-		.item-name{
-		    position: relative;
-			font-weight: 700;
-		    overflow: hidden;
-		    text-overflow: ellipsis;
-		    height: 3em;
-		    margin-bottom: .7rem;
-
-		    &:after{
-				content: "…";
-				display: inline-block;
-				height: 50%;
-				position:absolute;
-				right: .25em;
-				bottom: 0; 
-				background-color: white;
-		    }
-		}
+	    &:after{
+			content: "…";
+			display: inline-block;
+			height: 50%;
+			position:absolute;
+			right: .25em;
+			top: 1.5em;
+			background-color: white;
+	    }
 	}
 
-	.item-details {
+	.item-unit-price {
 	    width: 50%;
 	    float: left;
 	}
 
-	.item-total {
-	    font-size: 1.5em;
-	    font-weight: 700;
+	.item-total-price {
 	    width: 50%;
 	    float: right;
+	    font-size: 1.5em;
+	    font-weight: 700;
 	    text-align: right;
 	}
+	
 
 	.item-remove{
 		position: absolute;
