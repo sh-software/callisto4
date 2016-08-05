@@ -1,6 +1,5 @@
 .cmp-basket-preview-item{
 	display:table;
-
 	padding: .5em 0;
 
 	&:first-child{
@@ -66,19 +65,19 @@
 				background-color: white;
 		    }
 		}
+	}
 
-		.item-details {
-		    width: 50%;
-		    float: left;
-		}
+	.item-details {
+	    width: 50%;
+	    float: left;
+	}
 
-		.item-total {
-		    font-size: 1.5em;
-		    font-weight: 700;
-		    width: 50%;
-		    float: right;
-		    text-align: right;
-		}
+	.item-total {
+	    font-size: 1.5em;
+	    font-weight: 700;
+	    width: 50%;
+	    float: right;
+	    text-align: right;
 	}
 
 	.item-remove{

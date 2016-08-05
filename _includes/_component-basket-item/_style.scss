@@ -3,23 +3,23 @@
 
 	.basket-item-infos {
 
-		a{
+		&>a{
 			display: table;
 		}
 
 		&>a>[class^="item-"] {
 		    display: table-cell;
 		}
+	}
 
-		.item-details{
-			width: 50%;
-			float: none;
-		}
+	.item-details{
+		float: none;
+	}
 
-		.item-unit-price,
-		.item-total-price{
-			width: 25%;
-			text-align: right;
-		}
+	.item-unit-price,
+	.item-total-price{
+		width: 25%;
+		text-align: right;
+		float:none;
 	}
 }
