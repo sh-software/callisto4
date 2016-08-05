@@ -1,4 +1,5 @@
 .cmp-basket-item{
+	position: relative;
 	display: flex;
 	flex-flow: row wrap;
 	
@@ -41,6 +42,25 @@
 			bottom: 0; 
 			background-color: white;
 	    }
+	}
+
+	.item-quantity{
+		flex: 1;
+		.input-group.vert{
+			margin: 0 auto;
+			width: 3em;
+		}
+
+		.btn{
+			padding-top: .25rem;
+			padding-bottom: .25rem;
+		}
+
+		.form-control{
+			padding-left: .25rem;
+		    padding-right: .25rem;
+		    text-align: center;
+		}
 	}
 
 	.item-availability{
@@ -99,7 +119,7 @@
 
 	.toggle-description:checked{
 		& ~ .item-description{
-			max-height: 30em;// 20 lines
+			max-height: 20em;// 10 lines
 		}
 
 		& ~ .expand-btn{
@@ -114,7 +134,23 @@
 	}
 	
 	.item-total-price{
-		flex: 1;
+		font-size: 1.5em;
+	    font-weight: 700;
+	    text-align: right;
+	}
+
+	.item-remove{
+		position: absolute;
+	    bottom: 1em;
+	    right: 0;
+	    line-height: 1;
+	    color: $gray-lighter;
+	    cursor: pointer;
+		transition: color 250ms;
+
+	    &:hover{
+	    	color: $brand-danger;
+	    }
 	}
 
 	@include media-breakpoint-up(sm){
