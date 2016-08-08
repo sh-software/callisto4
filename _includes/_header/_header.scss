@@ -17,8 +17,9 @@
 				display: block;
 				line-height: 35px;
 				font-size: 14px;
+				color: white;
 				@include transition(all 0.3s ease-in-out);
-				color: $white-color !important;
+
 				&:hover, &:focus{
 					@include opacity(.8);
 				}
@@ -230,29 +231,30 @@ z-index:1001;
 }
 
 .navbar-toggler {
-float:right;
+	float:right;
 }
 
-//breadcrumb scss
-.breadcrumb {
-	margin:0;
-}
+// //breadcrumb scss
+// .breadcrumb {
+// 	margin:0;
+// }
 
-.breadcrumb-nav {
-	margin:0;
-	padding:0;
-	li {
-	display:inline-block;
-	margin:0 auto;
+// .breadcrumb-nav {
+// 	margin:0;
+// 	padding:0;
 	
-	
-	+li::before {
-    padding-right: .5rem;
-    padding-left: .5rem;
-    color: #818a91;
-    content: "/";
-}
-}
-}
+// 	li {
+// 		display:inline-block;
+// 		margin:0 auto;
+		
+		
+// 		+li::before {
+// 		    padding-right: .5rem;
+// 		    padding-left: .5rem;
+// 		    color: #818a91;
+// 		    content: "/";
+// 		}
+// 	}
+// }
 
 

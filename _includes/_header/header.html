@@ -1,10 +1,15 @@
 <div class="top-bar">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 hidden-sm hidden-xs">
-              <div class="shariff socialbar" data-services='["twitter","facebook","googleplus","pinterest"]' data-url="" style="max-width:100%;overflow:auto;margin-top:3px;" data-media-url=""></div>  
+            <div class="col-md-6 hidden-sm-down">
+                <div  class="shariff socialbar" 
+                    data-services='["facebook","googleplus","pinterest","twitter"]' 
+                    data-url="" 
+                    data-media-url=""
+                    data-theme="minimal"
+                    style="margin-top:3px;"></div>
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-6">
                 <ul class="list-inline pull-xs-right ">
                     <li class="list-inline-item">
                         <span>
@@ -59,89 +64,114 @@
     </div>
 </div>
 
-
 <!-- LOGIN MODAL -->
-    <div class="modal fade login-modal" id="login" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
+<div class="modal fade login-modal" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3 class="modal-title">Einloggen</h3>
-          </div>
-          <div class="modal-body">
-            <form action="" method="POST" role="form">
-              {% include _partial-forms/login.html %}
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="">Passwort merken?
-              </label>
-              <button type="submit" class="btn btn-primary btn-block">Einloggen</button>
-              <button type="button" class="btn btn-link btn-block">Passwort vergessen?</button>
-            </form>  
-          </div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Einloggen</h3>
+            </div>
+            <div class="modal-body">
+                {% include _partial-forms/login.html %}
+            </div>
         </div>
-      </div>
     </div>
-
+</div>
 
 <div class="modal fade" id="signup" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
+    <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3 class="modal-title">Account erstellen</h3>
-          </div>
-          <div class="modal-body">
-            <form action="" method="POST" role="form">
-              {% include _partial-forms/login.html %}
-              {% include _partial-forms/anmelden.html %}
-              <button type="submit" class="btn btn-primary btn-block">Registrieren</button>
-            </form>  
-          </div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Account erstellen</h3>
+            </div>
+            <div class="modal-body">
+                <form action="" method="POST" class="m-b-1">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="input-unit">
+                                <input type="email" name="email" id="txt_email">
+                                <label for="txt_email">E-Mail*</label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="input-unit">
+                                <input type="password" name="password" id="txt_pw">
+                                <label for="txt_pw">Passwort*</label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="input-unit">
+                                <input type="password" name="password" id="txt_pwrepeat">
+                                <label for="txt_pwrepeat">Passwort wiederholen*</label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-8">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value=""> <span>Passwort merken</span>
+                            </label>
+                            <div>
+                                <a href="#" class="small">Passwort vergessen?</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="submit" class="btn btn-primary pull-xs-right">Senden</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-      </div>
     </div>
-
-
-   <!-- Navigation -->
-   <div class="container">
-<nav class="navbar navbar-full navbar-dark bg-primary">
-  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">
-  &#9776;
-  </button>
-  <a class="navbar-brand" href="#">
-  Brand
-  </a>
-  <div class="collapse navbar-toggleable-md" id="mainNavbarCollapse">
-    <ul class="nav navbar-nav pull-lg-right">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 2</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link" id="navbarDropdown1" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-          <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
-          <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
-          <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 4</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!-- breadcrumb -->
-<div class="breadcrumb">
-            <ol class="breadcrumb-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Unterseite</a></li>
-              <li class="active">Aktuelle Seite</li>
-            </ol>
 </div>
+
+<!-- Navigation -->
+<div class="container">
+    <nav class="navbar navbar-full navbar-dark bg-primary">
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
+        <a class="navbar-brand" href="#">Brand</a>
+        <div class="collapse navbar-toggleable-md" id="mainNavbarCollapse">
+            <ul class="nav navbar-nav pull-lg-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" id="navbarDropdown1" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li>
+                            <a class="dropdown-item" href="#">Dropdown 1</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Dropdown 2</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Dropdown 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 4</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- breadcrumb -->
+    <nav class="breadcrumb small">
+        <a class="breadcrumb-item" href="#">Super</a>
+        <a class="breadcrumb-item" href="#">Awesome</a>
+        <a class="breadcrumb-item" href="#">Breadcrumb</a>
+        <span class="breadcrumb-item active">Navigation</span>
+    </nav>
 </div>
