@@ -4,24 +4,28 @@
 
 @import "variables";
 
+// Common
 @import "common/zIndex-scale";
 @import "common/shariff-theme-minimal";
 @import "common/buttons";
 
+//to delete
 @import "mixins/media-query";
 @import "mixins/grid";
 @import "mixins/mixins";
 
+//forms
 @import "forms/input-groups";
 @import "forms/inputs";
 @import "forms/select";
 @import "../_partial-forms/forms";
 
-//header
+//globals
 @import "../_header/header";
 @import "../_component-breadcrumb/styles";
-
 @import "../_footer/footer";
+
+//pages
 @import "../_single/single";
 
 //checkout

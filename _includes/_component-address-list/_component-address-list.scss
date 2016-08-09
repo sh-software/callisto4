@@ -6,6 +6,7 @@
 		//TODO add class to this div and set this rule by the class
 		&>div:first-child{
 			@extend .card;
+			margin-bottom: 0;
 		}
 	}
 
