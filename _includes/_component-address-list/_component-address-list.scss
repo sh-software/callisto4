@@ -2,6 +2,11 @@
 	
 	.items{
 		position: relative;
+		
+		//TODO add class to this div and set this rule by the class
+		&>div:first-child{
+			@extend .card;
+		}
 	}
 
 
@@ -31,9 +36,7 @@
 	}
 	
 	.dropdown-toggle{
-		border: 1px solid $gray-lighter;
-		border-radius: $border-radius;
-
+		
 		&:after{
 		    position: absolute;
 		    top: 50%;

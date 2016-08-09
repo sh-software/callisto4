@@ -1,7 +1,7 @@
 <div class="top-bar">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 hidden-sm-down">
+            <div class="col-md-4 hidden-sm-down">
                 <div  class="shariff socialbar" 
                     data-services='["facebook","googleplus","pinterest","twitter"]' 
                     data-url="" 
@@ -9,7 +9,7 @@
                     data-theme="minimal"
                     style="margin-top:3px;"></div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <ul class="list-inline pull-xs-right ">
                     <li class="list-inline-item">
                         <span>
@@ -168,10 +168,5 @@
         </div>
     </nav>
     <!-- breadcrumb -->
-    <nav class="breadcrumb small">
-        <a class="breadcrumb-item" href="#">Super</a>
-        <a class="breadcrumb-item" href="#">Awesome</a>
-        <a class="breadcrumb-item" href="#">Breadcrumb</a>
-        <span class="breadcrumb-item active">Navigation</span>
-    </nav>
+    {% include _component-breadcrumb/component-breadcrumb.html %}
 </div>
