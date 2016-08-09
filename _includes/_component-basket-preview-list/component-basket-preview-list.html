@@ -1,31 +1,5 @@
 <div class="cmp cmp-basket-preview-list">
-	<article class="item">
-		<div class="item-quantity">
-			<div class="widget-quantity">
-				<span class="cmd-increase" data-target=""></span>
-				<input type="text" id="" class="quantity-input" value="Menge" placeholder="Menge ändern">
-				<span class="cmd-decrease" data-target=""></span>
-			</div>
-		</div>
-		<a class="item-infos" href="">
-			<a class="item-image">
-				<img src="">
-			</a>
-			<div class="item-name">
-				Produktname
-			</div>
-			<div class="item-details">
-				10,00 € <sup>*</sup>
-				/ 200 g
-			</div>
-			<div class="item-total">
-				<span class="item-total-price">
-					10,00 € <sup>*</sup>
-				</span>
-			</div>
-			<div class="item-remove">
-				<i class="ic-times"></i>
-			</div>
-		</a>
-	</article>
+	{% for i in (1..5) %}
+		{% include _component-basket-preview-item/component-basket-preview-item.html  %}
+	{% endfor %}
 </div>

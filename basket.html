@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="basket container">
+    <div class="row">
+        
+        <div class="col-xs-12 m-b-3">
+            <h1>Warenkorb</h1>
+            <hr>
+        </div>
+        
+        <div class="col-xs-12 m-b-3">
+            {% for i in (1..5) %}
+                {% include _component-basket-item/component-basket-item.html id=i %}
+            {% endfor %}
+        </div>
+
+        <div class="col-xs-12 col-md-5 offset-md-7 m-b-3">
+            {% include _component-totals/component-totals.html %}
+        </div>
+
+        <div class="col-xs-12 m-b-3">
+            <hr>
+            <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                    {% include _component-coupon/component-coupon.html %}
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <button class="btn btn-primary btn-block" type="submit">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
