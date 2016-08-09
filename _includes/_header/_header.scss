@@ -4,7 +4,7 @@
 	display: block;
 	min-height: 35px;
 	height: auto;
-	background-color: $secondary-color;
+	background-color: $gray-dark;
 
 	.list-inline{
 		margin-bottom: 0;
@@ -40,16 +40,16 @@
 		li:first-child{
 			span{
 				small{
-					color: $text-link - 50;
+					color: white;
 					padding: 0 $padding - 5px;
 				}
 				a{
 					@include transition(all 0.3s ease-in-out);
 					&:hover{
-						color: $text-link - 50;
+						color: white;
 					}
 					&:focus{
-						color: $text-link;
+						color: white;
 					}
 				}
 			}
@@ -58,12 +58,12 @@
 			content: "|";
 			padding-left: 13px;
 			font-size: 16px;
-			color: $text-link;
+			color: $link-color;
 			opacity: .15;
 		}
 		li:nth-child(2){
 			a{
-				color: $white-color;
+				color: white;
 				@include transition(all 0.3s ease-in-out);
 				padding: 0 $padding;
 				&:hover{
@@ -90,17 +90,17 @@
 							box-shadow: none;
 							border-radius: 0;
 							&:focus{
-								border-color: $primary-color;
+								border-color: $brand-primary;
 							}
 						}
 						.input-group-addon{
 							border-radius: 0;
-							background-color: $primary-color;
-							color: $white-color;
+							background-color: $brand-primary;
+							color: white;
 							text-transform: uppercase;
-							font-size: $font-size;
+							font-size: $font-size-sm;
 							font-weight: 700;
-							border-color: $primary-color;
+							border-color: $brand-primary;
 						}
 					}
 				}
@@ -111,8 +111,8 @@
 				background-color: $brand-primary;
 				line-height: 35px;
 				min-height: 36px;
-				font-size: $font-size; 
-				color: $white-color;
+				font-size: $font-size-sm; 
+				color: white;
 				@include transition(all 0.3s ease-in-out);
 				@include mobile-xs {
 					padding: 0 $padding - 3px;
@@ -124,11 +124,11 @@
 					padding: 0 $padding+9px;
 				}
 				i{
-					font-size: $font-size;
+					font-size: $font-size-sm;
 					margin-right: $margin;
 				}
 				&:hover{
-					background-color: $primary-color;
+					background-color: $brand-primary;
 					@include opacity(1);
 				}
 				&:focus{
@@ -136,7 +136,7 @@
 				}
 			}
 			ul.dropdown-menu{
-				background-color: $primary-color;
+				background-color: $brand-primary;
 				border-radius: 0;
 				
 				margin: 0;
@@ -149,7 +149,7 @@
 					width: 300px;
 				}
 				li:first-child{
-					color: $white-color;
+					color: white;
 					padding: $padding 0 $padding - 2px $padding + 9px;
 				}
 				li{
@@ -160,11 +160,11 @@
 							padding: $padding+2px 0;
 							.media-body{
 								h5{
-									color: $white-color;
+									color: white;
 									line-height: 20px;
 									letter-spacing: 1px;
 									span{
-										font-size: $font-size; 
+										font-size: $font-size-sm; 
 									}
 								}
 							}
@@ -184,7 +184,7 @@
 							height: 36px;
 							padding: 0;
 							line-height: 36px;
-							font-size: $font-size;
+							font-size: $font-size-sm;
 							font-weight: 700;
 							letter-spacing: 1px;
 							background-color: $btn-bg;
@@ -222,12 +222,12 @@
 
 
 ul.dropdown-menu.dropdown-menu-right {
-z-index:1001;
+	z-index:1001;
 }
 
 //navigation scss
 .navbar {
-  border-radius: 0;
+  	border-radius: 0;
 }
 
 .navbar-toggler {
