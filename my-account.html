@@ -87,30 +87,48 @@ layout: default
     </div>
 
     <form action="" method="">
-        <div class="form-group row">
-            <label for="example-search-input" class="col-xs-2 col-form-label">Suchen</label>
-            <div class="col-xs-8">
-                <input class="form-control" type="search" placeholder="Bestellnummer..."></div>
-            <div class="col-xs-2">
-                <button type="submit" class="btn btn-primary">Los</button>
+        
+        <div class="row m-b-1">
+            <div class="col-sm-6 col-md-3">
+                <div class="input-unit">
+                    <input id="auftragId" type="text">
+                    <label for="auftragId">Auftrag ID eingeben</label>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="input-unit">
+                    <select class="custom-select" id="TimePeriod">
+                        <option>---</option>
+                        <option>letzte 30 Tage</option>
+                        <option>letzte 3 Monate</option>
+                        <option>letzte 6 Monate</option>
+                    </select>
+                    <label for="TimePeriod">Zeitraum wählen</label>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="input-unit">
+                    <input id="von" type="text">
+                    <label for="von">Von</label>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="input-unit">
+                    <input id="auftragId" type="text">
+                    <label for="auftragId">Bis</label>
+                </div>
+            </div>    
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 offset-sm-9">
+                <button type="submit" class="btn btn-primary btn-block">Suchen</button>
             </div>
         </div>
     </form>
-
-    <div class="form-group">
-        <label for="TimePeriod">Zeitraum wählen</label>
-        <select class="form-control" id="TimePeriod">
-            <option>---</option>
-            <option>letzte 30 Tage</option>
-            <option>letzte 3 Monate</option>
-            <option>letzte 6 Monate</option>
-        </select>
-        <div class="input-daterange input-group" id="datepicker">
-            <span class="input-group-addon">von</span>
-            <input class="input-sm form-control" name="start" type="text">
-            <span class="input-group-addon">bis</span>
-            <input class="input-sm form-control" name="end" type="text"></div>
-    </div>
 
     <hr>
 
