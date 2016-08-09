@@ -1,0 +1,123 @@
+---
+layout: default
+---
+
+<div class="wishlist container">
+    <div class="whishlist-header">
+        <div class="row">
+            <div class="col-sm-4">
+                <label for="SelectPerPage">Name
+                    <select class="form-control" id="SelectPerPage">
+                        <option>Nur Vorname</option>
+                        <option>Vorname und Nachname</option>
+                        <option>Vorname, Nachname und Ort</option>
+                        <option>Nicht anzeigen</option>
+                    </select>
+                </label>
+            </div>
+            <div class="col-sm-4">
+                <div class="cmp cmp-address-list m-b-3">
+                    <div class="dropdown items">
+                        <div id="{{include.id}}" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Lieferanschrift</span>
+                            <div class="item-inner">
+                                <div> <strong>Firma buyer</strong> </div>
+                                <div>Kurze Straße 3002</div>
+                                <div>12345 Ortschaft, Deutschland</div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="{{include.id}}">
+                            <ul>
+                                <li class="item">
+                                    <input type="radio" id="shippingAddressID" name="shippingAddressID" checked>
+                                    <label for="shippingAddressID" class="item-inner"> <span class="item-content small">
+                              <strong>Firma buyer</strong>
+                              <span>Kurze Straße 3002</span> <span>12345 Ortschaft, Deutschland</span> </span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input id="shippingAddress_60" type="radio" name="shippingAddressID" value="60">
+                                    <label for="shippingAddress_60" class="item-inner"> <span class="item-content small">
+                              <strong>Frau Vorname Nachname</strong>
+                              <span>Goethestrasse, 92</span> <span>34119 Kassel</span> <span>Deutschland</span> <span>Deutschland</span> </span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input id="shippingAddress_61" type="radio" name="shippingAddressID" value="61">
+                                    <label for="shippingAddress_61" class="item-inner"> <span class="item-content small">
+                              <strong>Frau Vorname Nachname</strong>
+                              <span>Straße, Hausnr., Zusatz</span> <span>Postleitzhal Ortschaft</span> <span>Deutschland</span> <span>Deutschland</span> <span>Deutschland</span> </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="">Wunschlist-URL</label>
+                    <input class="form-control" type="text" value="https://shop.abcdefg.de/?PublicShow=ItemWishlist" readonly> </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-6 text-xs-left"> <b>Hier steht der Titel</b> </div>
+        <div class="col-md-6 btn-group text-xs-right" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Speichern</button>
+            <button type="button" class="btn btn-primary">Löschen</button>
+            <button class="btn btn-primary btn_buy to_basket_control-buy" type="" data-url=""> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </button>
+        </div>
+    </div>
+    <div class="m-b-3">
+        <div class="row">
+            <div class="col-md-2 col-xd-12 "> 
+                <img src="https://placekitten.com/120/120" alt="" class="img-fluid" /> 
+            </div>
+            <div class="col-md-4 col-xd-12 flex-container">
+                <div class="flex-item">
+                    <div><b>Artikel-ID</b></div>
+                    <div>12345</div>
+                </div>
+                <div class="flex-item">
+                    <div><b>Menge</b></div>
+                    <div>123 g</div>
+                </div>
+                <div class="flex-item">
+                    <div><b>Stückpreis</b></div>
+                    <div>3,49 €</div>
+                </div>
+                <div class="flex-item">
+                    <div><b>Anzahl</b></div>
+                    <div>
+                        <input name="quantity" size="3" value="1" type="text"> </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xd-12 flex-container hidden-sm-down">
+                <div class="flex-item">
+                    <div><b>Erhalten</b></div>
+                    <div>
+                        <input size="3" value="0" type="text" disabled="disabled"> </div>
+                </div>
+                <div class="flex-item">
+                    <div><b>Position</b></div>
+                    <div>
+                        <input name="quantity" size="3" value="1" type="text"> </div>
+                </div>
+                <div class="flex-item">
+                    <div><b>Kommentar</b></div>
+                    <div>
+                        <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xd-12 flex-container">
+                <div class="flex-item">
+                    <div class="ItemsPriceValue"> <span class="PlentyCurrencyContainer"><span class="PlentyCurrencyValue">3,49</span><span class="PlentyCurrencySymbol">EUR</span></span>
+                    </div>
+                    <div class="ItemsPriceVat"> inkl. ges. MwSt. 7% </div>
+                    <div class="ItemsPriceShipping"> <a href="https://shop.seeberger.de/zahlung-versand/">zzgl. Versandkosten</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

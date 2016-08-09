@@ -1,0 +1,57 @@
+<div class="whishlist-header">
+<div class="row">
+            <div class="col-sm-4">
+                <label for="SelectPerPage">Name
+                    <select class="form-control" id="SelectPerPage">
+                        <option>Nur Vorname</option>
+                        <option>Vorname und Nachname</option>
+                        <option>Vorname, Nachname und Ort</option>
+                        <option>Nicht anzeigen</option>
+                    </select>
+                </label>
+            </div>
+            <div class="col-sm-4">
+                <div class="cmp cmp-address-list m-b-3">
+                    <div class="dropdown items">
+                        <div id="{{include.id}}" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Lieferanschrift</span>
+                            <div class="item-inner">
+                                <div> <strong>Firma buyer</strong> </div>
+                                <div>Kurze Straße 3002</div>
+                                <div>12345 Ortschaft, Deutschland</div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="{{include.id}}">
+                            <ul>
+                                <li class="item">
+                                    <input type="radio" id="shippingAddressID" name="shippingAddressID" checked>
+                                    <label for="shippingAddressID" class="item-inner"> <span class="item-content small">
+                              <strong>Firma buyer</strong>
+                              <span>Kurze Straße 3002</span> <span>12345 Ortschaft, Deutschland</span> </span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input id="shippingAddress_60" type="radio" name="shippingAddressID" value="60">
+                                    <label for="shippingAddress_60" class="item-inner"> <span class="item-content small">
+                              <strong>Frau Vorname Nachname</strong>
+                              <span>Goethestrasse, 92</span> <span>34119 Kassel</span> <span>Deutschland</span> <span>Deutschland</span> </span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input id="shippingAddress_61" type="radio" name="shippingAddressID" value="61">
+                                    <label for="shippingAddress_61" class="item-inner"> <span class="item-content small">
+                              <strong>Frau Vorname Nachname</strong>
+                              <span>Straße, Hausnr., Zusatz</span> <span>Postleitzhal Ortschaft</span> <span>Deutschland</span> <span>Deutschland</span> <span>Deutschland</span> </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="">Wunschlist-URL</label>
+                    <input class="form-control" type="text" value="https://shop.abcdefg.de/?PublicShow=ItemWishlist" readonly> </div>
+            </div>
+        </div>
+</div>

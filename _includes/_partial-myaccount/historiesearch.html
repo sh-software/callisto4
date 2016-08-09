@@ -1,0 +1,28 @@
+
+<form action="" method="">
+    <div class="form-group row">
+    <label for="example-search-input" class="col-xs-2 col-form-label">Suchen</label>
+        <div class="col-xs-8">
+            <input class="form-control" type="search" placeholder="Bestellnummer...">
+        </div>
+        <div class="col-xs-2">
+            <button type="submit" class="btn btn-primary">Los</button>
+        </div>
+    </div>
+</form>
+
+<div class="form-group">
+    <label for="TimePeriod">Zeitraum wählen</label>
+    <select class="form-control" id="TimePeriod">
+      <option>---</option>
+      <option>letzte 30 Tage</option>
+      <option>letzte 3 Monate</option>
+      <option>letzte 6 Monate</option>
+    </select>
+    <div class="input-daterange input-group" id="datepicker">
+        <span class="input-group-addon">von</span>
+        <input class="input-sm form-control" name="start" type="text">
+        <span class="input-group-addon">bis</span>
+        <input class="input-sm form-control" name="end" type="text">
+    </div>
+</div>

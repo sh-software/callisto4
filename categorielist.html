@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="categoriegrid container">
+  <!-- fullsize image -->
+    <div class="row">
+        <!-- leftSide start -->
+        <div class="col-lg-3">
+          <nav class="navbar navbar-light bg-faded">
+          <h2>Filter</h2>            
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#nav-content">
+            ☰
+            </button>
+              <div class="collapse navbar-toggleable-md" id="nav-content">    
+                {% include _partial-checklist/checkboxes.html %}
+                {% include _partial-checklist/checkboxes.html %}
+                {% include _partial-checklist/checkboxes.html %}
+                {% include _partial-checklist/checkboxes.html %}
+                {% include _partial-checklist/checkboxes.html %}
+                {% include _partial-checklist/checkboxes.html %}
+              </div>
+          </nav>
+        </div>
+        <!-- leftSide end -->
+        
+        <!-- rightside start -->
+        <div class="col-lg-9">
+          {% include _partial-checklist/subcategories.html %}
+          {% include _partial-checklist/pagination.html %}
+          {% include _partial-checklist/sort.html %}
+          {% include _partial-checklist/categorieitem.html %}
+          {% include _partial-checklist/categorieitem.html %}
+          {% include _partial-checklist/categorieitem.html %}
+          <div class="categoriegrid container">
+          {% include _partial-checklist/categorielistgrid.html %}
+          {% include _partial-checklist/categorielistgrid.html %}
+          </div>
+          {% include _partial-checklist/sort.html %}
+         
+        </div>
+          <!-- rightside end -->
+    </div>
+    <!-- row end -->
+</div>
+<!-- categorielist end -->

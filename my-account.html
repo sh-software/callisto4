@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<div class="myaccount container">
+<h1>Mein Konto</h1>
+    <h2>Kundendaten</h2>
+    <div class="customerdata row m-b-3">
+        <div class="col-sm-6">
+            <h2>Kundenstammdaten</h2>
+            {% include _partial-myaccount/customerdata.html %}
+
+            <h2>Kontaktinformationen</h2>
+            {% include _partial-myaccount/contactinformation.html %}
+            
+            <h2>Bankinformationen</h2>
+            {% include _partial-myaccount/bankinginformation.html %}
+
+            <h2>Passwort</h2>
+            {% include _partial-myaccount/changepassword.html %}
+
+        </div>
+        <div class="col-sm-6">
+            <h2>Lieferadressen</h2>
+             <div class="shipping-addresses-select">
+                {% include _component-address-list/component-address-list.html id="shippingAddress" %}
+            </div>
+        </div>      
+    </div>
+
+    <div class="historie m-b-3">
+        <h2>Bestellübersicht</h2>
+        {% include _partial-myaccount/historiesearch.html %}
+        <hr>
+        {% include _partial-myaccount/historiepagination.html %}
+
+        {% include _partial-myaccount/order.html %}
+
+        {% include _partial-myaccount/order.html %}
+
+        {% include _partial-myaccount/order.html %}
+
+        {% include _partial-myaccount/order.html %}
+    </div>
+    <!-- historie end -->
+
+
+    <div class="wishlist m-b-3">
+        <h2>Wunschliste</h2>
+        {% include _partial-myaccount/wishlistheader.html %}
+
+        {% include _partial-myaccount/wishlistbutton.html %}
+
+        {% include _partial-myaccount/wishlistcontent.html %}
+    </div>
+</div>
