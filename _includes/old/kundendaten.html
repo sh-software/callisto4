@@ -2,39 +2,145 @@
 layout: default
 ---
 
-<div class="customerdata container">
-	<h1>Kundendaten</h1>
+<div class="myaccount container m-y-3">
+	
+	<div class="row m-b-3">
+		<div class="col-sm-9">
+			<h1>Mein Konto</h1>
+			<span class="text-muted">Hallo Max Musterman!</span>
+		</div>
+		<div class="col-sm-3">
+			<button type="" class="btn btn-danger pull-xs-right">Logout</button>
+		</div>
+		<div class="col-xs-12">
+			<hr class="">
+		</div>
+	</div>
+	
 	<div class="row">
-		<div class="col-sm-6">
-			<h2>Kundenstammdaten</h2>
-			{% include _partial-customerdata/customerdata.html %}
-
-			<h2>Kontaktinformationen</h2>
-			{% include _partial-customerdata/contactinformation.html %}
-			
-			<h2>Bankinformationen</h2>
-			{% include _partial-customerdata/bankinginformation.html %}
-
-			<h2>Passwort</h2>
-			{% include _partial-customerdata/changepassword.html %}
-
+		<div class="col-md-6">
+			<h4>
+				Rechnungsadressen
+			</h4>
+			<p class="text-muted small font-italic">Alle Rechnungsadressen</p>
+			<div class="shipping-addresses-select">
+	            {% include _component-address-list/component-address-list.html id="invoiceAddress" %}
+	        </div>
 	    </div>
-	    <div class="col-sm-6">
-	    	<h2>Lieferadressen</h2>
+	    <div class="col-md-6">
+	    	<h4>
+	    		Lieferadressen
+	    	</h4>
+	    	<p class="text-muted small font-italic">Alle Lieferadressen</p>
 			 <div class="shipping-addresses-select">
 	            {% include _component-address-list/component-address-list.html id="shippingAddress" %}
 	        </div>
-		</div>   	
-	   
+		</div>   
+	</div>
 	
+	<div class="row">
+		<div class="col-md-6">
+			<h4>
+				Kontoeinstellungen
+			</h4>
+			<p class="text-muted small font-italic">Ändern Sie Ihre Zugangsdaten</p>
+			
+			<div class="card m-b-3">
+				<div class="card-block">
+					<div class="row  m-b-1">
+						<div class="col-sm-4">
+							<strong>E-Mail</strong>
+						</div>
+						<div class="col-sm-8">
+							<span>email@domain.com</span>
+						</div>
+					</div>
 
+					<div class="row">
+						<div class="col-sm-4">
+							<strong>Passwort</strong>
+						</div>
+						<div class="col-sm-8">
+							<span>***********</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class="col-md-6">
+			<h4>
+				Bankinformationen
+			</h4>
+			<p class="text-muted small font-italic">Ändern Sie Ihre Zahlungsinformationen</p>
+			{% include _component-address-list/component-address-list.html id="bankinfos" %}
+		</div>
+	</div> 
 
+</div>
 
+<!-- Auftragshistorie -->
 
+<div class="history container m-b-3">
+    <div class="row m-b-3">
+		<h1 class="col-xs-12">Auftragshistorie</h1>
+	</div>
 
+    <form action="" method="">
+        <div class="form-group row">
+            <label for="example-search-input" class="col-xs-2 col-form-label">Suchen</label>
+            <div class="col-xs-8">
+                <input class="form-control" type="search" placeholder="Bestellnummer..."></div>
+            <div class="col-xs-2">
+                <button type="submit" class="btn btn-primary">Los</button>
+            </div>
+        </div>
+    </form>
 
+    <div class="form-group">
+        <label for="TimePeriod">Zeitraum wählen</label>
+        <select class="form-control" id="TimePeriod">
+            <option>---</option>
+            <option>letzte 30 Tage</option>
+            <option>letzte 3 Monate</option>
+            <option>letzte 6 Monate</option>
+        </select>
+        <div class="input-daterange input-group" id="datepicker">
+            <span class="input-group-addon">von</span>
+            <input class="input-sm form-control" name="start" type="text">
+            <span class="input-group-addon">bis</span>
+            <input class="input-sm form-control" name="end" type="text"></div>
+    </div>
 
+    <hr>
 
+    <div id="DisplayOrdersCountOrders" class="DisplayOrdersCountOrders">xy Aufträge</div>
+
+    <div class="form-group">
+        <label for="SelectPerPage">pro Seite</label>
+        <select class="form-control" id="SelectPerPage">
+            <option>10</option>
+            <option>20</option>
+            <option>50</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="SelectPerPage">Seite</label>
+        <select class="form-control" id="SelectPerPage">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>X</option>
+        </select>
+        von X
+        <input id="OrderSearchCounter_next" type="button" title="nächste Seite" value="»" onclick=""></div>
+    {% include _partial-customerdata/order.html %}
+
+{% include _partial-customerdata/order.html %}
+
+{% include _partial-customerdata/order.html %}
+
+{% include _partial-customerdata/order.html %}
 </div>
 <!-- customerdata end -->

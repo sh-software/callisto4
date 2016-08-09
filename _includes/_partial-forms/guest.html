@@ -1,48 +1,73 @@
-<div class="form-group row">
-  <label for="example-text-input" class="col-xs-12 col-sm-2 col-form-label">Vorname</label>
-  <div class="col-xs-12 col-sm-10 col-md-10">
-    <input class="form-control" type="text" placeholder="Ihr Vorname" id="example-text-input" name="vorname">
-  </div>
-</div> 
-<div class="form-group row">
-  <label for="example-text-input" class="col-xs-12 col-sm-2 col-form-label">Nachname</label>
-  <div class="col-xs-12 col-sm-10 col-md-10">
-    <input class="form-control" type="text" placeholder="Ihr Nachname" id="example-text-input" name="nachname">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-email-input" class="col-xs-12 col-sm-2 col-form-label">E-Mail Adresse</label>
-  <div class="col-xs-12 col-sm-10 col-md-10">
-    <input class="form-control" type="email" placeholder="Ihre E-Mail Adresse" id="example-email-input" name="email">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-text-input" class="col-xs-12 col-sm-2 col-form-label">Straße</label>
-  <div class="col-xs-12 col-sm-10 col-md-10">
-    <input class="form-control" type="text" placeholder="Ihre Straße" id="example-text-input" name="strasse">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-number-input" class="col-xs-12 col-sm-2 col-form-label">Hausnummer</label>
-  <div class="col-xs-12 col-sm-10 col-md-10">
-    <input class="form-control" type="number" placeholder="55" id="example-number-input" name="hausnummer">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-number-input" class="col-xs-12 col-sm-2 col-form-label">Postleitzahl</label>
-  <div class="col-xs-12 col-sm-10 col-md-10">
-    <input class="form-control" type="number" placeholder="12345" id="example-number-input" name="plz">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-text-input" class="col-xs-12 col-sm-2 col-form-label">Ort</label>
-  <div class="col-xs-12 col-sm-10 col-md-10">
-    <input class="form-control" type="text" placeholder="Ihr Ort" id="example-text-input" name="ort">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-text-input" class="col-xs-12 col-sm-2 col-form-label">Land</label>
-  <div class="col-xs-12 col-sm-10 col-md-10">
-    <input class="form-control" type="text" placeholder="Ihr Land" id="example-text-input" name="land">
-  </div>
-</div>
+
+<form action="" method="POST">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="input-unit success">
+                <input type="text" name="vorname" id="txt_vorname">
+                <label for="txt_vorname">Vorname*</label>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="input-unit error">
+                <input type="text" name="nachname" id="txt_nachname">
+                <label for="txt_nachname">Nachname*</label>
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="input-unit">
+                <input type="text" name="email" id="txt_email">
+                <label for="txt_email">E-Mail*</label>
+            </div>
+        </div>
+
+        <div class="col-sm-9">
+            <div class="input-unit">
+                <input type="text" name="strasse" id="txt_strasse">
+                <label for="txt_strasse">Straße*</label>
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+            <div class="input-unit">
+                <input type="text" name="housenumber" id="txt_nummer">
+                <label for="txt_nummer">Nr.*</label>
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+            <div class="input-unit">
+                <input type="text" name="plz" id="txt_plz">
+                <label for="txt_plz">PLZ*</label>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="input-unit">
+                <input type="text" name="ort" id="txt_ort">
+                <label for="txt_ort">Ort*</label>
+            </div>
+        </div>
+
+        <div class="col-sm-5">
+            <div class="input-unit">
+                <select id="select" class="custom-select">
+                    <optgroup label="Option Group 1">
+                        <option>Option One</option>
+                        <option>Option Two</option>
+                        <option>Option Three</option>
+                    </optgroup>
+                    <optgroup label="Option Group 2">
+                        <option>Option One</option>
+                        <option>Option Two</option>
+                        <option>Option Three</option>
+                    </optgroup>
+                </select>
+                <label>Land</label>
+            </div>
+        </div>
+        <div class="col-sm-5 offset-sm-7">
+            <button type="submit" class="btn btn-primary btn-block">Weiter</button>
+        </div>
+    </div>
+</form>
