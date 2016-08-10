@@ -125,41 +125,31 @@ layout: default
 
         <div class="row">
             <div class="col-sm-3 offset-sm-9">
-                <button type="submit" class="btn btn-primary btn-block">Suchen</button>
+                <input type="submit" class="btn btn-primary btn-block" value="Submit">
             </div>
         </div>
     </form>
 
     <hr>
-
-    <div id="DisplayOrdersCountOrders" class="DisplayOrdersCountOrders">xy Aufträge</div>
-
-    <div class="form-group">
-        <label for="SelectPerPage">pro Seite</label>
-        <select class="form-control" id="SelectPerPage">
-            <option>10</option>
-            <option>20</option>
-            <option>50</option>
-        </select>
+    <div class="row m-b-1">
+        <div class="col-sm-6">
+            X Aufträge
+        </div>
+        <div class="col-sm-6">
+            <div class="pull-xs-right">
+                PLATZHALTER FÜR PAGINATOR
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    
+    <div class="order-list">
+        {% include _component-order-item/component-order-item.html %}
+        {% include _component-order-item/component-order-item.html %}
+        {% include _component-order-item/component-order-item.html %}
+        {% include _component-order-item/component-order-item.html %}
     </div>
 
-    <div class="form-group">
-        <label for="SelectPerPage">Seite</label>
-        <select class="form-control" id="SelectPerPage">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>X</option>
-        </select>
-        von X
-        <input id="OrderSearchCounter_next" type="button" title="nächste Seite" value="»" onclick="">
-    </div>
-    {% include _partial-myaccount/order.html %}
-
-    {% include _partial-myaccount/order.html %}
-
-    {% include _partial-myaccount/order.html %}
-
-    {% include _partial-myaccount/order.html %}
 </div>
 <!-- customerdata end -->
