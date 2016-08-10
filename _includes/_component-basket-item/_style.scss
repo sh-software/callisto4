@@ -2,19 +2,23 @@
 	position: relative;
 	display: flex;
 	flex-flow: row wrap;
-	
-	&>[class^="item-"]{
-	    
-	}
+	margin-bottom: 1em;
 
 	.toggle-description{
 	    display: none;
 	}
+
+	.item-image{
+		flex: 0 1 6em;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
 	
 	.item-details{
-		display: block;
-		padding-left: .5rem;
-		width: calc( 100% - 80px );
+		margin-top: 1em;
 
 		&>div[class^="item-"]{
 			display: block;
@@ -45,10 +49,29 @@
 	}
 
 	.item-quantity{
-		flex: 1;
+		position: relative;
+		display: flex;
+	    flex: 1;
+		flex-flow: column wrap;
+	    height: 6em;
+		
+		.item-unit-price{
+			align-self: center;
+			flex: 0;
+		}
+		
+		.item-total-price{
+			flex: 0;
+			font-size: 1.5em;
+		    font-weight: 700;
+		    text-align: right;
+		}
+
 		.input-group.vert{
-			margin: 0 auto;
-			width: 3em;
+			display: block;
+		    padding: 0 1em;
+		    flex: 1;
+		    width: 5em;
 		}
 
 		.btn{
@@ -62,24 +85,12 @@
 		    text-align: center;
 		}
 	}
-
-	.item-availability{
-
-	}
-
-	.item-id{
-
-	}
-
-	.item-properties{
-
-	}
 	
 	.item-description{
-		max-height: 2em;
+		max-height: 0;
 		height: auto;
 		overflow: hidden;
-		padding-bottom: 1em;
+		margin-bottom: 0;
 
 		transition: max-height 300ms; 
 	}
@@ -106,7 +117,7 @@
 		}
 
 		&:after{
-			content: 'MEHR';
+			content: 'Mehr';
 			font-weight: 700;
 			color: $gray-light;
 		    display: inline-block;
@@ -124,49 +135,70 @@
 
 		& ~ .expand-btn{
 			&:after{
-				content: 'weniger';
+				content: 'Weniger';
 			}
 		}
-	}
-	
-	.item-unit-price{
-
-	}
-	
-	.item-total-price{
-		font-size: 1.5em;
-	    font-weight: 700;
-	    text-align: right;
 	}
 
 	.item-remove{
 		position: absolute;
-	    bottom: 1em;
+	    bottom: 0;
 	    right: 0;
 	    line-height: 1;
-	    color: $gray-lighter;
+	    color: $brand-danger;
 	    cursor: pointer;
 		transition: color 250ms;
-
-	    &:hover{
-	    	color: $brand-danger;
-	    }
 	}
 
 	@include media-breakpoint-up(sm){
+		flex-flow: row nowrap;
 
+		.item-image{
+			
+		}
+		
 		.item-details{
-			width: 50%;
+			order: 2;
+			flex: 1;
+			margin-top: 0;
+			margin-left: 1em;
+		}
+
+		.item-quantity{
+			order: 3;
+			flex-flow: row nowrap;
+
+			.item-unit-price{
+				align-self: flex-start;
+				order: 1;
+				flex: 1;
+			}
+
+			.input-group.vert{
+				align-self: flex-start;
+				flex: 0;
+				display: table;
+				order: 2;
+			}
+
+			.item-total-price{
+				align-self: flex-start;
+				flex: 1;
+				order: 3;
+			}
 		}
 
 		.item-name:after{
 			content: none!important;
 		}
 
-		.item-unit-price,
-		.item-total-price{
-			width: auto!important;
-			text-align: right;
+		.item-remove{
+		    bottom: 1;
+		    color: $gray-lighter;
+
+		    &:hover{
+		    	color: $brand-danger;
+		    }
 		}
 
 	}
