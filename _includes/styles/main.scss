@@ -8,6 +8,7 @@
 @import "common/zIndex-scale";
 @import "common/shariff-theme-minimal";
 @import "common/buttons";
+@import "common/card";
 
 //to delete
 @import "mixins/media-query";
@@ -35,6 +36,9 @@
 @import "../_component-basket-preview-item/style";
 @import "../_component-method-list/style";
 @import "../_component-totals/style";
+
+//my-account
+@import "../_component-order-item/styles";
 
 //other
 @import "../_partial-checklist/checklist";
