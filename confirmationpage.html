@@ -4,71 +4,108 @@ layout: default
 
 <div class="myaccount container m-y-3">
     
-    
-<div class="">
-        {% include _component-confirm/component-confirm-details.html %}
-    </div>
-
-
-
-
-    <div class="row">
-        <div class="col-md-6">
-            <h4>
-                Rechnungsanschrift
-            </h4>
-            <div class="shipping-addresses-select">
-                {% include _component-confirm/component-confirm-address.html %}
-            </div>
-            <h4>
-                Lieferanschrift
-            </h4>
-             <div class="shipping-addresses-select">
-                {% include _component-confirm/component-confirm-shipping.html %}
-            </div>
+    <div class="row m-b-3">
+        <div class="col-xs-12">
+            <h1>Vielen Dank!</h1>
+            <p>Ihre Bestellung wird bearbeitet. Hier finden Sie eine Zusammenfassung:</p>
         </div>
-        <div class="col-md-6">
-            <h4>
-                Statushistorie
-            </h4>
-             <div class="shipping-addresses-select">
-                {% include _component-confirm/component-confirm-status.html %}
+    </div>
+    
+    <div class="row">
+        <div class="col-md-5 m-b-2">
+            <div class="card small">
+                <div class="card-header">
+                    <h5>Auftrag ID 1234567</h5>
+                </div>
+                <div class="card-block">
+                    <div class="details">
+                        <div class="row">
+                            <strong class="col-xs-6 col-sm-5">Auftragsdatum:</strong>
+                            <span class="col-xs-6 col-sm-7">03.08.2016</span>
+                        </div>
+                        <div class="row">
+                            <strong class="col-xs-6 col-sm-5">Zahlungseingang:</strong>
+                            <span class="col-xs-6 col-sm-7"> Kein Zahlungseingang </span>
+                        </div>
+                        <div class="row">
+                            <strong class="col-xs-6 col-sm-5">Status:</strong>
+                            <span class="col-xs-6 col-sm-7">[8] Storniert</span>
+                        </div>
+                        <div class="row">
+                            <strong class="col-xs-6 col-sm-5">Versand:</strong>
+                            <span class="col-xs-6 col-sm-7">Noch nicht versendet</span>
+                        </div>
+                    </div>   
+                    
+                    <hr>
+
+                    <div class="invoiceaddress">
+                        <h6>Rechnungsanschrift</h6>
+
+                        <div>Firma buyer</div>
+                        <div>Kurze Straße 55</div>
+                        <div>12345 Ortschaft, Deutschland</div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="shippingaddress">
+                        <h6>Lieferanschrift</h6>
+                        
+                        <div>Firma buyer</div>
+                        <div>Kurze Straße 3002</div>
+                        <div>12345 Ortschaft, Deutschland</div>
+                    </div>
+                    <hr>
+                    
+                    <div class="paymentmethod">
+                        <h6>Zahlungsart</h6>
+                        <div>PayPal Plus</div>
+                    </div>
+
+                    <hr>
+
+                    <div class="shippingmethod">
+                        <h6>Versandart</h6>
+                        <div>DHL Paketversand</div>
+                    </div>
+
+                    <hr>
+
+                    <div class="status">
+                        <h6>Statushistorie</h6>
+                        <ul>
+                            <li><span class="text-muted">03.08.2016 13:55</span> [8] Storniert</li>
+                            <li><span class="text-muted">03.08.2016 10:15</span> [3] Warten auf Zahlung</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- <div class="card-footer">
+                    
+                </div> -->
             </div>
-            <h4>
-                Zahlungsart
-            </h4>
-             <div class="shipping-addresses-select">
-                {% include _component-confirm/component-confirm-payment.html %}
+            
+        </div>
+
+        <div class="col-md-7">
+            <div class="confirmation-order-list">
+                {% include _component-confirmation-order-item/component-confirmation-order-item.html %}
+                {% include _component-confirmation-order-item/component-confirmation-order-item.html %}
             </div>
-            <h4>
-                Versandart
-            </h4>
-             <div class="shipping-addresses-select">
-                {% include _component-confirm/component-confirm-shippingmethod.html %}
-            </div>   
+            <div class="gesamtsumme">
+                {% include _component-totals/component-totals.html %}
+            </div>
         </div>   
     </div>
-</div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-6 col-md-4 offset-md-2">
+            <a type="" class="btn btn-primary btn-block bg-primary">Startseite</a>
+        </div>
 
-<!-- Auftragshistorie -->
-
-<div class="history container m-b-3">
-    <div class="row m-b-3">
-        <h1 class="col-xs-12">Ihre Bestellung</h1>
+        <div class="col-xs-6 col-md-4">
+            <a type="" class="btn btn-primary btn-block bg-primary">Mein Konto</a>
+        </div>
     </div>
-    <div class="order-list">
-            {% include _component-confirm/component-confirm-item.html %}
-            {% include _component-confirm/component-confirm-item.html %}
-            {% include _component-confirm/component-confirm-item.html %}
-    </div>
-       <!-- {% include _component-order-item/component-order-item.html %} -->
-
-
-<div class="col-xs-12 col-md-5 offset-md-7 m-b-3">
-    {% include _component-totals/component-totals.html %}
 </div>
-
-</div>
-
-
-
