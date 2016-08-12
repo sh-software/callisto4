@@ -6,13 +6,14 @@
 
 // Common
 @import "common/zIndex-scale";
+@import "common/common";
 @import "common/shariff-theme-minimal";
 @import "common/buttons";
 @import "common/card";
 
 //to delete
 @import "mixins/media-query";
-@import "mixins/grid";
+//@import "mixins/grid";
 @import "mixins/mixins";
 
 //forms

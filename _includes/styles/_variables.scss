@@ -35,14 +35,15 @@ $sitepad_lg: 		3em;
 //## Gray and brand colors for use across Bootstrap.
 
 
-$gray-darker:            #474747 !default;
-$gray-dark:              #4A4A4A !default;
-$gray:                   lighten(#000, 33.5%) !default;
-$gray-light:             #dedede !default;
-$gray-lighter:           #F4F4F4 !default;
+$gray-darker:            #333333 !default;
+$gray-dark:              #555555 !default;
+$gray:                   #999999 !default;
+$gray-light:             #e0e0e0 !default;
+$gray-lighter:           #f2f2f2 !default;
 
-$brand-primary:         #D4021D !default;
-$brand-secondary: 		#008EBD !default;
+$brand-primary:         #008ebd !default;
+$brand-secondary: 		#d4021d !default;
+
 $brand-success:         #7ED321 !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -95,7 +96,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit !default;
 $headings-font-weight:    500 !default;
-$headings-line-height:    1.1 !default;
+$headings-line-height:    1.4;
 $headings-color:          inherit !default;
 
 
