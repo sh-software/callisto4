@@ -1,0 +1,58 @@
+
+.single{
+
+    .main-image{
+        img{
+            width: 100%;
+        }
+    }
+
+    .title{
+        //font-size: 2rem;
+        line-height: 1.4;
+    }
+
+    .producer{
+        line-height: 1.1;
+        font-weight: 700;
+        display: inline-block;
+        text-decoration: none;
+    }
+}
+
+.rating{
+    .tag{
+        padding-right: 0;
+        overflow: hidden;
+        cursor: pointer;
+
+        .amount{
+            padding: 0.2rem .6rem 0.2rem .4rem;
+            margin-left: .2rem;
+            background-color: #4d5154;
+        }
+    }
+}
+
+.price {
+    display: block;
+    color: $brand-danger;
+    line-height: 1;
+}
+
+.vat {
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: .5em;
+    color:#020260;
+}
+
+.rezension {
+    display: inline-block;
+}
+
+.img-thumbnail {
+    border:none;
+    border-radius:none;
+    padding: .75rem .45rem .25rem 0;
+}
