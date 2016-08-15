@@ -1,14 +1,15 @@
 {
-  "name": "callisto4",
-  "homepage": "http://www.frontend-studios.de",
-  "authors": [
-    "frontend-studios"
-  ],
-  "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "v4.0.0-alpha.3",
-    "font-awesome": "fontawesome#^4.6.3"
-  },
-  "overrides": {}
+    "name": "callisto4",
+    "homepage": "http://www.frontend-studios.de",
+    "authors": [
+        "frontend-studios"
+    ],
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "v4.0.0-alpha.3",
+        "font-awesome": "fontawesome#^4.6.3",
+        "flag-icon-css": "^2.4.0"
+    },
+    "overrides": {}
 }

@@ -4,6 +4,8 @@
 
 @import "variables";
 
+@import "../../bower_components/flag-icon-css/sass/flag-icon";
+
 // Common
 @import "common/zIndex-scale";
 @import "common/common";
@@ -29,6 +31,7 @@
 
 //pages
 @import "../_single/single";
+@import "../_single/product-thumb";
 
 //checkout
 @import "../_component-address-list/component-address-list";

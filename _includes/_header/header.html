@@ -6,8 +6,7 @@
                     data-services='["facebook","googleplus","pinterest","twitter"]' 
                     data-url="" 
                     data-media-url=""
-                    data-theme="minimal"
-                    style="margin-top:3px;"></div>
+                    data-theme="minimal"></div>
             </div>
             <div class="col-md-8">
                 <ul class="list-inline pull-xs-right ">
@@ -17,6 +16,26 @@
                             <small>oder</small>
                             <a data-toggle="modal" href="#signup">Registieren</a>
                         </span>
+                    </li>
+                    <li class="list-inline-item dropdown">
+                        <a href="#" class="dropdown-toggle" id="shippingCountryList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                            <i class="flag-icon flag-icon-de"></i>
+                            <span class="hidden-xs-down">Ländereinstellungen</span>
+                        </a>
+                        <div class="country-settings dropdown-menu dropdown-menu-right small">
+                            <div class="list-group" aria-labelledby="shippingCountryList" >
+                                <div class="list-group-item small disabled"><strong>Länderauswahl</strong></div>
+                                <a href="#" class="list-group-item small"><i class="flag-icon flag-icon-de"></i>Deutschland</a>
+                                <a href="#" class="list-group-item small"><i class="flag-icon flag-icon-at"></i>Österreich</a>
+                                <a href="#" class="list-group-item small"><i class="flag-icon flag-icon-ch"></i>Schweiz</a>
+                                <a href="#" class="list-group-item small"><i class="flag-icon flag-icon-fr"></i>Frankreich</a>
+                                <a href="#" class="list-group-item small"><i class="flag-icon flag-icon-gb"></i>England</a>
+                                <a href="#" class="list-group-item small"><i class="flag-icon flag-icon-it"></i>Italien</a>
+                                <div class="list-group-item small disabled"><strong>Spracheauswahl</strong></div>
+                                <a href="#" class="list-group-item small"><i class="flag-icon flag-icon-de"></i>Deutsch</a>
+                                <a href="#" class="list-group-item small"><i class="flag-icon flag-icon-gb"></i>English</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="list-inline-item dropdown searchBox">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-search"></i>
@@ -30,33 +49,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#basketprev"> <i class="fa fa-shopping-cart"></i>
-                            0€
+                    <li class="list-inline-item">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="fa fa-shopping-cart"></i>
+                            32€
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li>Artikel in Ihrem Warenkorb</li>
-                            <li>
-                                <a href="single-product.html">
-                                    <div class="media">
-                                        <img class="media-left media-object" src="#" alt="cart-Image">
-                                        <div class="media-body">
-                                            <h5 class="media-heading">
-                                                Artikel
-                                                <br>
-                                                <span>2 x 199€</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <div class="btn-group" role="group" aria-label="...">
-                                    <button type="button" class="btn btn-default" onclick="#';">Warenkorb</button>
-                                    <button type="button" class="btn btn-default" onclick="#';">Ausloggen</button>
-                                </div>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </div>

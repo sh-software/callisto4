@@ -1,45 +1,67 @@
 ---
 layout: default
 ---
-
 <div class="categoriegrid container">
-  <!-- fullsize image -->
-    <div class="row">
+    <!-- fullsize image -->
+    <div class="row m-y-3">
         <!-- leftSide start -->
         <div class="col-lg-3">
-          <nav class="navbar navbar-light bg-faded">
-          <h2>Filter</h2>            
-            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#nav-content">
-            ☰
-            </button>
-              <div class="collapse navbar-toggleable-md" id="nav-content">    
-                {% include _partial-checklist/checkboxes.html %}
-                {% include _partial-checklist/checkboxes.html %}
-                {% include _partial-checklist/checkboxes.html %}
-                {% include _partial-checklist/checkboxes.html %}
-                {% include _partial-checklist/checkboxes.html %}
-                {% include _partial-checklist/checkboxes.html %}
-              </div>
-          </nav>
+            <nav class="navbar navbar-light bg-faded">
+                <h2>Filter</h2>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#nav-content">☰</button>
+                <div class="collapse navbar-toggleable-md" id="nav-content">
+                    {% include _partial-checklist/checkboxes.html %}
+                    {% include _partial-checklist/checkboxes.html %}
+                    {% include _partial-checklist/checkboxes.html %}
+                    {% include _partial-checklist/checkboxes.html %}
+                    {% include _partial-checklist/checkboxes.html %}
+                    {% include _partial-checklist/checkboxes.html %}
+                </div>
+            </nav>
         </div>
         <!-- leftSide end -->
-        
+
         <!-- rightside start -->
         <div class="col-lg-9">
-          {% include _partial-checklist/subcategories.html %}
-          {% include _partial-checklist/pagination.html %}
-          {% include _partial-checklist/sort.html %}
-          {% include _partial-checklist/categorieitem.html %}
-          {% include _partial-checklist/categorieitem.html %}
-          {% include _partial-checklist/categorieitem.html %}
-          <div class="categoriegrid container">
-          {% include _partial-checklist/categorielistgrid.html %}
-          {% include _partial-checklist/categorielistgrid.html %}
-          </div>
-          {% include _partial-checklist/sort.html %}
-         
+            <div class="list-controls row">
+                <!-- {% include _partial-checklist/subcategories.html %} -->
+                <!-- {% include _partial-checklist/pagination.html %} -->
+                {% include _partial-checklist/sort.html %}
+            </div>
+            <hr class="m-y-2">
+            <div class="product-list product-list-rows row">
+                {% include _partial-checklist/category-list-row-item.html %}
+                {% include _partial-checklist/category-list-row-item.html %}
+                {% include _partial-checklist/category-list-row-item.html %}
+
+                {% include _partial-checklist/category-list-row-item.html %}
+                {% include _partial-checklist/category-list-row-item.html %}
+                {% include _partial-checklist/category-list-row-item.html %}
+
+                {% include _partial-checklist/category-list-row-item.html %}
+                {% include _partial-checklist/category-list-row-item.html %}
+                {% include _partial-checklist/category-list-row-item.html %}
+            </div>
+            <div class="product-list product-list-grid row">
+                {% include _partial-checklist/category-list-grid-item.html %}
+                {% include _partial-checklist/category-list-grid-item.html %}
+                {% include _partial-checklist/category-list-grid-item.html %}
+
+                {% include _partial-checklist/category-list-grid-item.html %}
+                {% include _partial-checklist/category-list-grid-item.html %}
+                {% include _partial-checklist/category-list-grid-item.html %}
+
+                {% include _partial-checklist/category-list-grid-item.html %}
+                {% include _partial-checklist/category-list-grid-item.html %}
+                {% include _partial-checklist/category-list-grid-item.html %}
+            </div>
+            <hr class="m-y-2">
+            <div class="list-controls m-b-3 row">
+                <!-- {% include _partial-checklist/pagination.html %} -->
+                {% include _partial-checklist/sort.html %}
+            </div>
         </div>
-          <!-- rightside end -->
+        <!-- rightside end --> 
     </div>
     <!-- row end -->
 </div>

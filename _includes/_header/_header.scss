@@ -1,229 +1,75 @@
 //header scss
 .top-bar{
-	width: 100%;
-	display: block;
-	min-height: 35px;
-	height: auto;
+
+	$topbar-height : 2rem;
+
+	position: relative;
+	z-index: 1001;
+	height: $topbar-height;
 	background-color: $gray-dark;
+
+	.list-inline-item:not(:last-child){
+		margin-right: .6rem;
+	}
 
 	.list-inline{
 		margin-bottom: 0;
-	}
-
-	ul{
-		li{
-			a{
-				padding:0 3px;
-				display: block;
-				line-height: 35px;
-				font-size: 14px;
+		
+		.list-inline-item{
+			color: white;
+			
+			&>span>a,
+			&>a{
+				line-height: 2rem!important;
+				font-size: .8rem;
+				display: inline-block;
 				color: white;
-				@include transition(all 0.3s ease-in-out);
+			}
 
-				&:hover, &:focus{
-					@include opacity(.8);
-				}
+			.flag-icon{
+				margin-right: .4rem;
 			}
 		}
 	}
 	
 	ul.pull-xs-right{
-		margin-bottom: 0;
-		li{
-			padding: 0;
-			float: left; 
-			a{
-				font-size: 12px;
-				display: inline-block;
-			}
-		}
-		li:first-child{
-			span{
-				small{
-					color: white;
-					padding: 0 $padding - 5px;
-				}
-				a{
-					@include transition(all 0.3s ease-in-out);
-					&:hover{
-						color: white;
-					}
-					&:focus{
-						color: white;
-					}
-				}
-			}
-		}
-		li:first-child::after{
-			content: "|";
-			padding-left: 13px;
-			font-size: 16px;
-			color: $link-color;
-			opacity: .15;
-		}
-		li:nth-child(2){
-			a{
-				color: white;
-				@include transition(all 0.3s ease-in-out);
-				padding: 0 $padding;
-				&:hover{
-					opacity: .5;
-				}
-			}
-			.dropdown-menu{
-				padding: $padding $padding+5px;
-				border-radius: 0;
-				
-				@include mobile-xs {
-					width: 280px;
-					margin: 0 $margin - 75px 0 0;
-				}
-				@include mobile {
-					width: 350px;
-					margin: 0;
-				}
-				li{
-					line-height: 0;
-					width: 100%;
-					.input-group{
-						.form-control{
-							box-shadow: none;
-							border-radius: 0;
-							&:focus{
-								border-color: $brand-primary;
-							}
-						}
-						.input-group-addon{
-							border-radius: 0;
-							background-color: $brand-primary;
-							color: white;
-							text-transform: uppercase;
-							font-size: $font-size-sm;
-							font-weight: 700;
-							border-color: $brand-primary;
-						}
-					}
-				}
-			}
-		}
+
 		li:last-child{
 			a{
 				background-color: $brand-primary;
-				line-height: 35px;
-				min-height: 36px;
-				font-size: $font-size-sm; 
-				color: white;
-				@include transition(all 0.3s ease-in-out);
-				@include mobile-xs {
-					padding: 0 $padding - 3px;
-				}
-				@include mobile {
-					padding: 0 $padding;
-				}
-				@include tablet {
-					padding: 0 $padding+9px;
-				}
+				padding: 0 .6rem;
+
 				i{
 					font-size: $font-size-sm;
 					margin-right: $margin;
 				}
-				&:hover{
-					background-color: $brand-primary;
-					@include opacity(1);
-				}
-				&:focus{
-					@include opacity(1);
-				}
-			}
-			ul.dropdown-menu{
-				background-color: $brand-primary;
-				border-radius: 0;
-				
-				margin: 0;
-				box-shadow: none;
-				border: none;
-				@include mobile-xs {
-					width: 280px;
-				}
-				@include mobile {
-					width: 300px;
-				}
-				li:first-child{
-					color: white;
-					padding: $padding 0 $padding - 2px $padding + 9px;
-				}
-				li{
-					a{
-						line-height: 26px;
-						.media{
-							@include add-border(1px, rgba(0, 0, 0, 0.1), bottom);
-							padding: $padding+2px 0;
-							.media-body{
-								h5{
-									color: white;
-									line-height: 20px;
-									letter-spacing: 1px;
-									span{
-										font-size: $font-size-sm; 
-									}
-								}
-							}
-						}
-						&:hover{
-							opacity: .8;
-							background-color: transparent;
-						}
-					}
-				}
-				li{
-					.btn-group{
-						padding: $padding+4px $padding+9px;
-						.btn{
-							border-radius: 0;
-							border: none;
-							height: 36px;
-							padding: 0;
-							line-height: 36px;
-							font-size: $font-size-sm;
-							font-weight: 700;
-							letter-spacing: 1px;
-							background-color: $btn-bg;
-							@include transition(all 0.3s ease-in-out);
-						}
-						button:first-child{
-							&:hover{
-								opacity: .8;
-							}
-							@include mobile-xs {
-								width: 135px;
-							}
-							@include mobile {
-								width: 149px;
-							}
-						}
-						button:last-child{
-							margin-left: $margin - 6px;
-							@include mobile-xs {
-								width: 100px;
-							}
-							@include mobile {
-								width: 109px;
-							}
-							&:hover{
-								opacity: .8;
-							}
-						}
-					}
-				}
 			}
 		}
+	}
+
+	.searchBox,
+	.search-box{
+		.dropdown-menu{
+			min-width: 320px;
+			padding: 0;
+			border: none;
+		}
+	}
+
+	.country-settings{
+		min-width: 320px;
+		padding: 0;
+		border: none;
+
 	}
 }
 
 
-ul.dropdown-menu.dropdown-menu-right {
-	z-index:1001;
-}
+
+
+// ul.dropdown-menu.dropdown-menu-right {
+// 	z-index:1001;
+// }
 
 //navigation scss
 .navbar {
