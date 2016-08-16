@@ -1,12 +1,92 @@
 .product-thumb{
     border: 1px solid $gray-lighter;
     
+    .image-container{
+        position: relative;
+    }
+    
+    .special-tags{
+        position: absolute;
+        top: 0;
+        right: auto;
+        bottom: auto;
+        left: 0;
+
+        padding: .5rem;
+        display: flex;
+
+        
+        &.tl{
+            
+        }
+
+        &.tr{
+            top: 0;
+            right: 0;
+            left: auto;
+        }
+
+        &.bl{
+            top: auto;
+            right: auto;
+            bottom: 0;
+            left: 0;
+        }
+
+        &.br{
+            top: auto;
+            right: 0;
+            bottom: 0;
+            left: auto;   
+        }
+
+        &.v{
+            flex-direction: column;
+
+            .special-tag{
+                margin-bottom: .5rem;
+            } 
+        }
+
+        &.h{
+            .special-tag{
+                display: inline-block;
+                margin-right: 0;
+            } 
+        }
+
+        .special-tag{
+            line-height: 1;
+            width: 3em;
+            height: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+            
+            &:last-child{
+                margin: 0!important;
+            }
+        }
+    }
+
     .square-container{
         border-bottom: 1px solid $gray-lighter;
     }
 
     .product-thumb-content{
-        padding: 1rem;
+        padding: .5rem;
+    }
+
+    .product-thumb-meta{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+            margin-right: 1rem;
+        }
     }
 
     .item-name{
@@ -17,7 +97,7 @@
         text-overflow: ellipsis;
         text-tarnsform: uppercase;
         max-height: 3em;
-        margin-bottom: .7rem;
+        margin-bottom: .5rem;
 
         &:after {
             content: "…";
@@ -28,6 +108,14 @@
             top: 1.5em;
             background-color: #fff;
         }
+    }
+
+    .crossprice{
+        line-height: 1;
+        font-size: .8em;
+        font-weight: 700;
+        color: $gray-light;
+
     }
 
     .hover-only{

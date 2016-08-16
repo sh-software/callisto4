@@ -1,7 +1,8 @@
 
 /// Element group with fixed aspect ration 1x1
 ///
-/// @example
+/// @example scss - Basic Usage Sass
+/// 
 ///     <div class="square-container">
 ///         <div class="square-inner">
 ///             Content here
@@ -26,7 +27,8 @@
 
 /// Class for centering direct single child. 
 ///
-/// @example
+/// @example scss - Basic Usage Sass
+/// 
 /// <div class="center-xy">
 ///     content to be centered
 /// </div>
@@ -43,7 +45,8 @@
 
 /// Element group for star rating
 ///
-/// @example
+/// @example scss - Basic Usage Sass
+/// 
 /// <fieldset class="star-rating">
 ///     <input type="radio" id="star5" name="rating" value="5" />
 ///        <label for="star5" title="5 Stars"></label>

@@ -18,6 +18,19 @@
         display: inline-block;
         text-decoration: none;
     }
+
+    .price {
+        display: block;
+        color: $brand-danger;
+        line-height: 1;
+    }
+
+    .vat {
+        line-height: 1.4;
+        margin-top: 0;
+        margin-bottom: .5em;
+        color:#020260;
+    }
 }
 
 .rating{
@@ -34,18 +47,7 @@
     }
 }
 
-.price {
-    display: block;
-    color: $brand-danger;
-    line-height: 1;
-}
 
-.vat {
-    line-height: 1.4;
-    margin-top: 0;
-    margin-bottom: .5em;
-    color:#020260;
-}
 
 .rezension {
     display: inline-block;
