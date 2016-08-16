@@ -4,14 +4,18 @@
 
 @import "variables";
 
+@import "../../bower_components/flag-icon-css/sass/flag-icon";
+
 // Common
 @import "common/zIndex-scale";
+@import "common/common";
 @import "common/shariff-theme-minimal";
 @import "common/buttons";
+@import "common/card";
 
 //to delete
 @import "mixins/media-query";
-@import "mixins/grid";
+//@import "mixins/grid";
 @import "mixins/mixins";
 
 //forms
@@ -27,6 +31,7 @@
 
 //pages
 @import "../_single/single";
+@import "../_single/product-thumb";
 
 //checkout
 @import "../_component-address-list/component-address-list";
@@ -35,6 +40,9 @@
 @import "../_component-basket-preview-item/style";
 @import "../_component-method-list/style";
 @import "../_component-totals/style";
+
+//my-account
+@import "../_component-order-item/styles";
 
 //other
 @import "../_partial-checklist/checklist";
