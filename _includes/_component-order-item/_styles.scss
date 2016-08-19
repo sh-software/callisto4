@@ -1,61 +1,8 @@
 .cmp-order-item{
+
+	@extend .cmp-basket-item; 
 	position: relative;
 	margin-bottom: 1em;
-
-	.item-main{
-		display: table;
-	}
-	
-	.item-image{
-		display: table-cell;
-		vertical-align: top;
-	}
-	
-	.item-details{
-		display: table-cell;
-		vertical-align: top;
-		padding-left: .5rem;
-	}
-
-	.item-name{
-	    position: relative;
-	    line-height: 1.5;
-	    font-weight: 700;
-	    overflow: hidden;
-	    text-overflow: ellipsis;
-	    height: 3em;
-	    display: block;
-
-	    &:after{
-			content: "…";
-			display: inline-block;
-			height: 50%;
-			position:absolute;
-			right: .25em;
-			bottom: 0; 
-			background-color: white;
-	    }
-	}
-
-	.item-total-price{
-		font-size: 1.5em;
-	    font-weight: 700;
-	    text-align: right;
-	}
-
-	.item-remove{
-		position: absolute;
-	    bottom: 1em;
-	    right: 0;
-	    line-height: 1;
-	    color: $gray-lighter;
-	    cursor: pointer;
-		transition: color 250ms;
-
-	    &:hover{
-	    	color: $brand-danger;
-	    }
-	}
 
 	@include media-breakpoint-up(sm){
 

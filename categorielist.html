@@ -20,30 +20,35 @@ layout: default
             </nav>
         </div>
         <!-- leftSide end -->
-
+            
         <!-- rightside start -->
         <div class="col-lg-9">
             <div class="list-controls row">
-                <!-- {% include _partial-checklist/subcategories.html %} -->
-                <!-- {% include _partial-checklist/pagination.html %} -->
                 {% include _partial-checklist/sort.html %}
             </div>
-            <hr class="m-y-2">
-            <div class="product-list product-list-rows row">
-                {% include _partial-checklist/category-list-row-item.html %}
-                {% include _partial-checklist/category-list-row-item.html %}
-                {% include _partial-checklist/category-list-row-item.html %}
-            </div>
-            <div class="product-list product-list-grid row">
-                {% include _partial-checklist/category-list-grid-item.html %}
-                {% include _partial-checklist/category-list-grid-item.html %}
-                {% include _partial-checklist/category-list-grid-item.html %}
 
-                {% include _partial-checklist/category-list-grid-item.html %}
-                {% include _partial-checklist/category-list-grid-item.html %}
-                {% include _partial-checklist/category-list-grid-item.html %}
-            </div>
+            <input type="checkbox" id="row-toggle" name="row-toggle" class="hidden">
+            <label for="row-toggle">toggle view</label>
+            
             <hr class="m-y-2">
+            
+            
+            <div class="product-list row">
+                {% include _partial-checklist/category-list-item.html %}
+                {% include _partial-checklist/category-list-item.html %}
+                {% include _partial-checklist/category-list-item.html %}
+
+                {% include _partial-checklist/category-list-item.html %}
+                {% include _partial-checklist/category-list-item.html %}
+                {% include _partial-checklist/category-list-item.html %}
+
+                {% include _partial-checklist/category-list-item.html %}
+                {% include _partial-checklist/category-list-item.html %}
+                {% include _partial-checklist/category-list-item.html %}
+            </div>
+            
+            <hr class="m-y-2">
+            
             <div class="list-controls m-b-3 row">
                 <!-- {% include _partial-checklist/pagination.html %} -->
                 {% include _partial-checklist/sort.html %}
