@@ -95,7 +95,6 @@
         text-overflow: ellipsis;
         text-tarnsform: uppercase;
         max-height: 3em;
-        margin-bottom: .5rem;
 
         &:after {
             content: "…";
@@ -108,22 +107,35 @@
         }
     }
 
+    .crossprice{
+        line-height: 1;
+        font-size: .8em;
+        font-weight: 700;
+        color: $gray-light;
+    }
+
+    .price {
+        color: $gray;
+        line-height: 1.1;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
     .thumb-meta{
         display: flex;
-        align-items: center;
+        flex-flow: row nowrap;
         justify-content: space-between;
+        align-items: flex-end;
 
-        .left{
-            margin-right: 1rem;
+        .prices{
+            display: flex;
+            flex-flow: row nowrap;
+            margin-top: .5rem;
         }
-
-        .crossprice{
-            line-height: 1;
-            font-size: .8em;
-            font-weight: 700;
-            color: $gray-light;
-        }
-
+    }
+    
+    .thumb-controls{
+        margin-top: .5rem;
     }
 
     &:hover{
@@ -201,14 +213,20 @@
             order: 1;
         }
 
+        .thumb-meta{
+            order:2;
+        }
+
+        .thumb-controls{
+            order: 3;
+            align-self: flex-end;
+        }
+
         .thumb-extras{
-            order: 2;
+            order: 4;
             flex: 1 0 auto;
         }
 
-        .thumb-meta{
-            order:3;
-        }
 
         
     }
