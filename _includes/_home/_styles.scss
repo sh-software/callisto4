@@ -1,0 +1,286 @@
+.img-responsiv {
+	width:100%; 
+	height:auto;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-flow: row nowrap;
+}
+
+
+.flex-column {
+	flex-flow: column nowrap;
+}
+
+.flex-w-50 {
+	flex: 1 0 50%;
+}
+
+
+
+
+.product-thumb-home{
+    
+    @include make-col-ready(3);
+    @include make-col(3);
+
+    .thumb-inner{
+        position: relative;
+        border: 1px solid $gray-lighter;
+        transition: all 400ms;
+    }
+    
+    .thumb-image{
+        position: relative;
+    }
+    
+    //TODO create separate mixin
+    .special-tags{
+        position: absolute;
+        top: 0;
+        right: auto;
+        bottom: auto;
+        left: 0;
+
+        padding: 1rem;
+        display: flex;
+        
+        &.tl{
+            
+        }
+
+        &.tr{
+            top: 0;
+            right: 0;
+            left: auto;
+        }
+
+        &.bl{
+            top: auto;
+            right: auto;
+            bottom: 0;
+            left: 0;
+        }
+
+        &.br{
+            top: auto;
+            right: 0;
+            bottom: 0;
+            left: auto;   
+        }
+
+        &.v{
+            flex-direction: column;
+
+            .special-tag{
+                margin-bottom: .5rem;
+            } 
+        }
+
+        &.h{
+            .special-tag{
+                display: inline-block;
+                margin-right: 0;
+            } 
+        }
+
+        .special-tag{
+            line-height: 1;
+            width: 3em;
+            height: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+            
+            &:last-child{
+                margin: 0!important;
+            }
+        }
+    }
+
+    .square-container{
+        border-bottom: 1px solid $gray-lighter;
+    }
+
+    .thumb-content{
+        padding: 1rem;
+    }
+
+    .thumb-title{
+        display: block;
+        position: relative;
+        font-weight: 700;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-tarnsform: uppercase;
+        max-height: 3em;
+        margin-bottom: .5rem;
+
+        &:after {
+            content: "…";
+            display: inline-block;
+            height: 50%;
+            position: absolute;
+            right: .25em;
+            top: 1.5em;
+            background-color: #fff;
+        }
+    }
+
+    .thumb-meta{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+            margin-right: 1rem;
+        }
+
+        .crossprice{
+            line-height: 1;
+            font-size: .8em;
+            font-weight: 700;
+            color: $gray-light;
+        }
+
+    }
+
+    &:hover{
+        
+        .thumb-inner{
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+        }
+
+    }
+
+    @include media-breakpoint-down(sm){
+
+        @include make-col(12);
+
+    }
+
+    @include media-breakpoint-up(md){
+
+        @include make-col-ready(6);
+        @include make-col(6);
+        
+    }
+
+    @include media-breakpoint-up(lg){
+        @include make-col-ready(3);
+        @include make-col(3);
+
+    }
+}
+
+
+.overlay-md-up {
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+        &:hover {
+            opacity: 1;
+        }
+}
+
+.overlay-categorie-md-up {
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+        
+        .overlay-categorie-sm-down {
+            opacity: 0;    
+        }
+
+
+
+
+
+
+
+@include media-breakpoint-down(sm){
+
+    .overlay-sm-down {
+        background: rgba(0,0,0,.5);
+        height: 5rem;
+        width: 100%;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        top: 0;        
+        opacity: 1;
+
+    }
+
+
+.overlay-categorie-sm-down {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
+    }
+
+
+    .overlay-categorie-md-up {
+        display:none;
+    }
+
+
+
+
+}
+
+
+
+
+
+    @include media-breakpoint-up(md){        
+    }
+
+    @include media-breakpoint-up(lg){
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
