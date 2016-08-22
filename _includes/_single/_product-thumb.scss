@@ -1,7 +1,8 @@
-.product-thumb{
+.cmp-product-thumb{
     
-    @include make-col-ready(6);
-    @include make-col(6);
+    overflow: visible;
+
+    @extend .m-b-1;
 
     .thumb-inner{
         position: relative;
@@ -146,23 +147,33 @@
 
     }
 
-    @include media-breakpoint-up(sm){
-        
-    }
 
-    @include media-breakpoint-up(md){
+}
 
-        @include make-col-ready(4);
-        @include make-col(4);
-        
-    }
+#listVidewToggle ~.product-list{
 
-    @include media-breakpoint-up(lg){
+    .product-thumb{
+        @include make-col-ready(6);
+        @include make-col(6);
+
+        @include media-breakpoint-up(sm){
         
+        }
+
+        @include media-breakpoint-up(md){
+
+            @include make-col-ready(4);
+            @include make-col(4);
+            
+        }
+
+        @include media-breakpoint-up(lg){
+            
+        }
     }
 }
 
-#row-toggle:checked ~ .product-list{
+#listViewToggle:checked ~ .product-list{
 
     //specific styles for rows layout
     .product-thumb{
