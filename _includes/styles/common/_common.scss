@@ -160,24 +160,3 @@
 }
 
 
-// button combinations 
-.btn-group.extended,
-.input-group.extended{
-    display: flex;
-
-    .extended{
-        flex: 1;
-
-        .btn{
-            width: 100%;
-        }
-    }
-
-    .input-group-btn{
-        width: auto;
-    }
-}
-
-.btn.btn-nohover{
-
-}
