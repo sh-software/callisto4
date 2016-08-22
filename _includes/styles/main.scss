@@ -7,11 +7,15 @@
 @import "../../bower_components/flag-icon-css/sass/flag-icon";
 
 // Common
+
 @import "common/zIndex-scale";
 @import "common/common";
 @import "common/shariff-theme-minimal";
 @import "common/buttons";
 @import "common/card";
+@import "components/component-base";
+@import "components/accordion";
+@import "../_component-toggle-list-view/style";
 
 //to delete
 @import "mixins/media-query";
@@ -32,6 +36,7 @@
 //pages
 @import "../_single/single";
 @import "../_single/product-thumb";
+@import "../_single/crosseller-thumb";
 @import "../_component-filters/style";
 
 //checkout
@@ -45,5 +50,5 @@
 //my-account
 @import "../_component-order-item/styles";
 
-//other
-@import "../_partial-checklist/checklist";
+// rating
+@import "../_component-ratings-roll/style";
