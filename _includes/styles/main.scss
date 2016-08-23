@@ -26,6 +26,11 @@
 @import "common/structure";
 @import "common/body-toggles";
 
+//forms
+@import "forms/input-groups";
+@import "forms/inputs";
+@import "forms/select";
+
 //globals
 @import "../_header/header";
 @import "../_component-breadcrumb/styles";
@@ -44,6 +49,7 @@
 @import "../_component-basket-preview-item/style";
 @import "../_component-method-list/style";
 @import "../_component-totals/style";
+@import "components/basket-preview";
 
 //my-account
 @import "../_component-order-item/styles";

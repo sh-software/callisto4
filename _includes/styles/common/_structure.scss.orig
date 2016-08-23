@@ -50,6 +50,15 @@ body {
 		transform 	: translateX(-100%);
 	}
 
+<<<<<<< HEAD
+	// .wrapper-overlay {
+	// 	bottom 	 	: 0;
+	// 	left 		: 0;
+	// 	position 	: fixed;
+	// 	right 		: 0;
+	// 	top 		: 0;
+	// }
+=======
 	&.open-right,
 	&.open-left,
 	&.open-top,
@@ -79,6 +88,7 @@ body {
 						transform 300ms 10ms ease-in-out;
 		}
 	}
+>>>>>>> master
 
 	@include media-breakpoint-up(sm){
 		&.open-right{

@@ -1,66 +1,68 @@
 body {
-	&[class*="open-"] {
-		>.wrapper-main:after{
-			background-color : rgba(255,255,255,.6);
-			bottom 			 : 0;
-			content 		 : '';
-			left 			 : 0;
-			position 		 : absolute;
-			right 			 : 0;
-			top 			 : 0;
-			z-index 		 : 1001;
-		}
-	}
-	&.open-top {
-		>.wrapper-top {
-			transform: translateY(100%);
-		}
-	}
-	&.open-right {
-		>.wrapper-right {
-			transform: translateX(-100%);
-		}
-		&.slide-main {		
-			>.wrapper-main {
-				transform: translateX(-88.3%);
-			}
-		}
-	}
-	&.open-bottom {
-		>.wrapper-bottom {
-			transform: translateY(-100%);
-		}
-	}
-	&.open-left {
-		>.wrapper-left {
-			transform: translateX(100%);
-		}
-	}
+	// &[class*="open-"] {
+	// 	>.wrapper-main:after{
+	// 		background-color : rgba(255,255,255,.6);
+	// 		bottom 			 : 0;
+	// 		content 		 : '';
+	// 		left 			 : 0;
+	// 		position 		 : absolute;
+	// 		right 			 : 0;
+	// 		top 			 : 0;
+	// 		z-index 		 : 1001;
+	// 	}
+	// }
 	
-	@include media-breakpoint-up(sm){
-		&[class*="open-"] {
-			&.open-top {
-				>.wrapper-top {}
-			}
-			&.open-right {
-				>.wrapper-right {}
-				>.wrapper-main {}
-			}
-			&.open-bottom {
-				>.wrapper-bottom {}
-			}
-			&.open-left {}
-		}
-	}
 
-	@include media-breakpoint-up(md){
-		&[class*="open-"] {
-			&.open-right.slide-main {
-				>.wrapper-main { transform: translateX(-300px); }
-			}
-		}
-	}
+	// &.open-top {
+	// 	>.wrapper-top {
+	// 		transform: translateY(100%);
+	// 	}
+	// }
+	// &.open-right {
+	// 	>.wrapper-right {
+	// 		transform: translateX(-100%);
+	// 	}
+	// 	&.slide-main {		
+	// 		>.wrapper-main {
+	// 			transform: translateX(-88.3%);
+	// 		}
+	// 	}
+	// }
+	// &.open-bottom {
+	// 	>.wrapper-bottom {
+	// 		transform: translateY(-100%);
+	// 	}
+	// }
+	// &.open-left {
+	// 	>.wrapper-left {
+	// 		transform: translateX(100%);
+	// 	}
+	// }
+	
+	// @include media-breakpoint-up(sm){
+	// 	&[class*="open-"] {
+	// 		&.open-top {
+	// 			>.wrapper-top {}
+	// 		}
+	// 		&.open-right {
+	// 			>.wrapper-right {}
+	// 			>.wrapper-main {}
+	// 		}
+	// 		&.open-bottom {
+	// 			>.wrapper-bottom {}
+	// 		}
+	// 		&.open-left {}
+	// 	}
+	// }
 
-	@include media-breakpoint-up(lg){
-	}
+	// @include media-breakpoint-up(md){
+	// 	&[class*="open-"] {
+	// 		&.open-right.slide-main {
+	// 			>.wrapper-main { transform: translateX(-300px); }
+	// 		}
+	// 	}
+	// }
+
+	// @include media-breakpoint-up(lg){
+	// }
 }

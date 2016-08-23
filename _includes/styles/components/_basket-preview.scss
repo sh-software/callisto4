@@ -1,0 +1,12 @@
+.basket-preview{
+
+	display: flex;
+    flex-flow: column nowrap;
+
+    .list{
+	    display: flex;
+	    flex-flow: column nowrap;
+    	flex: 0 1 auto;
+	    overflow: auto;
+    }
+}

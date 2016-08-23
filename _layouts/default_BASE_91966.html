@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  {% include _head/head.html %}
+
+  <body class="">
+
+    <div class="wrapper wrapper-top">
+      <!-- messages -->
+    </div>
+
+    <div class="wrapper wrapper-left">
+      <!-- filters -->
+    </div>
+
+    <div class="wrapper wrapper-main">
+      <!-- content -->
+      {% include _header/header.html %}
+
+      <div class="main">
+          {{ content }}
+
+
+
+      </div>
+
+      {% include _footer/footer.html %}
+
+      <div class="wrapper wrapper-overlay">
+         <!-- content -->
+      </div>
+
+    </div>
+
+    <div class="wrapper wrapper-right">
+        <!-- basket preview -->
+        <h2>basket preview</h2>
+        <a>close</a>
+        <hr/>
+        {% include _component-basket-preview-list/component-basket-preview-list.html %}
+    </div>
+
+    <div class="wrapper wrapper-bottom">
+      <!-- eventually messages -->
+    </div>
+
+    <!-- Dan -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Bootstrap 4 Alpha JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+    <script src="../dist/script/shariff.complete.js"></script>
+
+  </body>
+
+</html>
