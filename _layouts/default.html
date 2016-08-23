@@ -48,7 +48,73 @@
     </div>
 
     <div class="wrapper wrapper-bottom">
-        <!-- eventually messages --> </div>
+        <!-- eventually messages --> 
+        
+        <!-- LOGIN MODAL -->
+        <div class="modal fade login-modal" id="login" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title">Einloggen</h3>
+                    </div>
+                    <div class="modal-body">
+                        {% include _partial-forms/login.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="signup" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title">Account erstellen</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="POST" class="m-b-1">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="input-unit">
+                                        <input type="email" name="email" id="txt_email">
+                                        <label for="txt_email">E-Mail*</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6">
+                                    <div class="input-unit">
+                                        <input type="password" name="password" id="txt_pw">
+                                        <label for="txt_pw">Passwort*</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6">
+                                    <div class="input-unit">
+                                        <input type="password" name="password" id="txt_pwrepeat">
+                                        <label for="txt_pwrepeat">Passwort wiederholen*</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-8">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> <span>Passwort merken</span>
+                                    </label>
+                                    <div>
+                                        <a href="#" class="small">Passwort vergessen?</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button type="submit" class="btn btn-primary pull-xs-right">Senden</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- Dan -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

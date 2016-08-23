@@ -263,7 +263,7 @@ $caret-width-lg:         $caret-width !default;
 
 
 //Callisto 4 variables
-$aside-columns-width: 30em;
+$aside-columns-width: 320px;
 
 
 // Tables
@@ -465,7 +465,7 @@ $form-icon-danger: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www
 //
 // Dropdown menu container and contents.
 
-$dropdown-min-width:             320px !default;
+$dropdown-min-width:             160px !default;
 $dropdown-padding-y:             5px !default;
 $dropdown-margin-top:            2px !default;
 $dropdown-bg:                    #fff !default;
@@ -495,16 +495,16 @@ $dropdown-header-color:          $gray-light !default;
 
 // Z-Index Scale
 // --------------------------------------------------
-$zIndex-1:   100;
-$zIndex-2:   200;
-$zIndex-3:   300;
-$zIndex-4:   400;
-$zIndex-5:   500;
-$zIndex-6:   600;
-$zIndex-7:   700;
-$zIndex-8:   800;
-$zIndex-9:   900;
-$zIndex-10: 1000;
+$zIndex-1:   1000;
+$zIndex-2:   2000;
+$zIndex-3:   3000;
+$zIndex-4:   4000;
+$zIndex-5:   5000;
+$zIndex-6:   6000;
+$zIndex-7:   7000;
+$zIndex-8:   8000;
+$zIndex-9:   9000;
+$zIndex-10: 10000;
 
 // Z-index master list
 //
@@ -513,15 +513,15 @@ $zIndex-10: 1000;
 
 // TODO use values from Z-Index Scale above
 
-$zindex-dropdown-backdrop: $zIndex-1 - 10 !default;
-$zindex-navbar:            $zIndex-1;//1000 !default;
-$zindex-dropdown:          $zIndex-1;//1000 !default;
-$zindex-popover:           $zIndex-2;//1060 !default;
-$zindex-tooltip:           $zIndex-2;//1070 !default;
-$zindex-navbar-fixed:      $zIndex-3;//1030 !default;
-$zindex-navbar-sticky:     $zIndex-3;//1030 !default;
-$zindex-modal-bg:          $zIndex-4;//1040 !default;
-$zindex-modal:             $zIndex-4;//1050 !default;
+$zindex-dropdown-backdrop:  990 !default;
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-navbar-sticky:     1030 !default;
+$zindex-modal-bg:          1040 !default;
+$zindex-modal:             1050 !default;
 
 
 // Navbar
