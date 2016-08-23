@@ -1,13 +1,13 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
-var sassdoc = require('sassdoc');
-minifyCSS = require('gulp-minify-css');
+var gulp          = require('gulp');
+var sass          = require('gulp-sass');
+var sourcemaps    = require('gulp-sourcemaps');
+var autoprefixer  = require('gulp-autoprefixer');
+var sassdoc       = require('sassdoc');
+minifyCSS         = require('gulp-minify-css');
 
 
-var input = './_includes/**/*.scss';
-var output = './dist';
+var input   = './_includes/**/*.scss';
+var output  = './dist';
 
 var sassOptions = {
   errLogToConsole: true,

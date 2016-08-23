@@ -1,7 +1,8 @@
-.product-thumb{
+.cmp-product-thumb{
     
-    @include make-col-ready(6);
-    @include make-col(6);
+    overflow: visible;
+
+    @extend .m-b-1;
 
     .thumb-inner{
         position: relative;
@@ -95,7 +96,6 @@
         text-overflow: ellipsis;
         text-tarnsform: uppercase;
         max-height: 3em;
-        margin-bottom: .5rem;
 
         &:after {
             content: "…";
@@ -108,22 +108,35 @@
         }
     }
 
+    .crossprice{
+        line-height: 1;
+        font-size: .8em;
+        font-weight: 700;
+        color: $gray-light;
+    }
+
+    .price {
+        color: $gray;
+        line-height: 1.1;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
     .thumb-meta{
         display: flex;
-        align-items: center;
+        flex-flow: row nowrap;
         justify-content: space-between;
+        align-items: flex-end;
 
-        .left{
-            margin-right: 1rem;
+        .prices{
+            display: flex;
+            flex-flow: row nowrap;
+            margin-top: .5rem;
         }
-
-        .crossprice{
-            line-height: 1;
-            font-size: .8em;
-            font-weight: 700;
-            color: $gray-light;
-        }
-
+    }
+    
+    .thumb-controls{
+        margin-top: .5rem;
     }
 
     &:hover{
@@ -134,23 +147,33 @@
 
     }
 
-    @include media-breakpoint-up(sm){
-        
-    }
 
-    @include media-breakpoint-up(md){
+}
 
-        @include make-col-ready(4);
-        @include make-col(4);
-        
-    }
+#listVidewToggle ~.product-list{
 
-    @include media-breakpoint-up(lg){
+    .product-thumb{
+        @include make-col-ready(6);
+        @include make-col(6);
+
+        @include media-breakpoint-up(sm){
         
+        }
+
+        @include media-breakpoint-up(md){
+
+            @include make-col-ready(4);
+            @include make-col(4);
+            
+        }
+
+        @include media-breakpoint-up(lg){
+            
+        }
     }
 }
 
-#row-toggle:checked ~ .product-list{
+#listViewToggle:checked ~ .product-list{
 
     //specific styles for rows layout
     .product-thumb{
@@ -201,14 +224,20 @@
             order: 1;
         }
 
+        .thumb-meta{
+            order:2;
+        }
+
+        .thumb-controls{
+            order: 3;
+            align-self: flex-end;
+        }
+
         .thumb-extras{
-            order: 2;
+            order: 4;
             flex: 1 0 auto;
         }
 
-        .thumb-meta{
-            order:3;
-        }
 
         
     }
