@@ -1,3 +1,15 @@
+
+/// Default behaviour and styling for base component class.
+/// It has .wait and .done states while working for example 
+/// with REST Calls
+/// 
+/// @author Bruno Fenzl
+///
+/// @example scss - Basic Usage HTML
+/// 	<div class="cmp">
+/// 		component markup here 	
+/// 	</div>
+/// 	
 @mixin cmp(){
 	position: relative;
 	

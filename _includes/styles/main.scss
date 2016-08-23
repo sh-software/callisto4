@@ -21,12 +21,11 @@
 @import "mixins/media-query";
 //@import "mixins/grid";
 @import "mixins/mixins";
+@import "mixins/transitions";
 
-//forms
-@import "forms/input-groups";
-@import "forms/inputs";
-@import "forms/select";
-@import "../_partial-forms/forms";
+@import "common/buttons";
+@import "common/structure";
+@import "common/body-toggles";
 
 //globals
 @import "../_header/header";

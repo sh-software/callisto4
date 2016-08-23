@@ -1,5 +1,14 @@
+/// Basic stylings for the filters sidebar in the product overview
+/// 
+/// @author Bruno Fenzl
+///
+/// @example scss - Basic Usage HTML
+/// 	<div class="cmp">
+/// 		component markup here 	
+/// 	</div>
+/// 
 
-.cmp-filters{
+@mixin cmp-filters(){
 	
 	.filters-header{
 		padding: .5rem 1rem;
@@ -19,7 +28,17 @@
 			border-bottom: none;
 		}
 	}
+}
 
+.cmp-filters{
+	@include cmp-filters();
+	
+
+
+
+
+	//TODO Make generic color classes
+	//and generic color checkboxes
 	.filters-colors{
 		font-size: 0;
 		line-height: 0;
@@ -69,6 +88,8 @@
 		}
 	}
 }
+
+
 
 
 
