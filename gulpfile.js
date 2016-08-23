@@ -1,10 +1,21 @@
 var gulp          = require('gulp');
+
+// css related
 var sass          = require('gulp-sass');
 var sourcemaps    = require('gulp-sourcemaps');
 var autoprefixer  = require('gulp-autoprefixer');
 var sassdoc       = require('sassdoc');
 minifyCSS         = require('gulp-minify-css');
 
+//js related 
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+
+
+var scripts = [
+  'bower_components/shariff/build/shariff.complete.js',
+  '_includes/scripts/main.js'
+];
 
 var input   = './_includes/**/*.scss';
 var output  = './dist';
@@ -48,13 +59,22 @@ gulp.task('sassdoc', function () {
     .resume();
 });
 
+var _sources = scripts.slice( 0, 1 )
+  .concat( scripts.slice( 1 ) );
+
+gulp.task( 'scripts', [ 'minify'] );
+
+gulp.task( 'minify', function() {
+  return gulp.src( _sources )
+    .pipe( concat( 'main.js' ) )
+    .pipe( uglify() )
+    .pipe( gulp.dest( output + '/scripts/' ) );
+});
+
 gulp.task('watch', function() {
   return gulp
-    .watch(input, ['sass'])
-    .on('change', function(event) {
-      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-    });
+    .watch(input, ['sass', 'scripts'])
 });
 
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'scripts', 'watch']);
