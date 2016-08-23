@@ -181,7 +181,7 @@
 
 
 .overlay-md-up {
-    background: rgba(0,0,0,.5);
+    background: rgba(255,255,255,.5);
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -204,9 +204,11 @@
     transform: translate(-50%, -50%);
 }
         
-        .overlay-categorie-sm-down {
-            opacity: 0;    
-        }
+.overlay-categorie-sm-down {
+    opacity: 0;    
+}
+
+
 
 
 
@@ -217,7 +219,7 @@
 @include media-breakpoint-down(sm){
 
     .overlay-sm-down {
-        background: rgba(0,0,0,.5);
+        background: rgba(255,255,255,.5);
         height: 5rem;
         width: 100%;
         position: absolute;
@@ -253,20 +255,29 @@
 
 
 
-    @include media-breakpoint-up(md){        
-    }
+@include media-breakpoint-up(md){        
+    
+}
 
     @include media-breakpoint-up(lg){
+    .totop {
+    display: none;
+}
     }
 
 
 
 
 
-
-
-
-
+.totop {
+    width: 100%;
+    height: 4rem;
+    background-color: #373a3c;
+    color: #fff;
+    text-align: center;
+    padding: .5rem .5rem;
+    opacity:1;
+}
 
 
 
