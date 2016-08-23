@@ -1,0 +1,52 @@
+body {
+	>.wrapper {
+		@include transitions();
+	} 
+	.wrapper-top {
+		display 	: inline-block;
+		left 		: 0;
+		position 	: absolute;
+		right 		: 0;  
+		top 		: 0;
+	}
+	.wrapper-right {
+		background-color : $gray-darker; 
+		bottom 		: 0;
+		color 		: white;
+		display 	: inline-block;
+		left 		: 100%;
+		position 	: absolute;
+		top 	 	: 0;
+		z-index 	: 1100;
+		padding 	: 1em;
+	}
+	.wrapper-bottom {}
+	.wrapper-left {
+		bottom 		: 0; 
+		display 	: inline-block;
+		left 		: 0;
+		position 	: absolute;
+		top 		: 0;
+		transform 	: translateX(-100%);
+	}
+
+	.wrapper-overlay {
+		bottom 	 	: 0;
+		left 		: 0;
+		position 	: fixed;
+		right 		: 0;
+		top 		: 0;
+	}
+
+	@include media-breakpoint-up(sm){
+	}
+
+	@include media-breakpoint-up(md){
+		.wrapper-right {
+			width : 300px;
+		}
+	}
+
+	@include media-breakpoint-up(lg){
+	}
+}
