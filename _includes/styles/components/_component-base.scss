@@ -1,6 +1,5 @@
 @mixin cmp(){
 	position: relative;
-	overflow: hidden;
 	
 	&::before{
 		content: "";
