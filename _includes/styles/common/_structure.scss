@@ -41,7 +41,9 @@ body {
 		}
 	}
 	
-	.wrapper-bottom { }
+	.wrapper-bottom {
+		z-index 	: 2000;
+	}
 	
 	.wrapper-left {
 		top 		: 0;
