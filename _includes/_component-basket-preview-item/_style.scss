@@ -96,9 +96,5 @@
 	    line-height: 1;
 	    cursor: pointer;
 		transition: color 250ms;
-
-	    &:hover{
-	    	color: $brand-danger;
-	    }
 	}
 }
