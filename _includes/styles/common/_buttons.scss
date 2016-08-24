@@ -112,6 +112,14 @@
 		border-bottom-right-radius: $border-radius-sm;
 	}
 
+	&.label-right{
+		.btn-label {
+			right: auto;
+			left: -#{$btn-padding-x-sm};
+		}
+	}
+
+
 	&.btn-link{
 		padding-left: 0;
 		padding-right: 0;
@@ -119,7 +127,6 @@
 		.btn-label{
 			background-color: rgba(0,0,0,0);
 			padding: $btn-padding-y-sm 0;
-			right: 0;
 		}
 	}
 }
