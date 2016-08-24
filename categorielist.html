@@ -163,13 +163,21 @@ layout: default
 
         <!-- rightside start -->
         <div class="col-lg-9">
-            <div class="list-controls row">
-                {% include _partial-checklist/sort.html %}
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Kategoriename</h1>
+                    <hr>
+                </div>
             </div>
 
-            <div class="row">
-                
-            </div>
+            <div class="list-controls row">
+                <div class="col-md-7">
+                    {% include _partial-checklist/sort.html %}
+                </div>
+                <div class="col-md-5">
+                    {% include _component-paginator/component-paginator.html %}
+                </div>
+            </div>            
 
             {% include _component-toggle-list-view/component-toggle-list-view.html %}
             
@@ -192,8 +200,7 @@ layout: default
             <hr class="m-y-2">
             
             <div class="list-controls m-b-3 row">
-                <!-- {% include _partial-checklist/pagination.html %} -->
-                {% include _partial-checklist/sort.html %}
+                {% include _component-paginator/component-paginator.html %}
             </div>
         </div>
         <!-- rightside end --> 

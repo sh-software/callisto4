@@ -1,0 +1,3 @@
+@mixin transitions($param: "all .3s ease-out") {
+	transition: unquote($param);
+}

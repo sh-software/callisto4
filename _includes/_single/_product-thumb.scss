@@ -150,9 +150,9 @@
 
 }
 
-#listVidewToggle ~.product-list{
+#listViewToggle ~ .product-list{
 
-    .product-thumb{
+    .cmp-product-thumb{
         @include make-col-ready(6);
         @include make-col(6);
 
@@ -176,7 +176,7 @@
 #listViewToggle:checked ~ .product-list{
 
     //specific styles for rows layout
-    .product-thumb{
+    .cmp-product-thumb{
         @include make-col-ready(12);
         @include make-col(12);
 

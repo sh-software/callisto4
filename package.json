@@ -35,6 +35,8 @@
   },
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^2.0.0",
     "shariff": "^1.24.0"
   }
 }
