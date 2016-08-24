@@ -9,7 +9,7 @@
 title: Callisto 4 Demo Templates
 email: bruno@brunofenzl.com
 
-baseurl: "/callisto4" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://frontend-studios.github.io" # the base hostname & protocol for your site
 
 # Build settings
