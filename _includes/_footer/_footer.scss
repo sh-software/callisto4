@@ -6,8 +6,7 @@
 
 .footer{
 	display: block;
-	background-color: $gray-dark;
-	border-top: .5em solid $brand-primary;
+	background-color: #171F24;
 
 	.footerLink{
 		@include mobile-xs{
@@ -23,26 +22,37 @@
 			margin-bottom: 0;
 		}
 		h5{
-			color: $gray;
+			color: #FFF;
 			text-transform: uppercase;
 			margin-bottom: 1rem;
 		}
 		ul{
 			li{
-				color: $gray-light;
-				font-size: 12px;
+				color:#dcdbd8;
+				font-size: $font-size-sm;
 				line-height: 20px;
 				a{
-					color: $gray-light;
-					font-size: $font-size-sm;
-					line-height: 20px;
+					color: #dcdbd8;
 					&:hover{
-						color: $gray-light;
+						color: #7A7F7F;
 					}
 				}
 			}
 		}
+		p {
+		color:#dcdbd8;
+		font-size: $font-size-sm;
+		line-height: 20px;
+		margin-bottom: 0;
+			a{
+			color: #dcdbd8;
+				&:hover{
+					color: #7A7F7F;
+				}
+			}
+		}
 	}
+
 
 	.newsletter{
 		h4, p{
@@ -152,46 +162,125 @@
 	// }
 }
 
-.copyRight{
-	display: block;
-	width: 100%;
-	min-height: 53px;
-	background-color: #101010;
-
+.copyright{	
 	p{
-		color: $gray-light;
+		color: #dcdbd8;
 		margin-bottom: 0;
-		@include mobile-xs{
-			text-align: center;
-			line-height: 45px;
-			font-size: $font-size-base;
-		}
-		@include mobile{
-			text-align: center;
-			line-height: 45px;
-			font-size: $font-size-base;
-		}
-		@include tablet{
-			text-align: left;
-			line-height: 53px;
-		}
-	}
-
-	ul{
-		@include mobile-xs{
-			text-align: center;
-		}
-		@include mobile{
-			text-align: center;
-		}
-		@include tablet{
-			text-align: right;
-		}
+		font-size: $font-size-sm;
 		
-		li{
-			a{
-				display: block;
-				font-size: 14px;
+		a {
+			color:#dcdbd8;
+			&:hover {
+			color: #7A7F7F;
+			}
+		}	
+	}
+
+}
+
+
+
+// 	.socialbar{
+// 			.orientation-horizontal {
+// 			 justify-content: center;
+// 				li {
+// 					max-width:50px!important;
+// 					text-align: center!important;
+// 					width: 30px !important;
+// 					margin-bottom:0px!important;	
+// 				}
+// 			}
+			
+// 			.orientation-horizontal { 
+// 			 justify-content: flex-start;
+// 				li {
+// 					min-width: 35px !important;
+// 					margin-bottom:0px!important;
+// 				}
+// 			}
+
+// 			span.share_text {
+// 			    display: none!important;
+// 	}
+// }
+			
+// 			.shariff-button a {
+// 			line-height: 0!important;
+// 			}
+
+
+.footerLink {
+	.shariff {
+	.orientation-vertical {
+		text-align: center;
+		li {
+			width: 35px;
+			margin:5px 0;
+		}
+	}
+		ul {
+			.shariff-button {
+				a {
+					background-color: #dcdbd8;
+					color:#171F24;
+					&:hover {					
+						color:#fff;
+						-moz-transition: opacity, 0.5s, ease;
+						-o-transition: opacity, 0.5s, ease;
+						-webkit-transition: opacity, 0.5s, ease;
+						-ms-transition: opacity, 0.5s, ease;
+						transition: opacity, 0.5s, ease;
+					}
+				}
+			}
+			.twitter {
+				a {
+					&:hover {
+						background-color: #55acee;			
+					}
+				}
+			}
+			.facebook {
+				a {
+					&:hover {
+						background-color: #3b5998;
+					}
+				}
+			}
+			.googleplus {
+				a {
+					&:hover {
+						background-color: #d34836;
+					}
+				}
+			}
+			.pinterest {
+				a {
+					&:hover {
+						background-color: #bd081c;
+					}
+				}
+			}
+		}
+	}
+}
+
+.payment_line {
+	div {
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+		&:hover {
+			-moz-transition: opacity, 0.5s, ease;
+			-o-transition: opacity, 0.5s, ease;
+			-webkit-transition: opacity, 0.5s, ease;
+			-ms-transition: opacity, 0.5s, ease;
+			transition: opacity, 0.5s, ease;
+			-webkit-filter: grayscale(0);
+			filter: grayscale(0);
+		}
+		a {
+			img {
+				margin-right: 15px;
 			}
 		}
 	}
@@ -199,30 +288,3 @@
 
 
 
-	.socialbar{
-			.orientation-horizontal {
-			 justify-content: center;
-				li {
-					max-width:50px!important;
-					text-align: center!important;
-					width: 30px !important;
-					margin-bottom:0px!important;	
-				}
-			}
-			
-			.orientation-horizontal { 
-			 justify-content: flex-start;
-				li {
-					min-width: 35px !important;
-					margin-bottom:0px!important;
-				}
-			}
-
-			span.share_text {
-			    display: none!important;
-	}
-}
-			
-			.shariff-button a {
-			line-height: 0!important;
-			}
