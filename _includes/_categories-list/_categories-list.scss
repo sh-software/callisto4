@@ -1,0 +1,14 @@
+.categories-list{
+
+}
+
+.page-infos{
+	display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+
+    .product-count{
+    	flex: 1;
+    }
+}
