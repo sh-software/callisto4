@@ -1,8 +1,4 @@
-#listViewToggle{
-	display: none;
-}
-
-.cmp-toggle-list-view{
+.toggle-list-view{
 	
 	.fa{
 		display: block;
@@ -16,15 +12,16 @@
 	.fa:nth-of-type(2){
 		color: $brand-primary;
 	}
+	
 
-}
+	&.grid-view{
+		.fa:nth-of-type(1){
+			color: $brand-primary;
+		}
 
-#listViewToggle:checked + .cmp-toggle-list-view{
-	.fa:nth-of-type(1){
-		color: $brand-primary;
+		.fa:nth-of-type(2){
+			color: $gray-light;
+		}
 	}
-
-	.fa:nth-of-type(2){
-		color: $gray-light;
-	}
+	
 }
