@@ -1,14 +1,54 @@
 .categories-list{
-
+	
 }
 
 .page-infos{
 	display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    
 
     .product-count{
     	flex: 1;
     }
+}
+
+.product-list{
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 0;
+
+	display: flex;
+	flex-flow: row wrap;
+
+	li{
+		@include make-col-ready(12);
+        @include make-col(12);
+        @extend .m-b-1;
+        display: flex;
+	}
+}
+
+@include media-breakpoint-up(sm){
+    .product-list.grid{
+
+    	li{
+            @include make-col(6);
+            display: flex;
+    	}
+
+    }
+}
+
+@include media-breakpoint-up(md){
+    .product-list.grid{
+
+        li{
+            @include make-col(4);
+            display: flex;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg){
+    
 }

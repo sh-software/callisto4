@@ -221,24 +221,28 @@ layout: default
             
             <hr class="m-b-1 hidden-sm-down">
             
-            <div class="product-list row">
-                {% include _partial-checklist/category-list-item.html %}
-                {% include _partial-checklist/category-list-item.html %}
-                {% include _partial-checklist/category-list-item.html %}
+            <ul class="product-list row grid">
 
-                {% include _partial-checklist/category-list-item.html %}
-                {% include _partial-checklist/category-list-item.html %}
-                {% include _partial-checklist/category-list-item.html %}
+                <li>{% include _partial-checklist/category-list-item.html %}</li>
+                <li>{% include _partial-checklist/category-list-item.html %}</li>
+                <li>{% include _partial-checklist/category-list-item.html %}</li>
 
-                {% include _partial-checklist/category-list-item.html %}
-                {% include _partial-checklist/category-list-item.html %}
-                {% include _partial-checklist/category-list-item.html %}
-            </div>
+                <li>{% include _partial-checklist/category-list-item.html %}</li>
+                <li>{% include _partial-checklist/category-list-item.html %}</li>
+                <li>{% include _partial-checklist/category-list-item.html %}</li>
+
+                <li>{% include _partial-checklist/category-list-item.html %}</li>
+                <li>{% include _partial-checklist/category-list-item.html %}</li>
+                <li>{% include _partial-checklist/category-list-item.html %}</li>
+
+            </ul>
             
             <hr class="m-y-2">
             
             <div class="list-controls m-b-3 row">
-                {% include _component-paginator/component-paginator.html %}
+                <div class="col-xs-12">
+                    {% include _component-paginator/component-paginator.html %}
+                </div>
             </div>
         </div>
         <!-- rightside end --> 
