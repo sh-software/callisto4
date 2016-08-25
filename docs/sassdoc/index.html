@@ -1,4 +1,26 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Callisto4 - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Callisto4 - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title"><a href="http://www.frontend-studios.de">Callisto4 - v1.0.0</a></h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="square-container" data-type="mixin"><a href="#undefined-mixin-square-container">square-container</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="center-xy" data-type="mixin"><a href="#undefined-mixin-center-xy">center-xy</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="star-rating" data-type="mixin"><a href="#undefined-mixin-star-rating">star-rating</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-square-container"><h3 class="item__heading"><a class="item__name" href="#mixin-square-container">square-container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin square-container() { 
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Callisto4 - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Callisto4 - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title"><a href="http://www.frontend-studios.de">Callisto4 - v1.0.0</a></h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="cmp-filters" data-type="mixin"><a href="#undefined-mixin-cmp-filters">cmp-filters</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="square-container" data-type="mixin"><a href="#undefined-mixin-square-container">square-container</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="center-xy" data-type="mixin"><a href="#undefined-mixin-center-xy">center-xy</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="star-rating" data-type="mixin"><a href="#undefined-mixin-star-rating">star-rating</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="cmp" data-type="mixin"><a href="#undefined-mixin-cmp">cmp</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-cmp-filters"><h3 class="item__heading"><a class="item__name" href="#mixin-cmp-filters">cmp-filters</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin cmp-filters() { 
+	
+	.filters-header{
+		padding: .5rem 1rem;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+
+	    .title{
+	    	flex: 1;
+	    }
+	}
+
+	.filters-section{
+		border-bottom: 1px solid $gray-lighter;
+
+		&amp;:last-of-type{
+			border-bottom: none;
+		}
+	}
+ }" data-collapsed="@mixin cmp-filters() { ... }"><code>@mixin cmp-filters() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Basic stylings for the filters sidebar in the product overview</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Basic Usage HTML</p></div><pre class="example__code language-scss"><code>&lt;div class=&quot;cmp&quot;&gt;
+	component markup here 	
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Bruno Fenzl</p></li></ul></section><section class="main__item container item" id="undefined-mixin-square-container"><h3 class="item__heading"><a class="item__name" href="#mixin-square-container">square-container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin square-container() { 
     position: relative;
     display: block;
     width: 100%;
@@ -12,7 +34,7 @@
         bottom: 0;
         left: 0;
     }
- }" data-collapsed="@mixin square-container() { ... }"><code>@mixin square-container() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Element group with fixed aspect ration 1x1</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Basic Usage CSS Output</p></div><pre class="example__code language-scss"><code>&lt;div class=&quot;square-container&quot;&gt;
+ }" data-collapsed="@mixin square-container() { ... }"><code>@mixin square-container() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Element group with fixed aspect ration 1x1</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Basic Usage HTML</p></div><pre class="example__code language-scss"><code>&lt;div class=&quot;square-container&quot;&gt;
     &lt;div class=&quot;square-inner&quot;&gt;
         Content here
     &lt;/div&gt;
@@ -24,7 +46,7 @@
     img{
         align-self: center; // center on the y axys
     }
- }" data-collapsed="@mixin center-xy() { ... }"><code>@mixin center-xy() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Class for centering direct single child.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Basic Usage CSS Output</p></div><pre class="example__code language-scss"><code>&lt;div class=&quot;center-xy&quot;&gt;
+ }" data-collapsed="@mixin center-xy() { ... }"><code>@mixin center-xy() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Class for centering direct single child.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Basic Usage HTML</p></div><pre class="example__code language-scss"><code>&lt;div class=&quot;center-xy&quot;&gt;
     content to be centered
 &lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Bruno Fenzl</p></li></ul></section><section class="main__item container item" id="undefined-mixin-star-rating"><h3 class="item__heading"><a class="item__name" href="#mixin-star-rating">star-rating</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin star-rating($default-color: $gray-lighter, $selected-color: #FFD700, $hover-color: #FFED85) { 
     border: none;
@@ -73,7 +95,7 @@
         float:right;
         margin-left: .25em;
     }
- }" data-collapsed="@mixin star-rating($default-color: $gray-lighter, $selected-color: #FFD700, $hover-color: #FFED85) { ... }"><code>@mixin star-rating($default-color: $gray-lighter, $selected-color: #FFD700, $hover-color: #FFED85) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Element group for star rating</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$default-color</code></th><td data-label="desc"><p>Normal color of the star. Defaults to the Bootstrap var $gray-lighter.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code>$gray-lighter</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$selected-color</code></th><td data-label="desc"><p>Selected color of the star. Defaults to #FFD700.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#FFD700; color: #000">#FFD700</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$hover-color</code></th><td data-label="desc"><p>Hover color of the star. Defaults to #FFED85.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#FFED85; color: #000">#FFED85</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Basic Usage CSS Output</p></div><pre class="example__code language-css"><code>&lt;fieldset class=&quot;star-rating&quot;&gt;
+ }" data-collapsed="@mixin star-rating($default-color: $gray-lighter, $selected-color: #FFD700, $hover-color: #FFED85) { ... }"><code>@mixin star-rating($default-color: $gray-lighter, $selected-color: #FFD700, $hover-color: #FFED85) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Element group for star rating</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$default-color</code></th><td data-label="desc"><p>Normal color of the star. Defaults to the Bootstrap var $gray-lighter.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code>$gray-lighter</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$selected-color</code></th><td data-label="desc"><p>Selected color of the star. Defaults to #FFD700.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#FFD700; color: #000">#FFD700</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$hover-color</code></th><td data-label="desc"><p>Hover color of the star. Defaults to #FFED85.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#FFED85; color: #000">#FFED85</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Basic Usage HTML</p></div><pre class="example__code language-css"><code>&lt;fieldset class=&quot;star-rating&quot;&gt;
     &lt;input type=&quot;radio&quot; id=&quot;star5&quot; name=&quot;rating&quot; value=&quot;5&quot; /&gt;
         &lt;label for=&quot;star5&quot; title=&quot;5 Stars&quot;&gt;&lt;/label&gt;
     &lt;input type=&quot;radio&quot; id=&quot;star4-5&quot; name=&quot;rating&quot; value=&quot;4.5&quot; /&gt;
@@ -94,4 +116,67 @@
         &lt;label for=&quot;star1&quot; title=&quot;1 Star&quot;&gt;&lt;/label&gt;
     &lt;input type=&quot;radio&quot; id=&quot;star0-5&quot; name=&quot;rating&quot; value=&quot;0.5&quot; /&gt;
         &lt;label for=&quot;star0-5&quot; title=&quot;0.5 Star&quot;&gt;&lt;/label&gt;
-&lt;/fieldset&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Bruno Fenzl</p></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --><a class="project-info__name" href="http://www.frontend-studios.de">Callisto4</a><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
+&lt;/fieldset&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Bruno Fenzl</p></li></ul></section><section class="main__item container item" id="undefined-mixin-cmp"><h3 class="item__heading"><a class="item__name" href="#mixin-cmp">cmp</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin cmp() { 
+	position: relative;
+	
+	&amp;::before{
+		content: &quot;&quot;;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		z-index: $zIndex-8;
+		opacity: 0;
+		background-color: rgba(0, 0, 0, .6);
+
+		transition: opacity 300ms,
+					width 0ms 310ms,
+					height 0ms 310ms;
+	}
+
+	&amp;::after{
+		content: &quot;Loading…&quot;;
+		color: white;
+		font-weight: 700;
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: $zIndex-9;
+		opacity: 0;
+		visibility: hidden;
+		transform: translate(-50%, -50%);
+
+		transition: opacity 300ms,
+					visibility 0ms 310ms,;
+	}
+
+	&amp;.wait{
+		pointer-events: none;
+		
+		&amp;::before{
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+
+			transition: width 0ms,
+						height 0ms,
+						opacity 300ms 10ms;
+		}
+
+		&amp;::after{
+			opacity: 1;
+			visibility: visible;
+			transition: visibility 0ms,
+						opacity 300ms 100ms;
+		}
+	}
+
+	&amp;.done{
+		
+	}
+
+ }" data-collapsed="@mixin cmp() { ... }"><code>@mixin cmp() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Default behaviour and styling for base component class. It has .wait and .done states while working for example with REST Calls</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Basic Usage HTML</p></div><pre class="example__code language-scss"><code>&lt;div class=&quot;cmp&quot;&gt;
+	component markup here 	
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Bruno Fenzl</p></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --><a class="project-info__name" href="http://www.frontend-studios.de">Callisto4</a><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

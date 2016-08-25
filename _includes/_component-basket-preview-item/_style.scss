@@ -94,12 +94,6 @@
 		position: absolute;
 	    bottom: 0;
 	    line-height: 1;
-	    color: $gray-light;
 	    cursor: pointer;
-		transition: color 250ms;
-
-	    &:hover{
-	    	color: $brand-danger;
-	    }
 	}
 }

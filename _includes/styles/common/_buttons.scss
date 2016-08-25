@@ -89,16 +89,44 @@
 //     Success
 // </button>
 
-.btn-label {
-	position: relative;
-	left: -12px;
-	display: inline-block;
-	padding: 6px 12px;
-	background: rgba(0,0,0,0.15);
-	border-radius: 3px 0 0 3px;
+
+.btn-remove{
+
 }
 
 .btn-labeled {
 	padding-top: 0;
-	padding-bottom: 0;
+    padding-bottom: 0;
+	
+	@extend .small;
+
+	transition: all 200ms;
+
+	.btn-label {
+		position: relative;
+		right: -#{$btn-padding-x-sm};
+		display: inline-block;
+		padding: $btn-padding-y-sm $btn-padding-x-sm;
+		background-color: rgba(0,0,0,0.15);
+		border-top-right-radius: $border-radius-sm;
+		border-bottom-right-radius: $border-radius-sm;
+	}
+
+	&.label-right{
+		.btn-label {
+			right: auto;
+			left: -#{$btn-padding-x-sm};
+		}
+	}
+
+
+	&.btn-link{
+		padding-left: 0;
+		padding-right: 0;
+
+		.btn-label{
+			background-color: rgba(0,0,0,0);
+			padding: $btn-padding-y-sm 0;
+		}
+	}
 }

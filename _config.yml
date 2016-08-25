@@ -10,9 +10,9 @@ title: Callisto 4 Demo Templates
 email: bruno@brunofenzl.com
 
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://frontend-studios.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-include: [/dist]
+include: [dist/scripts/, dist/styles/, dist/images, dist/fonts]
 exclude: [/node_modules, /bower_components, bower.json, package.json, /css]

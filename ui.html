@@ -1,17 +1,345 @@
-
 ---
 layout: default
 ---
 <div class="ui-examples container">
+	
+	<section class="m-y-3">
+		<h5>Buttons</h5>
+		<hr>
+		<div class="row">
+			
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<button class="btn btn-sm btn-outline-primary btn-block">
+                    Warenkorb
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </button>
+			</div>
 
-	<div class="btn-group extended">
-		<span class="btn btn-primary btn-sm btn-nohover">
-			4.5 <i class="fa fa-star"></i>
-		</span>
-		<button class="btn btn-sm btn-outline-primary extended" style=" flex: 1;">
-			Warenkorb <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-		</button>
-	</div>
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<div class="input-group extended">
+                    <div class="input-group-btn extended">
+                        <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Farbe
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Rot</a>
+                            <a class="dropdown-item" href="#">Grün</a>
+                            <a class="dropdown-item" href="#">Blau</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Schwarz</a>
+                        </div>
+                    </div>
+                    <span class="input-group-btn">
+                        <button class="btn btn-sm btn-primary">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                </div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<div class="btn-group extended">
+                    
+                    <input type="text" name="quant[1]" class="form-control input-number btn-sm" value="1" min="1" max="10">
+                    <span class="input-group-btn btn-group extended">
+                        <button type="button" class="btn btn-outline-primary btn-sm btn-number" data-type="plus" data-field="quant[1]">
+                            <span class="fa fa-plus"></span>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary btn-sm btn-number" data-type="minus" data-field="quant[1]">
+                            <span class="fa fa-minus"></span>
+                        </button>
+                        <button class="btn btn-sm btn-primary">
+                            Warenkorb
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                </div>
+			</div>
+		</div>
+		
+	</section>
+
+
+
+	<section class="m-y-3">
+		<h5>Labeled Buttons</h5>
+		<hr>
+		<div class="row">
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				
+                <button type="button" class="item-remove btn btn-labeled label-right btn-primary btn-sm">
+				    <span class="btn-label">
+				        4.5 <i class="fa fa-star"></i>
+				    </span>
+					<span class="message">
+				    	Warenkorb
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					</span>
+			    </button>
+
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<button type="button" class="item-remove btn btn-labeled btn-outline-primary btn-sm">
+					<span class="message">
+				    	Instant Buy
+					</span>
+				    <span class="btn-label">
+				        <i class="fa fa-bolt"></i>
+				    </span>
+			    </button>
+
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3">
+
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3">
+
+			</div>
+		</div>
+	</section>
+
+	<section class="m-y-3">
+		<h5>Rating</h5>
+		<hr>
+		<div class="row">
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+				<div class="rating">
+                    <span class="tag tag-success"> <i class="fa fa-star"></i>
+                        4.5
+                        <span class="amount">357</span>
+                    </span>
+                </div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+				<fieldset class="star-rating">
+	                <input type="radio" id="star5" name="rating" value="5" />
+	                <label for="star5" title="5 Stars"></label>
+	                <input type="radio" id="star4-5" name="rating" value="4.5" checked/>
+	                <label for="star4-5" title="4.5 Stars"></label>
+	                <input type="radio" id="star4" name="rating" value="4" />
+	                <label for="star4" title="4 Stars"></label>
+	                <input type="radio" id="star3-5" name="rating" value="3.5" />
+	                <label for="star3-5" title="3.5 Stars"></label>
+	                <input type="radio" id="star3" name="rating" value="3" />
+	                <label for="star3" title="3 Stars"></label>
+	                <input type="radio" id="star2-5" name="rating" value="2.5" />
+	                <label for="star2-5" title="2.5 Stars"></label>
+	                <input type="radio" id="star2" name="rating" value="2" />
+	                <label for="star2" title="2 Stars"></label>
+	                <input type="radio" id="star1-5" name="rating" value="1.5" />
+	                <label for="star1-5" title="1.5 Stars"></label>
+	                <input type="radio" id="star1" name="rating" value="1" />
+	                <label for="star1" title="1 Star"></label>
+	                <input type="radio" id="star0-5" name="rating" value="0.5" />
+	                <label for="star0-5" title="0.5 Star"></label>
+	            </fieldset>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3">
+
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3">
+
+			</div>
+		</div>
+	</section>
+
+	<section class="m-y-3">
+		<h5>Responsive Accordion</h5>
+		<hr>
+		<div class="row">
+			<div class="col-md-6 m-b-3">
+				<div class="cmp cmp-accordion active-md-down">
+                        
+					<div class="bg-faded">
+
+                        <input type="checkbox" id="accordionHeader1" class="accordion-control" value="">
+                        <label for="accordionHeader1" class="m-b-0 accordion-header bg-primary card-header font-weight-bold">Preis</label>
+                        
+                        <div class="accordion-content">
+                            <div class="card-block">
+	                            <p>
+	                            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ipsum eu odio fringilla venenatis. Praesent ipsum mauris, porttitor quis libero a, luctus imperdiet nulla. Quisque purus mauris.
+	                            </p>
+	                        </div>
+                        </div>
+
+                    </div>
+
+					<div class="bg-faded">
+
+                        <input type="checkbox" id="accordionHeader2" class="accordion-control" value="">
+                        <label for="accordionHeader2" class="m-b-0 accordion-header bg-primary card-header font-weight-bold">Stückzahl</label>
+                        
+                        <div class="accordion-content">
+                            <div class="card-block">
+	                            <p>
+	                            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ipsum eu odio fringilla venenatis. Praesent ipsum mauris, porttitor quis libero a, luctus imperdiet nulla. Quisque purus mauris.
+	                            </p>
+	                        </div>
+                        </div>
+
+                    </div>
+
+					<div class="bg-faded ">
+                        
+                        <input type="checkbox" id="accordionHeader3" class="accordion-control" value="">
+                        <label for="accordionHeader3" class="m-b-0 accordion-header bg-primary card-header font-weight-bold">Farben</label>
+                        
+                        <div class="accordion-content">
+	                        <div class="card-block">
+	                            <p>
+	                            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ipsum eu odio fringilla venenatis. Praesent ipsum mauris, porttitor quis libero a, luctus imperdiet nulla. Quisque purus mauris.
+	                            </p>
+	                        </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-faded">
+
+                        <input type="checkbox" id="accordionHeader4" class="accordion-control" value="">
+                        <label for="accordionHeader4" class="m-b-0 accordion-header bg-primary card-header font-weight-bold">Marken</label>
+                        
+                        <div class="accordion-content">
+                            <div class="card-block">
+	                            <p>
+	                            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ipsum eu odio fringilla venenatis. Praesent ipsum mauris, porttitor quis libero a, luctus imperdiet nulla. Quisque purus mauris.
+	                            </p>
+	                        </div>
+                        </div>
+
+                    </div>
+                </div>
+			</div>
+
+
+
+
+			
+			<div class="col-md-6 m-b-3">
+				<div class="cmp cmp-accordion active-lg-up">
+                        
+					<div class="bg-faded">
+
+                        <input type="checkbox" id="accordionHeader11" class="accordion-control" value="">
+                        <label for="accordionHeader11" class="m-b-0 accordion-header bg-success card-header font-weight-bold">Preis</label>
+                        
+                        <div class="accordion-content">
+                            <div class="card-block">
+	                            <p>
+	                            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ipsum eu odio fringilla venenatis. Praesent ipsum mauris, porttitor quis libero a, luctus imperdiet nulla. Quisque purus mauris.
+	                            </p>
+	                        </div>
+                        </div>
+
+                    </div>
+
+					<div class="bg-faded">
+
+                        <input type="checkbox" id="accordionHeader21" class="accordion-control" value="">
+                        <label for="accordionHeader21" class="m-b-0 accordion-header bg-success card-header font-weight-bold">Stückzahl</label>
+                        
+                        <div class="accordion-content">
+                            <div class="card-block">
+	                            <p>
+	                            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ipsum eu odio fringilla venenatis. Praesent ipsum mauris, porttitor quis libero a, luctus imperdiet nulla. Quisque purus mauris.
+	                            </p>
+	                        </div>
+                        </div>
+
+                    </div>
+
+					<div class="bg-faded ">
+                        
+                        <input type="checkbox" id="accordionHeader31" class="accordion-control" value="">
+                        <label for="accordionHeader31" class="m-b-0 accordion-header bg-success card-header font-weight-bold">Farben</label>
+                        
+                        <div class="accordion-content">
+	                        <div class="card-block">
+	                            <p>
+	                            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ipsum eu odio fringilla venenatis. Praesent ipsum mauris, porttitor quis libero a, luctus imperdiet nulla. Quisque purus mauris.
+	                            </p>
+	                        </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-faded">
+
+                        <input type="checkbox" id="accordionHeader41" class="accordion-control" value="">
+                        <label for="accordionHeader41" class="m-b-0 accordion-header bg-success card-header font-weight-bold">Marken</label>
+                        
+                        <div class="accordion-content">
+                            <div class="card-block">
+	                            <p>
+	                            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ipsum eu odio fringilla venenatis. Praesent ipsum mauris, porttitor quis libero a, luctus imperdiet nulla. Quisque purus mauris.
+	                            </p>
+	                        </div>
+                        </div>
+
+                    </div>
+                </div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3">
+
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3">
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="m-y-3">
+		<h5>Input Fields</h5>
+		<hr>
+		<div class="row">
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<div class="input-unit success">
+	                <input type="text" name="vorname" id="txt_vorname">
+	                <label for="txt_vorname">Vorname*</label>
+	            </div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<div class="input-unit error">
+	                <input type="text" name="vorname" id="txt_vorname">
+	                <label for="txt_vorname">Vorname*</label>
+	            </div>
+			</div>
+
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<div class="input-unit">
+	                <input type="text" name="vorname" id="txt_vorname">
+	                <label for="txt_vorname">Vorname*</label>
+	            </div>
+			</div>
+			
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<div class="input-unit">
+	                <select id="select" class="custom-select">
+	                    <optgroup label="Option Group 1">
+	                        <option>Option One</option>
+	                        <option>Option Two</option>
+	                        <option>Option Three</option>
+	                    </optgroup>
+	                    <optgroup label="Option Group 2">
+	                        <option>Option One</option>
+	                        <option>Option Two</option>
+	                        <option>Option Three</option>
+	                    </optgroup>
+	                </select>
+	                <label>Land</label>
+	            </div>
+	        </div>
+		</div>
+	</section>
 
 </div>
 

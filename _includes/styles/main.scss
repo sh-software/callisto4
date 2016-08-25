@@ -1,3 +1,4 @@
+
 @import "../../bower_components/bootstrap/scss/bootstrap";
 @import "../../bower_components/font-awesome/scss/font-awesome";
 @import "../../node_modules/shariff/build/shariff.complete.css";
@@ -7,7 +8,6 @@
 @import "../../bower_components/flag-icon-css/sass/flag-icon";
 
 // Common
-@import "common/zIndex-scale";
 @import "common/common";
 @import "common/shariff-theme-minimal";
 @import "common/buttons";
@@ -39,6 +39,8 @@
 //pages
 @import "../_single/single";
 @import "../_single/product-thumb";
+@import "../_home/styles";
+
 @import "../_single/crosseller-thumb";
 @import "../_component-filters/style";
 
