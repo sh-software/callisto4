@@ -6,21 +6,22 @@
 	}
 
 	.fa:nth-of-type(1){
-		color: $gray-light;
+		color: $brand-primary;
 	}
 
 	.fa:nth-of-type(2){
-		color: $brand-primary;
+		color: $gray-light;
 	}
 	
 
-	&.grid-view{
-		.fa:nth-of-type(1){
-			color: $brand-primary;
-		}
+	&.grid{
 
-		.fa:nth-of-type(2){
+		.fa:nth-of-type(1){
 			color: $gray-light;
+		}
+		
+		.fa:nth-of-type(2){
+			color: $brand-primary;
 		}
 	}
 	
