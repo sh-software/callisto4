@@ -1,9 +1,9 @@
+@import "variables";
 
 @import "../../bower_components/bootstrap/scss/bootstrap";
 @import "../../bower_components/font-awesome/scss/font-awesome";
 @import "../../node_modules/shariff/build/shariff.complete.css";
 
-@import "variables";
 
 //Error
 //@import "../../bower_components/flag-icon-css/sass/flag-icon";
@@ -16,6 +16,7 @@
 @import "components/component-base";
 @import "components/accordion";
 @import "../_component-toggle-list-view/style";
+@import "../_component-paginator/style";
 
 //to delete
 @import "mixins/media-query";
@@ -41,6 +42,7 @@
 @import "../_single/single";
 @import "../_single/product-thumb";
 @import "../_home/styles";
+@import "../_categories-list/_categories-list";
 
 @import "../_single/crosseller-thumb";
 @import "../_component-filters/style";
