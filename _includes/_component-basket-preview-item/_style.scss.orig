@@ -95,9 +95,6 @@
 	    bottom: 0;
 	    line-height: 1;
 	    cursor: pointer;
-<<<<<<< HEAD
 		transition: color 250ms;
-=======
->>>>>>> master
 	}
 }
