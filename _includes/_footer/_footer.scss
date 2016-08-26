@@ -50,6 +50,9 @@
 					color: #7A7F7F;
 				}
 			}
+			i {
+				width:15px;
+			}
 		}
 	}
 
@@ -63,103 +66,7 @@
 			@extend .small;
 		}
 	}
-	// .newsletter{
-	// 	display: block;
-	// 	text-align: center;
-		
-	// 	@include mobile{
-	// 		float: none;
-	// 		margin: 0 auto;
-	// 		margin-bottom: 1rem;
-	// 		width: 75%;
-	// 	}
-	// 	@include tablet{
-	// 		float: right;
-	// 		margin-bottom: 0;
-	// 		width: 90%;
-	// 	}
-	// 	@include desktops{
-	// 		width: 75%;
-	// 	}
-	// 	h4{
-	// 		color: $gray;
-	// 		font-size: $font-size-base;
-	// 		text-transform: uppercase;
-	// 		margin-bottom: 0;
-	// 	}	
-	// 	h3{
-	// 		color: $gray-light;
-	// 		text-transform: uppercase;
-	// 		margin-bottom: $margin;
-	// 	}
-	// 	p{
-	// 		color: $gray-light;
-	// 	}
-	// 	// .input-group{
-	// 	// 	display: block;
-	// 	// 	width: 100%;
-	// 	// 	.form-control, .input-group-addon{
-	// 	// 		display: inline-block;
-	// 	// 		float: left;
-	// 	// 		margin-right: 2%;
-	// 	// 		border-radius: 0;
-	// 	// 		border: none;
-	// 	// 		background-color: #3b3b3b;
-	// 	// 		height: 35px;
-	// 	// 		line-height: 35px;
-	// 	// 		padding: 0 $padding+4px;
-	// 	// 		font-size: $font-size-base;
-	// 	// 		color: $text-field-text;
-	// 	// 		&:focus{
-	// 	// 			box-shadow: none;
-	// 	// 		}
-	// 	// 		@include mobile-xs{
-	// 	// 			width: 73%;
-	// 	// 		}
-	// 	// 		@include mobile{
-	// 	// 			width: 73%;
-	// 	// 		}
-	// 	// 		@include tablet{
-	// 	// 			width: 63%;
-	// 	// 		}
-	// 	// 		@include desktops{
-	// 	// 			width: 73%;	
-	// 	// 		}
-	// 	// 	}
-	// 	// 	.input-group-addon{
-	// 	// 		margin-right: 0;
-	// 	// 		height: 35px;
-	// 	// 		padding: 0;
-	// 	// 		line-height: 29px;
-	// 	// 		border:3px solid $brand-primary;
-	// 	// 		font-size: $font-size-base;
-	// 	// 		text-transform: uppercase;
-	// 	// 		font-weight: 700;
-	// 	// 		color: $white-color;
-	// 	// 		@include transition(all 0.3s ease-in-out);
-	// 	// 		@include mobile-xs{
-	// 	// 			width: 25%;
-	// 	// 		}
-	// 	// 		@include mobile{
-	// 	// 			width: 25%;
-	// 	// 		}
-	// 	// 		@include tablet{
-	// 	// 			width: 35%;
-	// 	// 		}
-	// 	// 		@include desktops{
-	// 	// 			width: 25%;	
-	// 	// 		}
-	// 	// 		&:hover{
-	// 	// 			background-color: $brand-primary;
-	// 	// 			border-color: $brand-primary;
-	// 	// 			color: $white-color;
-	// 	// 			i{
-	// 	// 				color: $white-color;
-	// 	// 			}
-	// 	// 		}
-	// 	// 	}
-	// 	// }
-	// }
+
 }
 
 .copyright{	
@@ -179,44 +86,10 @@
 }
 
 
-
-// 	.socialbar{
-// 			.orientation-horizontal {
-// 			 justify-content: center;
-// 				li {
-// 					max-width:50px!important;
-// 					text-align: center!important;
-// 					width: 30px !important;
-// 					margin-bottom:0px!important;	
-// 				}
-// 			}
-			
-// 			.orientation-horizontal { 
-// 			 justify-content: flex-start;
-// 				li {
-// 					min-width: 35px !important;
-// 					margin-bottom:0px!important;
-// 				}
-// 			}
-
-// 			span.share_text {
-// 			    display: none!important;
-// 	}
-// }
-			
-// 			.shariff-button a {
-// 			line-height: 0!important;
-// 			}
-
-
 .footerLink {
 	.shariff {
 	.orientation-vertical {
 		text-align: center;
-		li {
-			width: 35px;
-			margin:5px 0;
-		}
 	}
 		ul {
 			.shariff-button {
@@ -286,5 +159,39 @@
 	}
 }
 
+	@include media-breakpoint-up(sm){
+		.shariff {
+			.orientation-horizontal {
+				li {
+				margin-right: 1.8%;
+				margin-bottom: 1.8%;
+			    width: 70px;
+			    flex: none;
+					.fa {
+				    width: 30px;
+				    line-height: 30px;
+				    text-align: center;
+					}
+				}
+			}
+		}
+	}
 
+	@include media-breakpoint-down(sm){	
+			.shariff {
+			.orientation-horizontal {
+				li {
+					width: 65px;
+				}
+			}
+		}
+
+	}
+	
+
+	@include media-breakpoint-up(md){	
+	}
+	
+	@include media-breakpoint-up(lg){
+	}
 
