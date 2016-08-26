@@ -30,7 +30,7 @@
 			li{
 				color:#dcdbd8;
 				font-size: $font-size-sm;
-				line-height: 20px;
+				line-height: 22px;
 				a{
 					color: #dcdbd8;
 					&:hover{
@@ -42,7 +42,7 @@
 		p {
 		color:#dcdbd8;
 		font-size: $font-size-sm;
-		line-height: 20px;
+		line-height: 22px;
 		margin-bottom: 0;
 			a{
 			color: #dcdbd8;
@@ -60,6 +60,7 @@
 	.newsletter{
 		h4, p{
 			color: white;
+			margin-bottom: .5rem;
 		}
 
 		p{
@@ -150,14 +151,30 @@
 			transition: opacity, 0.5s, ease;
 			-webkit-filter: grayscale(0);
 			filter: grayscale(0);
-		}
-		a {
-			img {
-				margin-right: 15px;
-			}
-		}
+		}		
 	}
 }
+
+	.btn_mail {
+    background-color: #7A7F7F;
+    color: #FFF;  
+    border:none;  
+		&:hover {
+		background-color: #b2b1a7;
+	    border:none;
+		}
+		i {
+	    padding: 0 1rem;
+		}
+	}
+
+	.newsletter {
+		.form-control {
+			font-size: .8rem;
+			padding: .65rem;
+		}
+	}
+
 
 	@include media-breakpoint-up(sm){
 		.shariff {
@@ -165,10 +182,10 @@
 				li {
 				margin-right: 1.8%;
 				margin-bottom: 1.8%;
-			    width: 70px;
+			    width: 80px;
 			    flex: none;
 					.fa {
-				    width: 30px;
+				    width: 25px;
 				    line-height: 30px;
 				    text-align: center;
 					}
@@ -176,6 +193,8 @@
 			}
 		}
 	}
+
+
 
 	@include media-breakpoint-down(sm){	
 			.shariff {
@@ -185,13 +204,27 @@
 				}
 			}
 		}
-
+		.border-left {
+	    border-top: 1px solid #4D4F4D;
+	    padding-top: 2rem;
+		}
 	}
 	
 
-	@include media-breakpoint-up(md){	
+	@include media-breakpoint-down(md){
+		.shariff {
+	    width: 340px;
+	    overflow: auto;
+	    margin-top: 10px;
+	    display: inline-block;
+		}	
+	
+		.newsletter  {
+			p {
+		    display: none;
+			}
+		}
 	}
 	
 	@include media-breakpoint-up(lg){
 	}
-
