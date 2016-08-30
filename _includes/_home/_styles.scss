@@ -66,6 +66,11 @@
             background-color: #b2b1a7;
         }
 }
+.totophover {
+    &:hover {
+        text-decoration:none;
+    }
+}
 
 
 

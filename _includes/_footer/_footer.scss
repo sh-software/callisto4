@@ -141,8 +141,8 @@
 
 .payment_line {
 	div {
-		-webkit-filter: grayscale(1);
-		filter: grayscale(1);
+		-webkit-filter: grayscale(.9);
+		filter: grayscale(.9);
 		&:hover {
 			-moz-transition: opacity, 0.5s, ease;
 			-o-transition: opacity, 0.5s, ease;
@@ -200,14 +200,18 @@
 			.shariff {
 			.orientation-horizontal {
 				li {
-					width: 65px;
+					width: 55px;
 				}
 			}
 		}
-		.border-left {
-	    border-top: 1px solid #4D4F4D;
-	    padding-top: 2rem;
+
+		.payment_line .img-fluid {
+		    margin: 0 auto;
 		}
+		// .border-left {
+	 //    border-top: 1px solid #4D4F4D;
+	 //    padding-top: 2rem;
+		// }
 	}
 	
 
@@ -219,11 +223,11 @@
 	    display: inline-block;
 		}	
 	
-		.newsletter  {
-			p {
-		    display: none;
-			}
-		}
+		// .newsletter  {
+		// 	p {
+		//     display: none;
+		// 	}
+		// }
 	}
 	
 	@include media-breakpoint-up(lg){
