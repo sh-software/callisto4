@@ -2,6 +2,13 @@
 	
 }
 
+.cmp-product-thumb.grid {
+    width: 100% !important;
+}
+.cmp-product-thumb .thumb-title {
+    min-height: 40px;
+}
+
 .page-infos{
 	display: flex;
     flex-flow: row nowrap;
