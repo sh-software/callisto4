@@ -14,8 +14,9 @@
                 <ul class="list-inline pull-xs-right ">
                     <li class="list-inline-item">
                         <span>
-                            <a data-toggle="modal" href="#login">Einloggen</a>
-                            <small>oder</small>
+                            <a data-toggle="modal" href="#login">Login</a>
+                            <small class="hidden-sm-down">oder</small>
+                            <small class="hidden-md-up">|</small>
                             <a data-toggle="modal" href="#signup">Registieren</a>
                         </span>
                     </li>
@@ -93,14 +94,14 @@
 
 <!-- Navigation -->
 <div class="container">
-    <nav class="navbar navbar-full navbar-dark bg-primary">
+    <nav class="navbar bg-primary">
         <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
         <a class="navbar-brand" href="#">
             <img src="dist/images/logo_long.svg">
         </a>
         <div class="collapse navbar-toggleable-md" id="mainNavbarCollapse">
             <ul class="nav navbar-nav pull-lg-right">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="/callisto4">
                         Home
                         <span class="sr-only">(current)</span>
@@ -125,32 +126,20 @@
                     <a class="nav-link" href="confirmationpage.html">Danke Seite</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" id="navbarDropdown1" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <li>
+                    <a class="dropdown-toggle nav-link" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <a class="dropdown-item" href="registrieren.html">Registrieren</a>
-                        </li>
-                        <li>
                             <a class="dropdown-item" href="gast.html">Gast Registrieren</a>
-                        </li>
-                        <li>
                             <a class="dropdown-item" href="anmeldung.html">Anmeldung</a>
-                        </li>
-                    </ul>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" id="navbarDropdown1" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <li>
+                    <a class="dropdown-toggle nav-link" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                             <a class="dropdown-item" href="content-payment.html">Content Payment</a>
-                        </li>
-                        <li>
                             <a class="dropdown-item" href="ui.html">UI Components</a>
-                        </li>
-                        <li>
                             <a class="dropdown-item" href="contentpage.html">Content Page</a>
-                         </li>
-                    </ul>
+                    </div>
                 </li>
             </ul>
         </div>
