@@ -2,11 +2,19 @@
 	
 }
 
-.cmp-product-thumb.grid {
-    width: 100% !important;
-}
-.cmp-product-thumb .thumb-title {
-    min-height: 40px;
+.cmp-product-thumb {
+    width: 100%;
+    .thumb-image {
+        img {
+            max-height: 100%;
+        }
+    }
+    .thumb-content {
+        width: 100%;
+        .thumb-title {
+            min-height: 40px;
+        }
+    }
 }
 
 .page-infos{

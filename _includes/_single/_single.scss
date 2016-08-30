@@ -21,7 +21,7 @@
 
     .price {
         display: block;
-        color: $brand-danger;
+        font-weight: bold;
         line-height: 1;
     }
 
@@ -30,6 +30,12 @@
         margin-top: 0;
         margin-bottom: .5em;
         color:#020260;
+    }
+    .crosssellers {
+        img {
+            max-width: 100%;
+            width: auto;
+        }
     }
 }
 
