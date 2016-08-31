@@ -164,24 +164,23 @@
     }
 
     .thumb-title{
-        display: block;
-        position: relative;
-        font-weight: 700;
-        overflow: hidden;
+        display: -webkit-box;
         text-overflow: ellipsis;
-        text-tarnsform: uppercase;
         max-height: 3em;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-weight: 700;
         margin-bottom: .5rem;
 
-        &:after {
-            content: "…";
-            display: inline-block;
-            height: 50%;
-            position: absolute;
-            right: .25em;
-            top: 1.5em;
-            background-color: #fff;
-        }
+        // display: block;
+        // position: relative;
+        // font-weight: 700;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // text-transform: uppercase;
+        // max-height: 3em;
+        // margin-bottom: .5rem;
     }
 
     .thumb-meta{

@@ -131,7 +131,12 @@ nav {
 	.navbar-brand {
 		position: absolute;
 	    display: block;
-	    margin: .25rem 1rem;
+	    margin: 0;
+	    height: 100%;
+	    padding: 0;
+	    img {
+		    padding: .5rem 1rem;	
+	    }
 	}
 
 
@@ -224,8 +229,11 @@ nav {
 		.navbar-brand {
 		    position: absolute;
 		    display: block;
-			// margin: .5rem 4rem .5rem 1rem;		
-		}
+		    img {
+			    padding: 1rem;
+			    width: 15rem;
+			    }
+			}
 
 		.nav-link {	
 			padding: 1.5rem!important;

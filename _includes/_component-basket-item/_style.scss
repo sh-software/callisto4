@@ -32,21 +32,24 @@
 	}
 
 	.item-name{
-	    position: relative;
-		font-weight: 700;
-	    overflow: hidden;
-	    text-overflow: ellipsis;
-	    height: 3em;
+	    display: -webkit-box!important;
+        text-overflow: ellipsis;
+        max-height: 3em;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-weight: 700;
+        margin-bottom: .5rem;
 
-	    &:after{
-			content: "…";
-			display: inline-block;
-			height: 50%;
-			position:absolute;
-			right: .25em;
-			bottom: 0; 
-			background-color: white;
-	    }
+	  //   &:after{
+			// content: "…";
+			// display: inline-block;
+			// height: 50%;
+			// position:absolute;
+			// right: .25em;
+			// bottom: 0; 
+			// background-color: white;
+	  //   }
 	}
 
 	.item-quantity{
@@ -207,9 +210,9 @@
 			}
 		}
 
-		.item-name:after{
-			content: none!important;
-		}
+		// .item-name:after{
+		// 	content: none!important;
+		// }
 
 		.item-remove{
 		    bottom: 1em;
