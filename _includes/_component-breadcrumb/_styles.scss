@@ -26,11 +26,8 @@
 				height: 0;
 				content: '';
 				border-top: 1rem solid transparent;
-				border-bottom: 1rem solid transparent;
-				right: -11px;
-				z-index: 2;
-				border-left: 11px solid #fff;
-				}
+				border-bottom: 1rem solid transparent;				
+				}				
 			}
 		}
 
@@ -48,9 +45,7 @@
 				content: '';
 				border-top: 1rem solid transparent;
 				border-bottom: 1rem solid transparent;
-				right: -11px;
-				z-index: 2;
-				border-left: 11px solid #fff;
+				
 				}
 			}
 		}
@@ -69,9 +64,7 @@
 				content: '';
 				border-top: 1rem solid transparent;
 				border-bottom: 1rem solid transparent;
-				right: -11px;
-				z-index: 2;
-				border-left: 11px solid #fff;
+				
 				}
 			}
 		}
@@ -109,7 +102,7 @@
 				content: '';
 				border-top: 1rem solid transparent;
 				border-bottom: 1rem solid transparent;
-				right: -10px;
+				right: -9px;
 				z-index: 3;
 				border-left-color: darken($brand-primary, 20%);
 				border-left-style: solid;
