@@ -27,7 +27,9 @@
 		
 		.list-inline-item{
 			color: #dcdbd8;
-			
+				
+
+
 			&>span>a,
 			&>a{
 				line-height: 2rem!important;
@@ -58,14 +60,23 @@
 		}
 	}
 
+
+
 	.searchBox,
-	.search-box{
+	.search-box{		
+		a.dropdown-toggle {
+			&:hover {
+				text-decoration: none;
+			}
+		}
 		.dropdown-menu{
-			min-width: 320px;
-			padding: 0;
-			border: none;
+			width: 320px;
+		    padding: 0;
+		    border: none;
+			position: absolute;
 		}
 	}
+
 
 	.country-settings{
 		min-width: 200px;
@@ -73,6 +84,12 @@
 		padding: 0;
 		border: none;
 		position:absolute;
+		.disabled {
+			background-color: #dcdbd8;
+			strong {
+				color: #4d4f4d;
+			}
+		}
 		a {
 			&:hover {
 				background-color: darken($brand-primary, 20%);			    
@@ -82,6 +99,13 @@
 			}
 		}
 	}
+
+	a#shippingCountryList {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
 }
 
 a#toggleBasketPreview:hover {
@@ -89,64 +113,72 @@ a#toggleBasketPreview:hover {
 }
 
 //navigation scss
-.navbar {
-  	border-radius: 0;
-  	height:5rem;
-  	padding:0;
-}
+nav {
+	&.navbar {
+	  	border-radius: 0;
+	  	height:5rem;
+	  	padding:0;
+	}
 
-.navbar-nav {
-	line-height:0;
-		.nav-item+.nav-item {
-			margin-left: 0;
+
+	.navbar-nav {
+		line-height:0;
+			.nav-item+.nav-item {
+				margin-left: 0;
+			}
+	}
+
+	.navbar-brand {
+		position: absolute;
+	    display: block;
+	    margin: 0;
+	    height: 100%;
+	    padding: 0;
+	    img {
+		    padding: .5rem 1rem;	
+	    }
+	}
+
+
+	.navbar-toggler {
+		float:right;
+	    line-height: 3.5rem;
+	    color:#fff;
+	}
+
+	.nav-link {
+			color: #fff!important;
+			padding: 2.5rem .5rem!important;
 		}
-}
-
-.navbar-brand {
-	position: absolute;
-    display: block;
-    padding: .5rem 1rem;
-}
 
 
-.navbar-toggler {
-	float:right;
-    line-height: 3rem;
-}
-
-.nav-link {
-		color: #fff!important;
-		padding: 2.5rem .5rem!important;
+	li.nav-item.open {
+		position: relative;
 	}
-
-
-li.nav-item.open {
-	position: relative;
-}
-li.nav-item.dropdown {
-	cursor: pointer;
-}
-li.nav-item.active {
-	background-color: darken($brand-primary, 20%);
-	color:#fff;
-}
-
-.nav-item {
-	.dropdown-toggle {
-		margin-right:1rem;
-		&::after {
-			position: absolute;
-		}
+	li.nav-item.dropdown {
+		cursor: pointer;
 	}
-	a {
-	padding:.5rem;
-	}
-		&:hover {
+	li.nav-item.active {
 		background-color: darken($brand-primary, 20%);
 		color:#fff;
 	}
-}
 
+	.nav-item {
+		.dropdown-toggle {
+			margin-right:1rem;
+			&::after {
+				position: absolute;
+			}
+		}
+		a {
+		padding:.5rem;
+		}
+			&:hover {
+			background-color: darken($brand-primary, 20%);
+			color:#fff;
+		}
+	}
+}
 .dropdown-menu {
     position: absolute;
     z-index: 1041;
@@ -177,22 +209,9 @@ li.nav-item.active {
 		}
 }
 
-@include media-breakpoint-up(sm){
-	.top-bar {
-		.shariff {
-			width:100%;
-			margin:0;
-			.orientation-horizontal {
-				li {
-				width:65px;
-				margin:0;				
-				}
-			}
-		}
-	}
-}	
+
 @include media-breakpoint-down(md){
-	.top-bar {
+	.top-bar {		
 		.shariff {
 			width:100%;
 			margin:0;
@@ -206,11 +225,20 @@ li.nav-item.active {
 			}
 		}
 	}
+	nav {
+		.navbar-brand {
+		    position: absolute;
+		    display: block;
+		    img {
+			    padding: 1rem;
+			    width: 15rem;
+			    }
+			}
 
-	.nav-link {	
-		padding: 1.5rem!important;
+		.nav-link {	
+			padding: 1.5rem!important;
+		}
 	}
-
 	.dropdown {
 	clear:both;
 	}
@@ -230,6 +258,52 @@ li.nav-item.active {
 	}
 }	
 
+@include media-breakpoint-up(sm){
+	.top-bar {		
+		.list-inline-item{			
+			&:nth-child(2), &:nth-child(3) {
+				position:relative;
+			}
+		}
+		.shariff {
+			width:100%;
+			margin:0;
+			height:2rem;
+			.orientation-horizontal {
+				li {
+				width:40px;
+				margin:0;				
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm){
+	.top-bar {
+		.list-inline-item{			
+			&:nth-child(2), &:nth-child(3) {
+				position:static;
+			}
+			.country-settings{
+			    min-width: 100%;
+			    padding: 0;
+			    border: none;
+			    position: absolute;
+			    top: 2rem;
+			}
+		}
+		.searchBox {
+			.dropdown-menu {
+			padding: 0;
+			border: none;
+			position: absolute;
+			top: 2rem;
+			}
+		}
+	}
+}
+
 @include media-breakpoint-down(xs){
 	.top-bar {
 		.shariff {
@@ -237,3 +311,4 @@ li.nav-item.active {
 		}
 	}
 }
+

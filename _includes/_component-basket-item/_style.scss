@@ -32,21 +32,14 @@
 	}
 
 	.item-name{
-	    position: relative;
-		font-weight: 700;
-	    overflow: hidden;
-	    text-overflow: ellipsis;
-	    height: 3em;
-
-	    &:after{
-			content: "…";
-			display: inline-block;
-			height: 50%;
-			position:absolute;
-			right: .25em;
-			bottom: 0; 
-			background-color: white;
-	    }
+	    display: -webkit-box!important;
+        text-overflow: ellipsis;
+        max-height: 3em;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-weight: 700;
+        margin-bottom: .5rem;
 	}
 
 	.item-quantity{
@@ -107,7 +100,6 @@
 		position: relative;
 		z-index: $zIndex-1;
 		width: 100%;
-		// margin-top: -1.5em;
 		text-align: center;
 		cursor: pointer;
 
@@ -205,10 +197,6 @@
 				flex: 1;
 				order: 3;
 			}
-		}
-
-		.item-name:after{
-			content: none!important;
 		}
 
 		.item-remove{
