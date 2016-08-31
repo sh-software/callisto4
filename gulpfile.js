@@ -26,7 +26,11 @@ var sassOptions = {
 };
 
 var autoprefixerOptions = {
-  browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+browsers: [
+       'last 2 versions',
+       'android 4',
+       'opera 12'
+     ]
 };
 
 var sassdocOptions = {
