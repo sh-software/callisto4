@@ -71,3 +71,25 @@
     border-radius:none;
     padding: .75rem .45rem .25rem 0;
 }
+
+.wishlist {
+    &:hover {
+        color: #d9534f!important;
+        text-decoration: none;
+    }
+}
+
+.single-rightside {
+    .shariff {
+        .orientation-horizontal {
+            li {
+                .fa {
+                    line-height: 30px;
+                    text-align: center;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
