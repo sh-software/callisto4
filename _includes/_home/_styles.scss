@@ -6,6 +6,7 @@
 
 .flex {
     display: flex;
+    display: webkit-flex;
 }
 
 .flex-row {
@@ -320,8 +321,15 @@
         }      
     }
 
+.overlay-banner-content {
+    height: 2rem;    
+    a {
+        font-size: 1.25rem;
+    }
+}
 
 }
+
 
 
 @include media-breakpoint-down(sm){
@@ -330,7 +338,6 @@
         @include make-col-ready(12);
         @include make-col(12);
 }
-
 
     .sale {
         text-align: center;
@@ -350,4 +357,3 @@
             }
         }
 }
-
