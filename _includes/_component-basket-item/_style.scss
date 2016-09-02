@@ -98,7 +98,7 @@
 	.expand-btn{
 		display: block;
 		position: relative;
-		z-index: $zIndex-1;
+		z-index: 999;
 		width: 100%;
 		text-align: center;
 		cursor: pointer;
@@ -151,9 +151,12 @@
 	    bottom: 0;
 	    right: 0;
 	    line-height: 1;
-	    color: $brand-danger;
+	    color: #dcdbd8;
 	    cursor: pointer;
 		transition: color 250ms;
+			&:hover {
+	    	color: $brand-danger;
+			}
 	}
 
 	@include media-breakpoint-up(sm){
@@ -219,6 +222,21 @@
 	}
 }
 
+@include media-breakpoint-only(xs) { 
+.basket {
+	.item-unit-price {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.item-total-price {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		}
+	}
+}
 
 .flex-container {
   justify-content: justify-content;
