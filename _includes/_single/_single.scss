@@ -44,6 +44,40 @@
 }
 
 
+#single-big-image {
+        .owl-controls {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            z-index: 9999;
+            width: 100%;
+            .owl-buttons {
+                &>div {
+                    background: rgba(255,255,255,0.75);
+                    padding: 1rem;
+                    position: absolute;
+                    &.owl-next {
+                        right:0;
+                    }
+                    &:hover {
+                        background: rgba(255,255,255,1);
+                    }
+                }
+            }
+        }
+
+    .owl_item{
+        margin: 5px;
+        a {
+            width: 100%;
+        }
+    }
+}
+#single-carousel .owl_item{
+    margin: 5px;
+    cursor: pointer;
+}
+
 .availability_1,
 .availability_2 {background-color: $availability_1;}
 .availability_3,
