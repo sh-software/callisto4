@@ -209,29 +209,24 @@
 
 		.payment_line .img-fluid {
 		    margin: 0 auto;
-		}
-		// .border-left {
-	 //    border-top: 1px solid #4D4F4D;
-	 //    padding-top: 2rem;
-		// }
+		}	
 	}
 	
 
 	@include media-breakpoint-down(md){
 		.shariff {
-	    width: 340px;
+		width: 340px;
 	    overflow: auto;
 	    margin-top: 10px;
 	    display: inline-block;
 		}	
-	
-		// .newsletter  {
-		// 	p {
-		//     display: none;
-		// 	}
-		// }
 	}
 	
 	@include media-breakpoint-up(lg){
 	}
 	
+@include media-breakpoint-only(xs) { 
+	.shariff {
+		width: 245px;
+		}
+}

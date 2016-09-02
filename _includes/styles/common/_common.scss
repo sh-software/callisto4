@@ -176,3 +176,9 @@ hr {
 .border-left {
     border-left: 1px solid #4D4F4D;
 }
+
+@include media-breakpoint-only(xs) { 
+    .border-left {
+        border:none;
+    }
+}
