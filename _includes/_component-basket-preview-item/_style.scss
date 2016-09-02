@@ -59,7 +59,8 @@
 
 	.basket-item-infos{
 		position: relative;
-		width: 100%;
+		max-width: 100%;
+		width: 50%;
 
 		a{
 			display: block;
