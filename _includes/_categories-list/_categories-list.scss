@@ -1,5 +1,4 @@
 .categories-list{
-	
 }
 .cmp-product-thumb {
     width: 100%;
@@ -83,6 +82,27 @@
         display: flex;
 	}
 }
+
+.categoriegrid {
+    .special-tags{
+        padding: .3rem; 
+    }
+}
+
+
+
+@include media-breakpoint-only(xs) { 
+
+.page-infos {
+    text-align: center;
+}
+
+nav.cmp.cmp-paginator.pull-xs-right {
+        text-align: center;
+        float: none!important;
+    }
+}
+
 
 @include media-breakpoint-up(sm){
     .product-list.grid{
