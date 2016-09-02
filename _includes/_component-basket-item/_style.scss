@@ -2,7 +2,7 @@
 	position: relative;
 	display: flex;
 	flex-flow: row wrap;
-	margin-bottom: 1em;
+	border-bottom:1px solid #dcdbd8;	
 
 	.toggle-description, //TODO remove this class. deprecated
 	.item-toggle{

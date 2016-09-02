@@ -6,7 +6,6 @@
 
 .flex {
     display: flex;
-    display: webkit-flex;
 }
 
 .flex-row {
@@ -27,6 +26,13 @@
             }
         }
 
+.height {
+    max-height: 100%;
+}
+
+.border {
+    border: 1px solid #dcdbd8;
+}
 
 .overlay-banner {
     bottom: 0;
@@ -157,7 +163,7 @@
     }
 
     .square-container{
-        border-bottom: 1px solid $gray-lighter;
+        border-bottom: 1px solid $gray-lighter;            
     }
 
     .thumb-content{
@@ -329,6 +335,7 @@
 }
 
 }
+
 
 
 

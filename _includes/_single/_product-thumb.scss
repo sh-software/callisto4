@@ -16,7 +16,14 @@
     .thumb-image{
         position: relative;
         flex: 1 0 120px;
-        order: 2
+        order: 2;
+        .square-container {
+            .square-inner {
+                    &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
     }
     
     //TODO create separate mixin
@@ -108,26 +115,6 @@
         font-weight: 700;
         margin-bottom: .5rem;
         order: 1;
-
-        // display: block;
-        // position: relative;
-        // font-weight: 700;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
-        // text-tarnsform: uppercase;
-        // max-height: 3em;
-
-        // order: 1;
-
-        // &:after {
-        //     content: "…";
-        //     display: inline-block;
-        //     height: 50%;
-        //     position: absolute;
-        //     right: .25em;
-        //     top: 1.5em;
-        //     background-color: #fff;
-        //}
     }
 
     .crossprice{
@@ -161,7 +148,6 @@
     
     .thumb-controls{
         margin-top: .5rem;
-
         order: 3;
         align-self: flex-end;
     }

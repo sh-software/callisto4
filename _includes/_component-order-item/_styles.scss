@@ -2,7 +2,10 @@
 
 	@extend .cmp-basket-item; 
 	position: relative;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #dcdbd8;
+    
 
 	@include media-breakpoint-up(sm){
 
