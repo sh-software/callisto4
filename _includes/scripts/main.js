@@ -3,27 +3,14 @@
 	function CallistoMain(){
 		console.log('callisto main', $);
 
-		// use hover instead click for bs4 dropdowns
-		var navbarToggle = '.navbar-toggler';
-		$('.dropdown, .dropup').each(function() {
-			var dropdown = $(this),
-			  dropdownToggle = $('[data-toggle="dropdown"]', dropdown),
-			  dropdownHoverAll = dropdownToggle.data('dropdown-hover-all') || false;
-			  
-			// Mouseover
-			dropdown.hover(function(){
-			  var notMobileMenu = $(navbarToggle).size() > 0 && $(navbarToggle).css('display') === 'none';
-			  if ((dropdownHoverAll == true || (dropdownHoverAll == false && notMobileMenu))) { 
-			    dropdownToggle.trigger('click');
-			  }
-			})
-			
-		});
 
 		// Sticky sidebar single item
-		$(".single-rightside").stick_in_parent({
-		
-		});
+		if(window.matchMedia('(min-width: 768px)').matches) {
+            $(".single-rightside").stick_in_parent({
+			
+			});
+        }
+        
 		$('.single-rightside')
 		.on('sticky_kit:bottom', function(e) {
 		    $(this).parent().css('position', 'static');
@@ -31,6 +18,7 @@
 		.on('sticky_kit:unbottom', function(e) {
 		    $(this).parent().css('position', 'relative');
 		});
+
 
 
 

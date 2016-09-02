@@ -115,6 +115,9 @@ a#toggleBasketPreview:hover {
 
 //navigation scss
 nav {
+	.dropdown:hover .dropdown-menu {
+		display: block !important;
+	}
 	&.navbar {
 	  	border-radius: 0;
 	  	height:5rem;
