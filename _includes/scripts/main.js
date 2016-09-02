@@ -7,17 +7,18 @@
 		// Sticky sidebar single item
 		if(window.matchMedia('(min-width: 768px)').matches) {
             $(".single-rightside").stick_in_parent({
-			
+				
+			});
+			$('.single-rightside')
+			.on('sticky_kit:bottom', function(e) {
+			    $(this).parent().css('position', 'static');
+			})
+			.on('sticky_kit:unbottom', function(e) {
+			    $(this).parent().css('position', 'relative');
 			});
         }
         
-		$('.single-rightside')
-		.on('sticky_kit:bottom', function(e) {
-		    $(this).parent().css('position', 'static');
-		})
-		.on('sticky_kit:unbottom', function(e) {
-		    $(this).parent().css('position', 'relative');
-		});
+		
 
 
 
