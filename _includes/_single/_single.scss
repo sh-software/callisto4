@@ -9,7 +9,7 @@
 
     .title{
         //font-size: 2rem;
-        line-height: 1.4;
+        line-height: 1.2;
     }
 
     .producer{
@@ -90,5 +90,12 @@
                 }
             }
         }
+    }
+}
+@include media-breakpoint-only(md) {
+    .single {
+         .price {      
+                float: right;
+            }
     }
 }
