@@ -1,155 +1,65 @@
-.breadcrumb-arrow {
-	margin:0;
+.breadcrumb {
+
+	color 		: $brand-primary;
+	font-size   : 1rem;
+	height 	    : 1.9rem;
+	line-height : 30px;
+	margin 	   	: 0;
+	padding 	: 0;
+
 	ul {
-		padding:0;
-	}
-	height: 2rem;
-	padding: 0;
-	line-height: 30px;
-	list-style: none;
-	li {
-		i {
-			font-size: 1rem;
-		}
-		&:nth-child(1) {
-			a {
-				padding: 0 10px;
-				padding-left: 10px;
-				background-color: #949594;
-				&:before {
-					border-left-color: #949594;
-				}
-				&:after {
-				position: absolute;
-				top: -1px;
-				width: 0;
-				height: 0;
-				content: '';
-				border-top: 1rem solid transparent;
-				border-bottom: 1rem solid transparent;				
-				}				
-			}
-		}
+		background-color : white;
+		border 		 : 0;
+		display 	 : inline-block;
+		list-style 	 : none;
+		margin 		 : 0;
+		padding 	 : 0;
 
-		&:nth-child(2) {
-			a {
-				background-color: #a6a7a6;
-				&:before {
-					border-left-color: #a6a7a6;
-				}
-				&:after {
-				position: absolute;
-				top: -1px;
-				width: 0;
-				height: 0;
-				content: '';
-				border-top: 1rem solid transparent;
-				border-bottom: 1rem solid transparent;
-				
-				}
-			}
-		}
+		li {
+			border 	 : 0;
+			display	 : inline-block; 
+			margin 	 : 0;
 
-		&:nth-child(3) {
-			a {
-				background-color: #B7B8B7;
-				&:before {
-					border-left-color: #B7B8B7;
-				}
-				&:after {
-				position: absolute;
-				top: -1px;
-				width: 0;
-				height: 0;
-				content: '';
-				border-top: 1rem solid transparent;
-				border-bottom: 1rem solid transparent;
-				
-				}
-			}
-		}
 
-		display: inline-block;
-		vertical-align: top;
-		a {
-			display: inline-block;
-			vertical-align: top;
-			height: 2rem;
-			padding: 0 10px 0 25px;
-			line-height: 2rem;
-			position: relative;
-			color: #fff;
-			text-decoration: none;
-			background-color: darken($brand-primary, 20%);
+			.breadcrumb-item {
+				color 	 : white;
+				padding  : 0 1em;
+				position : relative;
 
-			&:after {
-				position: absolute;
-				top: -1px;
-				width: 0;
-				height: 0;
-				content: '';
-				border-top: 1rem solid transparent;
-				border-bottom: 1rem solid transparent;
-				right: -11px;
-				z-index: 2;
-				border-left: 11px solid #fff;
-			}
-			&:before {
-				position: absolute;
-				top: -1px;
-				width: 0;
-				height: 0;
-				content: '';
-				border-top: 1rem solid transparent;
-				border-bottom: 1rem solid transparent;
-				right: -9px;
-				z-index: 3;
-				border-left-color: darken($brand-primary, 20%);
-				border-left-style: solid;
-				border-left-width: 11px;
-			}
-			&:focus {
-				background-color: #171F24;
-				&:before {
-					border-left-color: #171F24;
-				}
-			}
-			&:hover {
-				background-color: #171F24;
-				&:before {
-					border-left-color: #171F24;
-				}
-			}
-			&:active {
-				background-color: #171F24;
-				&:after {
-					border-left-color: #171F24;
-				}
-				&:before {
-					border-left-color: #171F24;
-				}
-			}
-		}
-		span {
-			display: inline-block;
-			vertical-align: top;
-			padding: 0 10px;
-		}
-		&:not(:first-child) {
-			margin-left: -5px;
-			span {
-				height: 1rem;
-				padding: 0 10px 0 25px;
-				line-height: 2rem;
-				color: darken($brand-primary, 20%);
-			}
-		}
-	}
+				&::before { content   : ""; z-index : 1; }
+				&::after  { content   : ""; z-index : 2; }
 
-	li+li {
-		&:before {
-			padding: 0;
-			content: "";
-		}
+				&:not(.active):hover {
+					background-color : black !important;
+					text-decoration  : none; 
+				}
+			}
+			.breadcrumb-item.active {
+				background-color : #dcdbd8 !important;
+				color  			 : $brand-primary; 
+			}
+
+			&:not(:first-child) .breadcrumb-item {
+				padding-left : 25px;
+				&::before {
+					@include triangle-right(white, 15px, 10px);
+					left         : 0;
+					position 	 : absolute;
+				}
+			}
+			&:not(:last-child) .breadcrumb-item {
+				&::after {
+					@include triangle-right(yellow, 15px, 10px);
+					left     : 100%;
+					position : absolute;
+					top 	 : 0;
+				}
+			}
+
+			&:focus { outline : none; }
+		} 
+
+		// rgb(148,148,149) = #949594
+		@include rainbow-li(148, 149, 148, 6);
 	}
 }
