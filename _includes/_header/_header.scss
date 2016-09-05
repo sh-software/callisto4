@@ -4,7 +4,7 @@
 	$topbar-height : 2rem;
 	color:#dcdbd8;
 	position: relative;
-	z-index: 1001;
+	z-index: $zIndex-2;
 	height: $topbar-height;
 	background-color: #171F24;
 
@@ -153,6 +153,7 @@ nav {
 	.nav-link {
 			color: #fff!important;
 			padding: 2.5rem .5rem!important;
+			height:0;
 		}
 
 
@@ -185,7 +186,7 @@ nav {
 }
 .dropdown-menu {
     position: absolute;
-    z-index: 1041;
+    z-index: $zIndex-2;
     display: none;
     min-width: 160px;    
     margin: 0;
@@ -255,7 +256,7 @@ nav {
 	div#mainNavbarCollapse {
     top: 5rem;
     position: absolute;
-    z-index: 1000;
+    z-index: $zIndex-2;
     background-color: $brand-primary;
     width: 100%;
     left: 0;

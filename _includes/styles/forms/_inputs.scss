@@ -130,7 +130,7 @@ $border-width: 1px;
     }
 
 	&.error{
-		z-index: $zIndex-3;
+		z-index: $zIndex-1;
     	border-color: $brand-danger;
 
 		input{
@@ -149,7 +149,7 @@ $border-width: 1px;
     }
 
     &.success{
-    	z-index: $zIndex-2;
+    	z-index: $zIndex-1;
     	border-color: $brand-success;
 
     	input{

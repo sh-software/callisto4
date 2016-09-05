@@ -39,6 +39,7 @@
     left: 0;
     right: 0;
     position: absolute;
+    cursor:pointer;
 }
 
 .overlay-banner-content {
@@ -173,9 +174,9 @@
         display: -webkit-box;
         text-overflow: ellipsis;
         max-height: 3em;
-        -webkit-line-clamp: 2;
+        line-clamp: 2;
         overflow: hidden;
-        -webkit-box-orient: vertical;
+        box-orient: vertical;
         font-weight: 700;
         margin-bottom: .5rem;
 
