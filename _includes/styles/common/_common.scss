@@ -182,3 +182,69 @@ hr {
         border:none;
     }
 }
+
+
+/// mimics the image-background: cover; behaviour but with img element
+///
+/// @author Bruno Fenzl
+/// 
+/// @example scss - Basic Usage HTML
+///     <div class="some-class">
+///         img class="img-cover" src="">
+///     </div>
+@mixin img-cover{
+    position: relative;
+    overflow: hidden;
+
+    .img-cover{
+        position: absolute;
+        top: -9999px;
+        right: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        margin: auto;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+
+.img-cover-container{
+    @include img-cover();
+}
+
+
+
+
+
+
+@mixin rainbow-li($r, $g, $b, $steps){
+    $step : $steps;
+    $child : 1;
+    @while $step >= 1 {
+        $amount : $step/$steps;
+
+        li:nth-child(#{$child}) .breadcrumb-item:not(.active), 
+        li:nth-child(#{$child}) .breadcrumb-item:not(.active) {
+            background-color: rgba($r, $g, $b, $amount);
+
+            &::after { border-left-color : rgba($r, $g, $b, $amount); }
+
+            &:hover {
+                &::after { border-left-color : black!important; }
+            }
+        }
+        $child : $child + 1;
+        $step  : $step - 1;
+    }
+}
+
+
+
+
+@mixin triangle-right($color, $w, $h){
+    width: 0;
+    height: 0;
+    border-top: $w solid transparent;
+    border-left: $h solid $color;
+    border-bottom: $w solid transparent;
+}
