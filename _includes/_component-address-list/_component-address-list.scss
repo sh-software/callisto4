@@ -10,33 +10,6 @@
 		}
 	}
 
-
-	.add-item{
-		width: 100%;
-		padding: 1em;
-		text-align:center;
-		cursor: pointer;
-
-    	.fa{
-    		width: 1em;
-		    height: 1em;
-		    font-size: 1.5em;
-		    text-align: center;
-		    padding: .3em;
-		    box-sizing: content-box;
-		    border: 3px solid #ddd;
-		    border-radius: 50%;
-		    line-height: 1.1;
-		    color: #ddd;
-		    transition: all .2s ease-in-out;
-
-		    &:hover{
-				color: $brand-primary;
-				border-color: $brand-primary;
-	    	}
-    	}
-	}
-	
 	.dropdown-toggle{
 		
 		&:after{
@@ -136,7 +109,8 @@
 
 	.item-content{
 		display: inline-block;
-	    width: calc( 100% - 4em );
+	    // width: calc( 100% - 4em );
+	    width: 100%;
 
 		strong, span{
 			display: block;
@@ -151,7 +125,8 @@
 		.items{
 			display: inline-block;
 			vertical-align: middle;
-			width: calc( 100% - 5em );
+			// width: calc( 100% - 5em );
+			width:100%;
 		}
 
 		.add-item{
@@ -166,3 +141,36 @@
 		
 	}
 }
+.checkout {
+	header{ 
+		h4 {
+    	line-height: 2.5rem;
+		}
+	}
+}
+
+	.add-item{		
+		text-align:center;
+		cursor: pointer;		
+	    float: right;
+	    width: auto;
+
+    	.fa{
+    		width: 1em;
+		    height: 1em;
+		    font-size: 1.5em;
+		    text-align: center;
+		    padding: .3em;
+		    box-sizing: content-box;
+		    border: 3px solid #ddd;
+		    border-radius: 50%;
+		    line-height: 1.1;
+		    color: #ddd;
+		    transition: all .2s ease-in-out;
+
+		    &:hover{
+				color: $brand-primary;
+				border-color: $brand-primary;
+	    	}
+    	}
+	}

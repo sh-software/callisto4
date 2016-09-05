@@ -326,16 +326,14 @@
         }      
     }
 
-.overlay-banner-content {
-    height: 2rem;    
-    a {
-        font-size: 1.25rem;
+    .overlay-banner-content {
+        height: 2rem;    
+        a {
+            font-size: 1.25rem;
+        }
     }
-}
 
 }
-
-
 
 
 @include media-breakpoint-down(sm){
