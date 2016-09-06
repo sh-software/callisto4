@@ -4,7 +4,6 @@ layout: default
 
 <div class="checkout container">
     <div class="row m-t-3">
-        
         <div class="col-xs-12 m-b-3">
             <h1>Kasse</h1>
             <hr>
@@ -15,32 +14,52 @@ layout: default
         <div class="col-md-7">
             <div id="registry-form-container" class="registry-form-container main-col" data-id="0" data-status="2">
 
-                    <header class="m-b-1">
-                        <h3>Rechnungsadresse</h3>
-                    </header>
+                    <div class="row m-b-1">
+                        <header class="col-xs-9">
+                            <h4>Rechnungsadresse</h4>
+                        </header>
+                        <div class="col-xs-3 add-item">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div> 
+
                     <div class="invoice-addresses-select">
                         {% include _component-address-list/component-address-list.html id="invoiceAddress" %}
+                    </div>
+                    
+                    <div class="row m-b-1">
+                        <header class="col-xs-9">
+                            <h4>Rechnungsadresse</h4>
+                        </header>
+                        <div class="col-xs-3 add-item">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="invoice-addresses-select">
                         {% include _component-address-list/component-address-list-empty.html id="invoiceAddress" %}
                     </div>
 
-                    <header class="m-b-1">
-                        <h3>Lieferadresse</h3>
-                    </header>
+                    <div class="row m-b-1">                        
+                        <header class="col-xs-9">
+                            <h4>Lieferadresse</h4>
+                        </header>
+                        <div class="col-xs-3 add-item">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div> 
                     <div class="shipping-addresses-select">
                         {% include _component-address-list/component-address-list.html id="shippingAddress" %}
                     </div>
 
                     <header class="m-b-1">
-                        <h3>Versandart</h3>
+                        <h4>Versandart</h4>
                     </header>
                     <div class="shipping-method-select">
                         {% include _component-shipping-profiles/component-shipping-profiles.html %}
                     </div>
 
                     <header class="m-b-1">
-                        <h3>Zahlungsart</h3>
+                        <h4>Zahlungsart</h4>
                     </header>
                     <div class="payment-method-select">
                         {% include _component-method-list/component-method-list.html %}                    

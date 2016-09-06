@@ -145,9 +145,7 @@
 
     .thumb-content{
         padding: 1rem;
-
         order: 3;
-
         display: flex;
         flex-flow: column nowrap;
     }
@@ -199,13 +197,6 @@
         align-self: flex-end;
     }
 
-    &:hover{
-        
-        .thumb-inner{
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
-        }
-
-    }
     
     @include media-breakpoint-up(sm){
 
