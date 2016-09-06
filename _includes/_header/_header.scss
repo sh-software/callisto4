@@ -2,17 +2,18 @@
 .top-bar{
 
 	$topbar-height : 2rem;
-	color:#dcdbd8;
+	
+	color:$gray-lighter;
 	position: relative;
 	z-index: $zIndex-2;
 	height: $topbar-height;
-	background-color: #171F24;
+	background-color: $gray-darker;
 
 	.shariff {
 		.theme-minimal {
 			.shariff-button {
 				a {
-					color: #dcdbd8;
+					color: $gray-lighter;
 				}
 			}
 		}
@@ -26,7 +27,7 @@
 		margin-bottom: 0;
 		
 		.list-inline-item{
-			color: #dcdbd8;
+			color: $gray-lighter;
 				
 
 
@@ -35,7 +36,7 @@
 				line-height: 2rem!important;
 				font-size: .8rem;
 				display: inline-block;
-				color: #dcdbd8;
+				color: $gray-lighter;
 			}
 
 			.flag-icon{
@@ -85,16 +86,16 @@
 		border: none;
 		position:absolute;
 		.disabled {
-			background-color: #dcdbd8;
+			background-color: $gray-lighter;
 		    cursor: auto;
 			strong {
-				color: #4d4f4d;
+				color: $gray-dark;
 			}
 		}
 		a {
 			&:hover {
 				background-color: darken($brand-primary, 20%);			    
-				color: #dcdbd8;
+				color: $gray-lighter;
 			    border: 1px solid darken($brand-primary, 20%);
 				text-decoration: none;
 			}
@@ -192,7 +193,7 @@ nav {
     min-width: 160px;    
     margin: 0;
     padding:0;
-    color: #4d4f4d;
+    color: $gray-dark;
     text-align: left;
     list-style: none;
     background-color: #fff;
@@ -203,7 +204,7 @@ nav {
 		    display: block;
 		    width: 100%;
 		    padding: 1.25rem .5rem;
-		    color: #4d4f4d;
+		    color: $gray-dark;
 		    text-align: inherit;
 		    background: 0;
 		    border: 0;
@@ -285,36 +286,36 @@ nav {
 	}
 }
 
-@include media-breakpoint-down(sm){
-	.top-bar {
-		.list-inline-item{			
-			&:nth-child(2), &:nth-child(3) {
-				position:static;
-			}
-			.country-settings{
-			    min-width: 100%;
-			    padding: 0;
-			    border: none;
-			    position: absolute;
-			    top: 2rem;
-			}
-		}
-		.searchBox {
-			.dropdown-menu {
-			padding: 0;
-			border: none;
-			position: absolute;
-			top: 2rem;
-			}
-		}
-	}
-}
+// @include media-breakpoint-down(sm){
+// 	.top-bar {
+// 		.list-inline-item{			
+// 			&:nth-child(2), &:nth-child(3) {
+// 				position:static;
+// 			}
+// 			.country-settings{
+// 			    min-width: 100%;
+// 			    padding: 0;
+// 			    border: none;
+// 			    position: absolute;
+// 			    top: 2rem;
+// 			}
+// 		}
+// 		.searchBox {
+// 			.dropdown-menu {
+// 			padding: 0;
+// 			border: none;
+// 			position: absolute;
+// 			top: 2rem;
+// 			}
+// 		}
+// 	}
+// }
 
-@include media-breakpoint-down(xs){
-	.top-bar {
-		.shariff {
-			display: none;
-		}
-	}
-}
+// @include media-breakpoint-down(xs){
+// 	.top-bar {
+// 		.shariff {
+// 			display: none;
+// 		}
+// 	}
+// }
 

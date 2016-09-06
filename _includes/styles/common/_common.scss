@@ -172,11 +172,11 @@ hr {
     box-sizing: content-box;
     height: 0;
     border: 0;
-    border-top: 1px solid #4D4F4D;
+    border-top: 1px solid $gray-dark;
 }
 
 .border-left {
-    border-left: 1px solid #4D4F4D;
+    border-left: 1px solid $gray-dark;
 }
 
 @include media-breakpoint-only(xs) { 

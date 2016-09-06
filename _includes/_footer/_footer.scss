@@ -1,7 +1,7 @@
 .totop {
     display: block;
     height: 4rem;
-    background-color: #4D4F4D;
+    background-color: $gray-dark;
     color: white;
     text-align: center;
     padding: .5rem .5rem;
@@ -10,7 +10,7 @@
     transition: all 200ms;
     
     &:hover {
-        background-color: #b2b1a7;
+        background-color: $gray-light;
     }
 }
 
@@ -22,7 +22,7 @@
 
 .footer{
 	display: block;
-	background-color: #171F24;
+	background-color: $gray-darker;
 
 	.footerLink{
 		text-align: center;
@@ -36,30 +36,30 @@
 
 		ul{
 			li{
-				color:#dcdbd8;
+				color:$gray-lighter;
 				font-size: $font-size-sm;
 				line-height: 22px;
 				
 				a{
-					color: #dcdbd8;
+					color: $gray-lighter;
 					&:hover{
-						color: #7A7F7F;
+						color: $gray;
 					}
 				}
 			}
 		}
 
 		p {
-			color:#dcdbd8;
+			color:$gray-lighter;
 			font-size: $font-size-sm;
 			line-height: 22px;
 			margin-bottom: 0;
 			
 			a{
-				color: #dcdbd8;
+				color: $gray-lighter;
 				
 				&:hover{
-					color: #7A7F7F;
+					color: $gray;
 				}
 			}
 			
@@ -85,14 +85,14 @@
 
 .copyright{	
 	p{
-		color: #dcdbd8;
+		color: $gray-lighter;
 		margin-bottom: 0;
 		font-size: $font-size-sm;
 		
 		a {
-			color:#dcdbd8;
+			color:$gray-lighter;
 			&:hover {
-			color: #7A7F7F;
+			color: $gray;
 			}
 		}	
 	}
@@ -107,8 +107,8 @@
 		ul {
 			.shariff-button {
 				a {
-					background-color: #dcdbd8;
-					color:#171F24;
+					background-color: $gray-lighter;
+					color:$gray-darker;
 					padding:0 .2rem;
 
 					&:hover {					
@@ -161,7 +161,7 @@
 }
 
 	.btn_mail {
-	    background-color: #7A7F7F;
+	    background-color: $gray;
 	    color: white;
 	    //border: none;
 	    //line-height: 1.3;
@@ -171,7 +171,7 @@
 		}
 
 		&:hover {
-			background-color: #b2b1a7;
+			background-color: $gray-light;
 		    //border:none;
 		}
 	}
@@ -217,33 +217,33 @@
 	}
 
 
-	@include media-breakpoint-down(sm){	
-		.shariff {
-			.orientation-horizontal {
-				li {
-					width: 55px;
-				}
-			}
-		}
+	// @include media-breakpoint-down(sm){	
+	// 	.shariff {
+	// 		.orientation-horizontal {
+	// 			li {
+	// 				width: 55px;
+	// 			}
+	// 		}
+	// 	}
 
-		.payment_line .img-fluid {
-		    margin: 0 auto;
-		}	
-	}
+	// 	.payment_line .img-fluid {
+	// 	    margin: 0 auto;
+	// 	}	
+	// }
 
-	@include media-breakpoint-down(md){
-		.shariff {
-			width: 340px;
-		    overflow: auto;
-		    margin-top: 10px;
-		    display: inline-block;
-		}	
-	}
+	// @include media-breakpoint-down(md){
+	// 	.shariff {
+	// 		width: 340px;
+	// 	    overflow: auto;
+	// 	    margin-top: 10px;
+	// 	    display: inline-block;
+	// 	}	
+	// }
 	
 	
 	
-@include media-breakpoint-only(xs) { 
-	.shariff {
-		width: 245px;
-	}
-}
+// @include media-breakpoint-only(xs) { 
+// 	.shariff {
+// 		width: 245px;
+// 	}
+// }
