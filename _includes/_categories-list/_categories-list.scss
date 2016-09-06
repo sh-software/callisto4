@@ -1,61 +1,4 @@
-.categories-list{
-}
-.cmp-product-thumb {
-    width: 100%;
-    .thumb-image {
-        img {
-            max-height: 100%;
-        }
-    }
-    .thumb-content {
-        width: 100%;
-        .thumb-title {
-            min-height: 40px;
-        }
-        .thumb-meta {
-            
-            .crossprice {
-                position: absolute;
-                right: 1rem;
-                bottom: 4.5rem;
-            }
-            .left {
-                position: absolute;
-                bottom: 1rem;
-            }
-            .price {
-                position: absolute;
-                right: 1rem;
-                bottom: 3rem;
-            }            
-        }
-        .thumb-controls {
-            margin-top: 0;
-            position:absolute;
-            bottom:1rem;
-        }
-    }
-    &.grid {
-        .thumb-content {
-            .thumb-meta {
-                margin-top: 1rem;
-                .crossprice {
-                    bottom: 5rem;
-                }
-                .left {
-                    position: static;
-                }
-                .price {
-                    position: static;
-                } 
-            }
-            .thumb-controls {
-                margin-top: 1rem;
-                position:static;
-            }
-        }
-    }
-}
+.categories-list{}
 
 .page-infos{
 	display: flex;
@@ -76,10 +19,7 @@
 	flex-flow: row wrap;
 
 	li{
-		@include make-col-ready(12);
-        @include make-col(12);
-        @extend .m-b-1;
-        display: flex;
+       margin-bottom: 2px;
 	}
 }
 
@@ -89,22 +29,30 @@
     }
 }
 
+// @include media-breakpoint-only(xs) { 
 
+//     .page-infos {
+//         text-align: center;
+//     }
 
-@include media-breakpoint-only(xs) { 
-
-.page-infos {
-    text-align: center;
-}
-
-nav.cmp.cmp-paginator.pull-xs-right {
-        text-align: center;
-        float: none!important;
-    }
-}
+//     nav.cmp.cmp-paginator.pull-xs-right {
+//         text-align: center;
+//         float: none!important;
+//     }
+// }
 
 
 @include media-breakpoint-up(sm){
+    .product-list{
+        li{
+            @include make-col-ready(12);
+            @include make-col(12);
+            margin-bottom: $grid-gutter-width;
+
+            display: flex;
+        }
+    }
+
     .product-list.grid{
 
     	li{

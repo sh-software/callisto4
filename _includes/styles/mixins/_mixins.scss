@@ -78,30 +78,3 @@
   background-position: center center;
   height: auto;
 }
-@mixin rainbow-li($r, $g, $b, $steps){
-    $step : $steps;
-    $child : 1;
-    @while $step >= 1 {
-        $amount : $step/$steps;
-
-        li:nth-child(#{$child}) .breadcrumb-item:not(.active), 
-        li:nth-child(#{$child}) .breadcrumb-item:not(.active) {
-            background-color: rgba($r, $g, $b, $amount);
-
-            &::after { border-left-color : rgba($r, $g, $b, $amount); }
-
-            &:hover {
-                &::after { border-left-color : black!important; }
-            }
-        }
-        $child : $child + 1;
-        $step  : $step - 1;
-    }
-}
-@mixin triangle-right($color, $w, $h){
-    width: 0;
-    height: 0;
-    border-top: $w solid transparent;
-    border-left: $h solid $color;
-    border-bottom: $w solid transparent;
-}

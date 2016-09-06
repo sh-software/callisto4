@@ -120,18 +120,22 @@
 
 			//toggle internal style of thumbs 
 			$('.product-list, .cmp-product-thumb').toggleClass('grid');
-			
-			// //toggle thumbs size
-			// if( $('.product-list').hasClass('grid') ){
-
-			// 	$('.product-list').removeClass('grid').addClass('rows');
-			
-			// }else if( $('.product-list').hasClass('rows') ){
-			
-			// 	$('.product-list').removeClass('rows').addClass('grid');
-			
-			// }
 		});
+
+		$('#mainNavbarCollapse').collapse('hide');
+
+		//Add click listener outside the navigation to close it 
+		$('#mainNavbarCollapse').on('show.bs.collapse', function () {
+			$('.main').one('click', closeNav);
+		})
+
+		$('#mainNavbarCollapse').on('hide.bs.collapse', function () {
+			$('.main').off('click', closeNav)
+		})
+
+		function closeNav(){
+			$('#mainNavbarCollapse').collapse('hide');
+		}
 
 	}
 

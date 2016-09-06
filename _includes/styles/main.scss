@@ -3,9 +3,6 @@
 @import "../../bower_components/bootstrap/scss/bootstrap";
 @import "../../bower_components/font-awesome/scss/font-awesome";
 @import "../../node_modules/shariff/build/shariff.complete.css";
-
-
-
 @import "../../bower_components/flag-icon-css/sass/flag-icon";
 
 // Common
@@ -18,16 +15,14 @@
 @import "components/alerts";
 @import "../_component-toggle-list-view/style";
 @import "../_component-paginator/style";
-
-//to delete
-@import "mixins/media-query";
-//@import "mixins/grid";
-@import "mixins/mixins";
-@import "mixins/transitions";
-
-@import "common/buttons";
 @import "common/structure";
 @import "common/body-toggles";
+
+
+// Home
+@import "../_home/styles";
+@import "../_component-hero/component-hero";
+
 
 //forms
 @import "forms/input-groups";
@@ -44,7 +39,7 @@
 @import "../_single/product-thumb";
 @import "../_single/owl-carousel";
 @import "../_single/lightbox";
-@import "../_home/styles";
+
 @import "../_categories-list/_categories-list";
 
 @import "../_single/crosseller-thumb";
