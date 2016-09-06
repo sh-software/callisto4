@@ -59,11 +59,11 @@
 					background-color: white;
 					transform-origin:0 center;
 
-					transform: rotate(45deg) translate(-50%, -50%);
+					transform: rotate(45deg) translate(-55%, -55%);
 				}
 
 				&:after{
-					transform: rotate(-45deg) translate(-50%, -50%);
+					transform: rotate(-45deg) translate(-45%, -45%);
 				}
 			}
 		}
