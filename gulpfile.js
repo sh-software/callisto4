@@ -26,23 +26,7 @@ var sassOptions = {
 };
 
 var autoprefixerOptions = {
-browsers: [
-       'last 3 versions',
-       'android 4',
-       'opera 12',
-       'chrome 45', 
-       'edge 12', 
-       'firefox 41', 
-       'ie 10',
-       'ie 11', 
-       'ie_mob 11',
-       'ios_saf 9', 
-       'opera 32', 
-       'safari 9'
-     ]
-
-
- 
+  browsers: [ 'last 3 versions' ]
 };
 
 var sassdocOptions = {

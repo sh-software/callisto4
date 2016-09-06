@@ -1,3 +1,19 @@
+.totop {
+    display: block;
+    height: 4rem;
+    background-color: $gray-dark;
+    color: white;
+    text-align: center;
+    padding: .5rem .5rem;
+    text-decoration:none!important;
+
+    transition: all 200ms;
+    
+    &:hover {
+        background-color: $gray-light;
+    }
+}
+
 .footertop{
 	display: block;
 	background-color: $gray-lighter;
@@ -6,50 +22,47 @@
 
 .footer{
 	display: block;
-	background-color: #171F24;
+	background-color: $gray-darker;
 
 	.footerLink{
-		@include mobile-xs{
-			text-align: center;
-			margin-bottom: 1rem;
-		}
-		@include mobile{
-			text-align: center;
-			margin-bottom: 1rem;
-		}
-		@include tablet{
-			text-align: left;
-			margin-bottom: 0;
-		}
+		text-align: center;
+		margin-bottom: 1rem;
+
 		h5{
-			color: #FFF;
+			color: white;
 			text-transform: uppercase;
 			margin-bottom: 1rem;
 		}
+
 		ul{
 			li{
-				color:#dcdbd8;
+				color:$gray-lighter;
 				font-size: $font-size-sm;
 				line-height: 22px;
+				
 				a{
-					color: #dcdbd8;
+					color: $gray-lighter;
 					&:hover{
-						color: #7A7F7F;
+						color: $gray;
 					}
 				}
 			}
 		}
+
 		p {
-		color:#dcdbd8;
-		font-size: $font-size-sm;
-		line-height: 22px;
-		margin-bottom: 0;
+			color:$gray-lighter;
+			font-size: $font-size-sm;
+			line-height: 22px;
+			margin-bottom: 0;
+			
 			a{
-			color: #dcdbd8;
+				color: $gray-lighter;
+				
 				&:hover{
-					color: #7A7F7F;
+					color: $gray;
 				}
 			}
+			
 			i {
 				width:15px;
 			}
@@ -72,18 +85,17 @@
 
 .copyright{	
 	p{
-		color: #dcdbd8;
+		color: $gray-lighter;
 		margin-bottom: 0;
 		font-size: $font-size-sm;
 		
 		a {
-			color:#dcdbd8;
+			color:$gray-lighter;
 			&:hover {
-			color: #7A7F7F;
+			color: $gray;
 			}
 		}	
 	}
-
 }
 
 
@@ -95,16 +107,13 @@
 		ul {
 			.shariff-button {
 				a {
-					background-color: #dcdbd8;
-					color:#171F24;
+					background-color: $gray-lighter;
+					color:$gray-darker;
 					padding:0 .2rem;
+
 					&:hover {					
-						color:#fff;
-						-moz-transition: opacity, 0.5s, ease;
-						-o-transition: opacity, 0.5s, ease;
-						-webkit-transition: opacity, 0.5s, ease;
-						-ms-transition: opacity, 0.5s, ease;
-						transition: opacity, 0.5s, ease;
+						color:white;
+						transition: opacity 0.5s ease;
 					}
 				}
 			}
@@ -142,91 +151,99 @@
 
 .payment_line {
 	div {
-		-webkit-filter: grayscale(.9);
 		filter: grayscale(.9);
+		
 		&:hover {
-			-moz-transition: opacity, 0.5s, ease;
-			-o-transition: opacity, 0.5s, ease;
-			-webkit-transition: opacity, 0.5s, ease;
-			-ms-transition: opacity, 0.5s, ease;
-			transition: opacity, 0.5s, ease;
-			-webkit-filter: grayscale(0);
+			transition: opacity 0.5s ease;
 			filter: grayscale(0);
 		}		
 	}
 }
 
 	.btn_mail {
-    background-color: #7A7F7F;
-    color: #FFF;
-    border: none;
-    line-height: 1.3;  
+	    background-color: $gray;
+	    color: white;
+	    //border: none;
+	    //line-height: 1.3;
+
 		i {
-	    padding: 0 1rem;
+	    	padding: 0 1rem;
 		}
+
 		&:hover {
-		background-color: #b2b1a7;
-	    border:none;
+			background-color: $gray-light;
+		    //border:none;
 		}
 	}
 
-	.newsletter {
-		.form-control {
-			font-size: .8rem;
-			padding: .65rem;
-		}
-	}
+	// .newsletter {
+	// 	.form-control {
+	// 		font-size: .8rem;
+	// 		padding: .65rem;
+	// 	}
+	// }
 
 
 	@include media-breakpoint-up(sm){
+		.footerLink{
+			text-align: left;
+			margin-bottom: 0;
+		}
+
 		.shariff {
 			.orientation-horizontal {
 				li {
-				margin-right: 1.8%;
-				margin-bottom: 1.8%;
-			    width: 80px;
-			    flex: none;
+					margin-right: 1.8%;
+					margin-bottom: 1.8%;
+				    width: 80px;
+				    flex: none;
+
 					.fa {
-				    width: 25px;
-				    line-height: 30px;
-				    text-align: center;
+					    width: 25px;
+					    line-height: 30px;
+					    text-align: center;
 					}
 				}
 			}
 		}
 	}
 
+	@include media-breakpoint-up(md){
 
-
-	@include media-breakpoint-down(sm){	
-			.shariff {
-			.orientation-horizontal {
-				li {
-					width: 55px;
-				}
-			}
-		}
-
-		.payment_line .img-fluid {
-		    margin: 0 auto;
-		}	
 	}
-	
 
-	@include media-breakpoint-down(md){
-		.shariff {
-		width: 340px;
-	    overflow: auto;
-	    margin-top: 10px;
-	    display: inline-block;
-		}	
-	}
-	
 	@include media-breakpoint-up(lg){
+
 	}
+
+
+	// @include media-breakpoint-down(sm){	
+	// 	.shariff {
+	// 		.orientation-horizontal {
+	// 			li {
+	// 				width: 55px;
+	// 			}
+	// 		}
+	// 	}
+
+	// 	.payment_line .img-fluid {
+	// 	    margin: 0 auto;
+	// 	}	
+	// }
+
+	// @include media-breakpoint-down(md){
+	// 	.shariff {
+	// 		width: 340px;
+	// 	    overflow: auto;
+	// 	    margin-top: 10px;
+	// 	    display: inline-block;
+	// 	}	
+	// }
 	
-@include media-breakpoint-only(xs) { 
-	.shariff {
-		width: 245px;
-		}
-}
+	
+	
+// @include media-breakpoint-only(xs) { 
+// 	.shariff {
+// 		width: 245px;
+// 	}
+// }

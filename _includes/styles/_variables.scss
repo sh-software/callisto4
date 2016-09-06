@@ -66,10 +66,11 @@ $grid-gutter-width: 30px;
 
 
 $gray-darker:           #171f24;
-$gray-dark:             #4d4f4d;
+$gray-dark:             #4D4F4D;
 $gray:                  #7a7f7f;
 $gray-light:            #b2b1a7;
 $gray-lighter:          #dcdbd8;
+$gray-lighter2:         #f4f4f4;
 
 $brand-primary:         #008ebd;
 $brand-secondary:       #d4021d;
@@ -396,15 +397,16 @@ $custom-file-text: (
 
 // Z-Index Scale
 // --------------------------------------------------
+$zIndex-0:   990;
 $zIndex-1:   1000;
-$zIndex-2:   2000;
-$zIndex-3:   3000;
-$zIndex-4:   4000;
-$zIndex-5:   5000;
-$zIndex-6:   6000;
-$zIndex-7:   7000;
-$zIndex-8:   8000;
-$zIndex-9:   9000;
+$zIndex-2:   1020;
+$zIndex-3:   1030;
+$zIndex-4:   1040;
+$zIndex-5:   1050;
+$zIndex-6:   1060;
+$zIndex-7:   1070;
+$zIndex-8:   1080;
+$zIndex-9:   1090;
 $zIndex-10: 10000;
 
 // Z-index master list
@@ -414,15 +416,15 @@ $zIndex-10: 10000;
 
 // TODO use values from Z-Index Scale above
 
-$zindex-dropdown-backdrop:  990;
-$zindex-navbar:            1000;
-$zindex-dropdown:          1000;
-$zindex-popover:           1060;
-$zindex-tooltip:           1070;
-$zindex-navbar-fixed:      1030;
-$zindex-navbar-sticky:     1030;
-$zindex-modal-bg:          1040;
-$zindex-modal:             1050;
+$zindex-dropdown-backdrop: $zIndex-0;
+$zindex-navbar:            $zIndex-5;
+$zindex-dropdown:          $zIndex-1;
+$zindex-popover:           $zIndex-6;
+$zindex-tooltip:           $zIndex-7;
+$zindex-navbar-fixed:      $zIndex-3;
+$zindex-navbar-sticky:     $zIndex-3;
+$zindex-modal-bg:          $zIndex-4;
+$zindex-modal:             $zIndex-5;
 
 
 // Navbar
