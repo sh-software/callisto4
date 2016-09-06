@@ -1,10 +1,12 @@
 .cmp-product-thumb{
+    padding: .8rem;
+    border-bottom:2px solid $gray-lighter2;
 
     overflow: visible;
 
     .thumb-inner{
         position: relative;
-        border: 1px solid $gray-lighter;
+        //border: 1px solid $gray-lighter;
 
         display: flex;
         flex-flow: row nowrap;
@@ -143,24 +145,60 @@
     }
 
     .thumb-content{
-        padding: 1rem;
+        padding: 0 .8rem;
         order: 3;
         display: flex;
         flex-flow: column nowrap;
     }
 
-    .thumb-title{        
+    .thumb-title{
+        position: relative;
         display: flex;
         order: 1;
         overflow: hidden;
         text-overflow: ellipsis;
-        // max-height: 3em;
-        // margin-bottom: .5rem;
-        // font-weight: 700;
+        max-height: 3em;
+        font-weight: 700;
+
+        &:after{
+            content: "…";
+            display: inline-block;
+            height: 50%;
+            position:absolute;
+            right: .25em;
+            bottom: 0; 
+            background-color: white;
+        }
     }
 
+
+    .thumb-meta{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        order:2;
+
+        flex: 1 0 auto;
+        flex-direction: column;
+    }
+
+    .prices{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-top: .5rem;
+    }
+
+    .extras{
+
+    }
+
+
     .crossprice{
-        line-height: 1;
+        //line-height: 1;
         font-size: .8em;
         font-weight: 700;
         color: $gray-light;
@@ -173,24 +211,6 @@
         font-size: 1.2rem;
     }
 
-    .thumb-meta{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: flex-end;
-
-        order:2;
-
-        flex: 1 0 auto;
-        flex-direction: column;
-
-        .prices{
-            display: flex;
-            flex-flow: row nowrap;
-            margin-top: .5rem;
-        }
-    }
-    
     .thumb-controls{
         margin-top: .5rem;
         order: 3;
@@ -199,9 +219,26 @@
 
     
     @include media-breakpoint-up(sm){
+        padding: 0;
+        background-color: transparent;
+        border: 1px solid $gray-lighter2;
 
         .thumb-image{
             flex: 1 0 200px;
+        }
+        
+        .thumb-content{
+            padding: .8rem;
+        }
+
+        .thumb-title{
+            max-height: none;
+            margin-bottom: 0;
+            font-weight: 400;
+
+            &:after{
+                content: none;
+            }
         }
 
         &.grid{
@@ -214,6 +251,10 @@
                 max-height: 3em;
                 margin-bottom: .5rem;
                 font-weight: 700;
+
+                &:after{
+                    content: "…";
+                }
             }
 
             .thumb-inner{
