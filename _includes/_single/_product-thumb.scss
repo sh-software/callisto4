@@ -1,6 +1,5 @@
 .cmp-product-thumb{
-    // @include make-col-ready(12);
-    // @include make-col(12);
+
     overflow: visible;
 
     .thumb-inner{
@@ -151,15 +150,13 @@
     }
 
     .thumb-title{        
-        display: -webkit-box;
-        text-overflow: ellipsis;
-        max-height: 3em;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-        -webkit-box-orient: vertical;
-        font-weight: 700;
-        margin-bottom: .5rem;
+        display: flex;
         order: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // max-height: 3em;
+        // margin-bottom: .5rem;
+        // font-weight: 700;
     }
 
     .crossprice{
@@ -184,6 +181,9 @@
 
         order:2;
 
+        flex: 1 0 auto;
+        flex-direction: column;
+
         .prices{
             display: flex;
             flex-flow: row nowrap;
@@ -205,6 +205,16 @@
         }
 
         &.grid{
+
+            .thumb-meta{
+                flex-direction: row;
+            }
+
+            .thumb-title{
+                max-height: 3em;
+                margin-bottom: .5rem;
+                font-weight: 700;
+            }
 
             .thumb-inner{
                 flex-direction: column;
