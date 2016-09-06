@@ -4,7 +4,9 @@
 .container{
     width:100%!important;
     max-width: 1200px;
+    z-index: auto;
 }
+
 
 /// Element group with fixed aspect ration 1x1
 /// 
@@ -211,7 +213,6 @@ hr {
 .img-cover-container{
     @include img-cover();
 }
-
 
 
 
